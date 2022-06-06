@@ -30,7 +30,7 @@ const Carousel = () => {
           className="carousel slide bg-cover "
           data-bs-ride="carousel"
         >
-          <div className="carousel-indicators px-2.5 my-20 gap-3 flex justify-start flex-col ">
+          <div className="carousel-indicators px-2.5 my-32 gap-3 flex justify-start flex-col ">
             <button
               type="button"
               data-bs-target="#demo"
