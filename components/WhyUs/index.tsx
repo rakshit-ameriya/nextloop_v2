@@ -6,7 +6,7 @@ import { TEXT_CONSTANTS } from 'types/enum';
 const WhyUs = () => {
   return (
     <div>
-      <div className=" relative flex justify-center space-x-36  w-full h-1/2 my-20">
+      <div className=" relative flex justify-center space-x-36 items-center  w-full h-1/2 my-20">
         <div className={`${styles.backcolor} w-10 flex justify-center`}></div>
         <div className="w-56 flex flex-col py-20">
           <div className="relative bg-[#0AD4A5] w-20 h-3">
@@ -23,7 +23,7 @@ const WhyUs = () => {
           </div>
         </div>
         <div className="flex justify-start rounded-md ">
-          <Image src="/whyus.png" width={400} height={250} alt="whyus" />
+          <Image src="/whyus.png" width={400} height={350} alt="whyus" />
         </div>
       </div>
     </div>
