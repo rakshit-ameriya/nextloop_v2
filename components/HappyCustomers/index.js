@@ -2,6 +2,37 @@ import React from 'react';
 import Image from 'next/image';
 import { TEXT_CONSTANTS } from '../../types/enum';
 
+const IMAGES_DATA = {
+  imgData_1: [
+    {
+      id: 1,
+      image: '/happyCustomers1.png',
+    },
+    {
+      id: 2,
+      image: '/happyCustomers2.png',
+    },
+    {
+      id: 3,
+      image: '/happyCustomers3.png',
+    },
+  ],
+  imgData_2: [
+    {
+      id: 1,
+      image: '/happyCustomers4.png',
+    },
+    {
+      id: 2,
+      image: '/happyCustomers5.png',
+    },
+    {
+      id: 3,
+      image: '/happyCustomers6.png',
+    },
+  ],
+};
+
 function HappyCustomers() {
   return (
     <div>
@@ -21,63 +52,31 @@ function HappyCustomers() {
       <div className=" mt-5 w-full h-screen flex justify-items-center">
         <div className=" w-1/2">
           <div className=" flex justify-evenly mt-16 ml-24">
-            <div className="h-24 w-28 flex flex-col space-y-12 ">
-              <div>
-                <Image
-                  src={'/happyCustomers1.PNG'}
-                  width={'20'}
-                  height={'20'}
-                  layout="responsive"
-                  alt="Happy-Customer"
-                />
-              </div>
-              <div>
-                <Image
-                  src={'/happyCustomers2.PNG'}
-                  width={'20'}
-                  height={'20'}
-                  layout="responsive"
-                  alt="Happy-Customer"
-                />
-              </div>
-              <div>
-                <Image
-                  src={'/happyCustomers3.PNG'}
-                  width={'20'}
-                  height={'20'}
-                  layout="responsive"
-                  alt="Happy-Customer"
-                />
-              </div>
+            <div className="h-24 w-28 flex flex-col space-y-12">
+              {IMAGES_DATA.imgData_1.map(img => (
+                <div key={img.id}>
+                  <Image
+                    src={img.image}
+                    width={'20'}
+                    height={'20'}
+                    layout="responsive"
+                    alt={img.image}
+                  />
+                </div>
+              ))}
             </div>
             <div className="h-24 w-28 flex flex-col space-y-12">
-              <div>
-                <Image
-                  src={'/happyCustomers4.PNG'}
-                  width={'20'}
-                  height={'20'}
-                  layout="responsive"
-                  alt="Happy-Customer"
-                />
-              </div>
-              <div>
-                <Image
-                  src={'/happyCustomers5.PNG'}
-                  width={'20'}
-                  height={'20'}
-                  layout="responsive"
-                  alt="Happy-Customer"
-                />
-              </div>
-              <div>
-                <Image
-                  src={'/happyCustomers6.PNG'}
-                  width={'20'}
-                  height={'20'}
-                  layout="responsive"
-                  alt="Happy-Customer"
-                />
-              </div>
+              {IMAGES_DATA.imgData_2.map(img => (
+                <div key={img.id}>
+                  <Image
+                    src={img.image}
+                    width={'20'}
+                    height={'20'}
+                    layout="responsive"
+                    alt={img.image}
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -93,13 +92,15 @@ function HappyCustomers() {
               />
             </div>
             <div className="text-3xl font-bold mt-8">
-              <p>The best web studio</p>
-              <span>in New York -</span>
-              <span className="text-3xl font-normal">according</span>
+              <p>{TEXT_CONSTANTS.BEST_WEB_STUDIO}</p>
+              <span>{TEXT_CONSTANTS.IN_NEWYORK}</span>
+              <span className="text-3xl font-normal">
+                {TEXT_CONSTANTS.ACCORDING}
+              </span>
             </div>
 
             <div className="text-3xl">
-              <p>to magazine developer</p>
+              <p>{TEXT_CONSTANTS.TO_MAGAZINE_DEVELOPER}</p>
             </div>
             <div className=" h-screen flex justify-start">
               <div className="w-28 h-24 mt-10">
@@ -113,10 +114,10 @@ function HappyCustomers() {
               </div>
               <div>
                 <div className="text-base font-bold leading-5 mt-20 ml-2 text-gray-500">
-                  <p>Richard jacobson</p>
+                  <p>{TEXT_CONSTANTS.RICHARD_JACOBSON}</p>
                 </div>
                 <div className="text-base font-normal leading-5 ml-2 text-gray-500">
-                  <p>magazine editor</p>
+                  <p>{TEXT_CONSTANTS.MAGAZINE_EDITOR}</p>
                 </div>
               </div>
             </div>
