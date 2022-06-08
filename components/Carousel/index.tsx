@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../../styles/carousel.module.css';
 
@@ -17,13 +16,6 @@ const Carousel = () => {
   ];
   return (
     <div>
-      <Head>
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-        />
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-      </Head>
       <div className="w-full h-screen relative">
         <div
           id="demo"
