@@ -6,17 +6,17 @@ const OurServices = () => {
     {
       id: 1,
       title: 'Cloud Computing',
-      image: '/cloudcomputing.svg',
+      image: '/images/cloudcomputing.svg',
     },
     {
       id: 2,
       title: 'Web Development',
-      image: '/webdevelopment.svg',
+      image: '/images/webdevelopment.svg',
     },
     {
       id: 3,
       title: 'Mobile Development',
-      image: '/mobiledevelopment.svg',
+      image: '/images/mobiledevelopment.svg',
     },
   ];
   return (

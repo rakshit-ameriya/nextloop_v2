@@ -5,12 +5,12 @@ const Carousel = () => {
   const ImageData = [
     {
       id: 2,
-      image: '/Rectangle.png',
+      image: '/images/Rectangle.png',
       alt: 'loop-1',
     },
     {
       id: 3,
-      image: '/Rectangle.png',
+      image: '/images/Rectangle.png',
       alt: 'loop-2',
     },
   ];
@@ -44,7 +44,7 @@ const Carousel = () => {
           <div className={`carousel-inner ${styles.animateCarousel}`}>
             <div className="carousel-item active ">
               <Image
-                src="/Rectangle.png"
+                src="/images/Rectangle.png"
                 height={230}
                 width={500}
                 alt="loop-3"
