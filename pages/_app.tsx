@@ -12,11 +12,11 @@ function MyApp({ Component, pageProps }: AppProps) {
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
           rel="stylesheet"
         />
-        <Script
-          async
-          src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        ></Script>
       </Head>
+      <Script
+        async
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      ></Script>
       <Layout>
         <Component {...pageProps} />
       </Layout>
