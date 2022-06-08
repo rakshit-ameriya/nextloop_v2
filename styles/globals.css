@@ -18,3 +18,12 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border-bottom: unset;
+  border-top: unset;
+  background-color: #0ad4a5;
+}
