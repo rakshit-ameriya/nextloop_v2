@@ -27,5 +27,8 @@ export enum TEXT_CONSTANTS {
   LOREM_IPSUM_DOLAR_1 = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.',
   WE_ARE_STRONG_AND_WORTHY = 'We are a strong and worthy competitor in the field of web development. We work together with a client as a team. This allows us to identify customer needs and offer the best solution. A team of diverse specialists works on each project.',
   ABOUT_US = 'About Us',
-  WE_ARE_MORE_THAN='We re more than a web studio'
+  WE_ARE_MORE_THAN = 'We re more than a web studio',
+  LETS_TALK = "Let's Talk!",
+  SEND_US = 'Send us some details about your project, and feel free to ask questions about our process.',
+  OUR_CONSULTANT = 'Our consultants will be with you ASAP.',
 }

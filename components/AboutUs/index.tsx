@@ -1,9 +1,9 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import { TEXT_CONSTANTS } from 'types/enum';
 
 const AboutUs = () => {
-    const[progress,setProgress]=useState<number>(60)
+  const [progress] = useState(60);
   return (
     <div className=" relative  w-full h-screen  ">
       <div className="object-cover bg-cover  flex justify-center w-2/3 h-2/3 absolute -top-36 left-24 text-black -z-50">
