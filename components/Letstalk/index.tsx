@@ -5,7 +5,7 @@ import { TEXT_CONSTANTS } from '../../types/enum';
 const Letstalk = () => {
   return (
     <div className="w-full h-1/3  flex justify-center mt-10">
-      <div className=" rounded-full  h-48 w-3/4 p-4 border-2  shadow-gray-300 flex justify-center ">
+      <div className=" rounded-full  h-48 w-3/4 p-4 border-1  shadow-gray-300 flex justify-center ">
         <div className="text-center ml-44 ">
           <h1 className="text-4xl font-bold mb-7">
             {TEXT_CONSTANTS.LETS_TALK}

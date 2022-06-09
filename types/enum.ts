@@ -14,7 +14,7 @@ export enum TEXT_CONSTANTS {
   OUR_SERVICES = 'Our Services',
   CAN_WE_SAY_ABOUT_THESE_GUY = 'Can say about these guys only good words! Well tested product was provided as well as 24/7 support and maintenance. After 2 months of designing on this theme, my rating could not be less than 5 stars.',
   DEVELOPMENT_SERVER = 'Development center, Clever Kids',
-  OUR_CLIENT_SAYS = 'Our Client Says',
+  OUR_CLIENT_SAYS = 'Our Clients Say',
   OUR_CLIENT_VALUE_US = 'Our Clients Value us and recommend',
   OUR_PORT_FOLIO = 'Our Portfolio',
   MORE_THAN_500 = 'More than 500+ work in our portfolio',

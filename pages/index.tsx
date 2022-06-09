@@ -5,6 +5,7 @@ import WhyUs from 'components/WhyUs';
 import AboutUs from 'components/AboutUs';
 import Letstalk from 'components/Letstalk';
 import Solutions from 'components/Solutions';
+import OurClinetsSay from 'components/OurClientsSay';
 
 const Home: NextPage = () => {
   return (
@@ -14,6 +15,7 @@ const Home: NextPage = () => {
       <WhyUs />
       <AboutUs />
       <Solutions />
+      <OurClinetsSay />
       <Letstalk />
     </div>
   );
