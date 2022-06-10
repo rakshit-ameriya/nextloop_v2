@@ -18,7 +18,7 @@ const constants = {
     {
       id: 'career',
       name: 'Career',
-      // link: "/career"
+      link: '/career',
     },
 
     {

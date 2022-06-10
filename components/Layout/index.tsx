@@ -2,8 +2,10 @@ import React from 'react';
 import Link from 'next/link';
 import Constants from '../../constants';
 import { TEXT_CONSTANTS } from '../../types/enum';
+import { useRouter } from 'next/router';
 
 const Layout = (props: any) => {
+  const router = useRouter();
   return (
     <div>
       <div className="w-full h-24 bg-[#010028] ">
@@ -24,7 +26,13 @@ const Layout = (props: any) => {
             <ul className="flex flex-row space-x-8 space-y-0 md:flex-row items-center  md:space-y-0 md:space-x-8 lg:md:-x-8">
               {Constants.Navigation.map(item => (
                 <Link key={item.id} href={item.link ? item.link : '/'}>
-                  <a className="hover:underline decoration-red-500">
+                  <a
+                    className={
+                      router.asPath == item.link
+                        ? `text-[#0AD4A5] hover:text-[#0AD4A5]`
+                        : `text-white hover:text-green-300`
+                    }
+                  >
                     {item.name}
                   </a>
                 </Link>
