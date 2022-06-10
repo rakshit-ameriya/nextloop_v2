@@ -31,4 +31,6 @@ export enum TEXT_CONSTANTS {
   LETS_TALK = "Let's Talk!",
   SEND_US = 'Send us some details about your project, and feel free to ask questions about our process.',
   OUR_CONSULTANT = 'Our consultants will be with you ASAP.',
+  HAPPY_SERVICES = 'Happy Customers',
+  WE_COOPERATE_WITH_GLOBAL_BRANDS = 'We coorperte with global brands',
 }

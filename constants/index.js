@@ -24,7 +24,7 @@ const constants = {
     {
       id: 'contact',
       name: 'Contact',
-      // link: "/contact"
+      link: '/contact',
     },
   ],
 };
