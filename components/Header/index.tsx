@@ -5,7 +5,7 @@ import Carousel from 'components/Carousel';
 const Header = () => {
   return (
     <>
-      <div className="w-full h-screen bg-[#010028] relative">
+      <div className="w-full h-screen bg-[#010028]">
         <Carousel />
         <div className="absolute top-0 w-full h-screen py-10">
           <div className="flex justify-center w-1/2 place-items-center ">

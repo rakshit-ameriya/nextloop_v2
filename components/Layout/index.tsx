@@ -8,7 +8,7 @@ const Layout = (props: any) => {
   const router = useRouter();
   return (
     <div>
-      <div className="w-full h-24 bg-[#010028] ">
+      <div className="w-full h-24 bg-transparent z-10 absolute top-0">
         <nav className="flex justify-evenly space-x-40 items-center py-4 px-4 mx-auto max-w-screen-xl md:px-12 lg:px-16 xl:px-5">
           <a
             href="#"
