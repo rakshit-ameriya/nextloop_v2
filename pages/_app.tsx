@@ -9,6 +9,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>Nextloop</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Nextloop Technologies Pvt. Ltd." />
         <link rel="icon" href="/images/logo-white.jpg" />
         <link
