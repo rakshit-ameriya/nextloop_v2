@@ -32,7 +32,7 @@ const Layout = (props: any) => {
                     className={
                       router.asPath == item.link
                         ? `text-[#0AD4A5] hover:text-[#0AD4A5]`
-                        : `text-white hover:text-green-300`
+                        : `text-white`
                     }
                   >
                     {item.name}

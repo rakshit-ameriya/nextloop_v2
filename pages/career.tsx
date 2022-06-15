@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-const career = () => {
+const Career = () => {
   return (
     <>
       <div className="w-full h-3/4 relative top-0 -z-50 bg-[#010028]  ">
@@ -389,4 +389,4 @@ const career = () => {
   );
 };
 
-export default career;
+export default Career;
