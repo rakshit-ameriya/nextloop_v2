@@ -9,7 +9,7 @@ const Layout = (props: any) => {
   return (
     <div>
       <div className="w-full h-24 bg-transparent z-10 absolute top-0">
-        <nav className="flex justify-center sm:justify-evenly sm:space-x-40 space-x-40 items-start py-4 px-4 mx-auto max-w-screen-xl md:px-12 lg:px-16 xl:px-5">
+        <nav className="flex justify-between sm:justify-evenly sm:space-x-40 space-x-1 items-start p-2 mt-2  mx-auto max-w-screen-xl md:px-12 lg:px-16 xl:px-5">
           <a
             href="#"
             className="lg:text-2xl text-white md:text-3xl font-semibold tracking-wide"
@@ -23,9 +23,9 @@ const Layout = (props: any) => {
             </h5>
           </a>
           <div
-            className={`text-white font-semibold text-sm md:static md:bg-transparent md:flex items-center space-y-8 md:space-y-0 md:space-x-8 lg:space-x-14`}
+            className={`text-white font-bold text-xs sm:text-sm md:static md:bg-transparent md:flex items-center space-y-8 md:space-y-0 md:space-x-8 lg:space-x-14`}
           >
-            <ul className="flex flex-col  space-y-5 md:flex-row items-center  md:space-y-0 md:space-x-8 lg:md:-x-8">
+            <ul className="flex flex-row  space-x-2 md:flex-row items-center  md:space-y-0 md:space-x-8 lg:md:-x-8">
               {Constants.Navigation.map(item => (
                 <Link key={item.id} href={item.link ? item.link : '/'}>
                   <a

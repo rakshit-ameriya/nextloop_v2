@@ -136,7 +136,7 @@ const Contact: NextPage = () => {
       <div className="w-full h-96 -z-50 relative  bg-[#010028]  ">
         <div className="">
           <svg
-            className="absolute top-56 sm:absolute sm:top-60"
+            className="absolute top-80 sm:absolute sm:top-60"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1440 320"
           >
@@ -149,9 +149,9 @@ const Contact: NextPage = () => {
         </div>
       </div>
 
-      <div className="w-full h-screen  flex justify-center items-center md:absolute md:top-28 z-50   ">
-        <div className="w-3/5  sm:p-10 bg-white max-h-fit overflow-hidden border-2 rounded-2xl shadow-md hover:shadow-none">
-          <div className="pl-5 mb-3">
+      <div className="w-full h-screen  flex justify-center items-center absolute top-52  sm:absolute sm:top-28 z-50   ">
+        <div className="w-5/4 sm:w-3/5   sm:p-10 bg-white max-h-fit overflow-hidden border-2 rounded-2xl shadow-md hover:shadow-none">
+          <div className="pl-5 pr-5 mb-3">
             <h1 className="text-3xl font-bold">Lets Connect</h1>
             <h1 className="text-xs max-w-xs mt-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -164,7 +164,7 @@ const Contact: NextPage = () => {
               {/* form start */}
               <div>
                 <form onSubmit={handleSubmit}>
-                  <div className="flex flex-col  md:space-x-2 mb-3 justify-center rounded-md pl-5 md:flex-row sm:flex-col">
+                  <div className="flex flex-col  md:space-x-2 mb-3 justify-center rounded-md pl-5 pr-5 md:flex-row sm:flex-col">
                     <div className="w-full">
                       <label className="block">Full Name</label>
                       <input
@@ -204,7 +204,7 @@ const Contact: NextPage = () => {
                       )} */}
                     </div>
                   </div>
-                  <div className="flex flex-col md:space-x-2 mb-3 rounded-md pl-5 md:flex-row sm:flex-col">
+                  <div className="flex flex-col md:space-x-2 mb-3 rounded-md pl-5 pr-5 md:flex-row sm:flex-col">
                     <div className="w-full">
                       <label className="block">Phone Number</label>
                       <input
@@ -244,7 +244,7 @@ const Contact: NextPage = () => {
                       )} */}
                     </div>
                   </div>
-                  <div className="w-full pl-5">
+                  <div className="w-full pl-5 pr-5">
                     <label className="block">Comments</label>
                     <textarea
                       className="rounded-md p-1 w-full h-32 border-1"
@@ -253,7 +253,7 @@ const Contact: NextPage = () => {
                       onChange={e => handleChange(e)}
                     />
                   </div>
-                  <div className="pl-5 w-full sm:w-3/4  mt-3">
+                  <div className="pl-5 pr-5 w-full sm:w-3/4  mt-3">
                     <button
                       className="bg-green-300 w-full sm:w-3/4 text-white font-normal p-1 border-1 rounded-full"
                       type="submit"
@@ -271,7 +271,7 @@ const Contact: NextPage = () => {
                 <div>
                   {/* icons */}
                   <Image
-                    src="/Location_Icon.png"
+                    src="/images/addressIcon.png"
                     width={20}
                     height={20}
                     alt="Location Icon"
@@ -292,7 +292,7 @@ const Contact: NextPage = () => {
                 <div>
                   {/* icons */}
                   <Image
-                    src="/Phone_Icon.png"
+                    src="/images/telephone.png"
                     width={18}
                     height={18}
                     alt="Phone Icon"
@@ -308,7 +308,7 @@ const Contact: NextPage = () => {
                 <div>
                   {/* icons */}
                   <Image
-                    src="/Message_Icon.png"
+                    src="/images/message-box.png"
                     width={15}
                     height={15}
                     alt="Message Icon"
@@ -336,9 +336,9 @@ const Contact: NextPage = () => {
                   </div>
                 ))}
               </div>
-              <div className="mt-3 max-w-xs max-h-fit">
+              <div className="mt-3 max-w-xs max-h-fit pr-5 sm:pr-0">
                 <Image
-                  src="/Map_Icon.png"
+                  src="/images/map.png"
                   width={300}
                   height={130}
                   alt="Map Icon"

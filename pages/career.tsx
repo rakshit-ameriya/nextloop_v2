@@ -16,7 +16,7 @@ const Career = () => {
           />
         </div>
 
-        <div className="relative -top-36 z-10 h-16">
+        <div className="relative sm:relative top-5 sm:-top-36 z-10 h-16">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path
               fill="#fff"
@@ -25,8 +25,8 @@ const Career = () => {
             ></path>
           </svg>
         </div>
-        <div className="z-10 absolute top-1/3 left-1/3 flex justify-center flex-col items-center">
-          <h1 className="text-4xl text-white font-bold  font-montserrat p-2 ">
+        <div className="z-10 sm:absolute sm:top-1/3 sm:left-1/3 absolute top-1/3  flex justify-center flex-col items-center">
+          <h1 className="sm:text-4xl text-xl  text-white font-bold  font-montserrat p-2 ">
             Current Openings
           </h1>
           <p className="text-xs text-white font-light max-w-md text-center mt-2 p-3 ">
@@ -35,8 +35,8 @@ const Career = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-center flex-col items-center mb-10 ">
-        <div className="relative w-2/3 overflow-hidden rounded-2xl shadow-md border">
+      <div className="flex justify-center flex-col items-center mb-10 mt-5 sm:mt-0 ">
+        <div className="relative w-5/6 sm:w-2/3 overflow-hidden rounded-2xl shadow-md border">
           <input
             type="checkbox"
             className="peer absolute top-0 inset-x-0 w-full h-20 opacity-0 z-10 cursor-pointer"
@@ -103,7 +103,7 @@ const Career = () => {
             </div>
           </div>
         </div>
-        <div className="mt-6 relative w-2/3 overflow-hidden rounded-2xl shadow-md border">
+        <div className="mt-6 relative w-5/6 sm:w-2/3 overflow-hidden rounded-2xl shadow-md border">
           <input
             type="checkbox"
             className="peer absolute top-0 inset-x-0 w-full h-20 opacity-0 z-10 cursor-pointer"
@@ -168,7 +168,7 @@ const Career = () => {
             </div>
           </div>
         </div>
-        <div className="mt-6 relative w-2/3 overflow-hidden rounded-2xl shadow-md border">
+        <div className="mt-6 relative w-5/6 sm:w-2/3 overflow-hidden rounded-2xl shadow-md border">
           <input
             type="checkbox"
             className="peer absolute top-0 inset-x-0 w-full h-20 opacity-0 z-10 cursor-pointer"

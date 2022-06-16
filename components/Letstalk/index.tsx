@@ -4,31 +4,28 @@ import { TEXT_CONSTANTS } from '../../types/enum';
 
 const Letstalk = () => {
   return (
-    <div className="w-full h-1/3  flex justify-center mt-10">
-      <div className=" rounded-full  h-48 w-3/4 p-4 border-1  shadow-gray-300 flex justify-center ">
-        <div className="text-center ml-44 ">
-          <h1 className="text-4xl font-bold mb-7">
+    <div className="w-full h-3/4  flex justify-center items-center py-2">
+      <div className="w-4/5 h-1/2  border-1 rounded-2xl sm:rounded-full flex flex-col sm:flex-row justify-center items-center sm:space-x-3 space-x-0 p-3">
+        <div className="">
+          <h1 className="text-3xl font-montserrat text-center">
             {TEXT_CONSTANTS.LETS_TALK}
           </h1>
-          <h1 className="text-xs font-medium text-gray-400">
+          <h1 className="text-sm  text-center mt-10 ">
             {TEXT_CONSTANTS.SEND_US}
           </h1>
-          <span className="text-xs font-medium text-gray-400">
-            {' '}
+          <h1 className="text-sm  text-center">
             {TEXT_CONSTANTS.OUR_CONSULTANT}
-          </span>
-
-          <div className="-mx-10 border-b-2 border-green-300  w-20   ml-[350px] "></div>
-          <div className="-mx-20  border-b-2 border-green-300  w-40  mt-3 ml-96 "></div>
+          </h1>
         </div>
-        <div className="h-24 w-28 ml-10  mt-4 p-4">
+        <div className="mt-2 flex justify-center flex-col space-y-2">
           <Image
             src={'/images/lets_talk.png'}
-            width={28}
-            height={24}
-            layout="responsive"
+            width={70}
+            height={70}
             alt="Message Icon"
           />
+          <div className="w-16 bg-green-300 border-1 border-green-400 mt-4 -ml-6"></div>
+          <div className="w-32 bg-green-300 border-1 border-green-400 mt-2"></div>
         </div>
       </div>
     </div>
