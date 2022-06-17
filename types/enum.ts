@@ -1,4 +1,10 @@
 export enum TEXT_CONSTANTS {
+  TECHNOLOGIES = 'technologies',
+  NEXTLOOP = 'nextloop',
+  DISCOVER = 'Discover',
+  INFORMATION = 'Information',
+  HELP_AND_SUPPORT = 'Help and Support',
+  CONTACT = 'CONTACT',
   HAPPY_SERVICES = 'Happy Customers',
   WE_COOPERATE_WITH_GLOBAL_BRANDS = 'We coorperte with global brands',
   BEST_WEB_STUDIO = 'The best web studio',
