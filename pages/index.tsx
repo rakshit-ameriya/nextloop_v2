@@ -12,11 +12,6 @@ import OurClinetsSay from 'components/OurClientsSay';
 const Home: NextPage = () => {
   return (
     <div>
-      <Head>
-        <title>NextLoop</title>
-        <meta name="description" content="Nextloop Technologies Pvt. Ltd." />
-        <link rel="icon" href="/logo-white.jpg" />
-      </Head>
       <Header />
       <OurServices />
       <WhyUs />
