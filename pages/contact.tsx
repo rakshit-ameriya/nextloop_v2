@@ -132,7 +132,7 @@ const Contact: NextPage = () => {
     }
   };
   return (
-    <>
+    <div>
       <div className="w-full h-96 -z-50 relative  bg-[#010028]  ">
         <div className="">
           <svg
@@ -148,207 +148,208 @@ const Contact: NextPage = () => {
           </svg>
         </div>
       </div>
+      <div className="relative -top-36 sm:relative sm:-top-56">
+        <div className="w-full h-screen  flex justify-center items-center z-50">
+          <div className="w-5/4 sm:w-3/5   sm:p-10 bg-white max-h-fit overflow-hidden border-2 rounded-2xl shadow-md hover:shadow-none">
+            <div className="pl-5 pr-5 mb-3">
+              <h1 className="text-3xl font-bold">Lets Connect</h1>
+              <h1 className="text-xs max-w-xs mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </h1>
+            </div>
 
-      <div className="w-full h-screen  flex justify-center items-center absolute top-52  sm:absolute sm:top-28 z-50   ">
-        <div className="w-5/4 sm:w-3/5   sm:p-10 bg-white max-h-fit overflow-hidden border-2 rounded-2xl shadow-md hover:shadow-none">
-          <div className="pl-5 pr-5 mb-3">
-            <h1 className="text-3xl font-bold">Lets Connect</h1>
-            <h1 className="text-xs max-w-xs mt-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </h1>
-          </div>
-
-          <div className="flex flex-col justify-center items-center space-x-5 sm:flex-col md:flex-row">
-            <div className="w-full sm:w-full md:w-3/4">
-              {/* form start */}
-              <div>
-                <form onSubmit={handleSubmit}>
-                  <div className="flex flex-col  md:space-x-2 mb-3 justify-center rounded-md pl-5 pr-5 md:flex-row sm:flex-col">
-                    <div className="w-full">
-                      <label className="block">Full Name</label>
-                      <input
-                        type="text"
-                        className={`rounded-full p-1 w-full border-1 ${
-                          validation.fullName
-                            ? 'focus:outline-red-600 border-red-500'
-                            : ''
-                        } `}
-                        name="fullName"
-                        value={inputValues.fullName}
-                        onChange={e => handleChange(e)}
-                      />
-                      {/* {validation.fullName && (
+            <div className="flex flex-col justify-center items-center space-x-5 sm:flex-col md:flex-row">
+              <div className="w-full sm:w-full md:w-3/4">
+                {/* form start */}
+                <div>
+                  <form onSubmit={handleSubmit}>
+                    <div className="flex flex-col  md:space-x-2 mb-3 justify-center rounded-md pl-5 pr-5 md:flex-row sm:flex-col">
+                      <div className="w-full">
+                        <label className="block">Full Name</label>
+                        <input
+                          type="text"
+                          className={`rounded-full p-1 w-full border-1 ${
+                            validation.fullName
+                              ? 'focus:outline-red-600 border-red-500'
+                              : ''
+                          } `}
+                          name="fullName"
+                          value={inputValues.fullName}
+                          onChange={e => handleChange(e)}
+                        />
+                        {/* {validation.fullName && (
                         <p className="text-xs text-red-500">
                           {validation.fullName}
                         </p>
                       )} */}
-                    </div>
-                    <div className="w-full">
-                      <label className="block">Email</label>
-                      <input
-                        type="text"
-                        className={`rounded-full p-1 w-full border-1 ${
-                          validation.email
-                            ? 'focus:outline-red-600 border-red-500'
-                            : ''
-                        } `}
-                        name="email"
-                        value={inputValues.email}
-                        onChange={e => handleChange(e)}
-                      />
-                      {/* {validation.email && (
+                      </div>
+                      <div className="w-full">
+                        <label className="block">Email</label>
+                        <input
+                          type="text"
+                          className={`rounded-full p-1 w-full border-1 ${
+                            validation.email
+                              ? 'focus:outline-red-600 border-red-500'
+                              : ''
+                          } `}
+                          name="email"
+                          value={inputValues.email}
+                          onChange={e => handleChange(e)}
+                        />
+                        {/* {validation.email && (
                         <p className="text-xs text-red-500">
                           {validation.company}
                         </p>
                       )} */}
+                      </div>
                     </div>
-                  </div>
-                  <div className="flex flex-col md:space-x-2 mb-3 rounded-md pl-5 pr-5 md:flex-row sm:flex-col">
-                    <div className="w-full">
-                      <label className="block">Phone Number</label>
-                      <input
-                        type="number"
-                        className={`rounded-full p-1 w-full border-1 ${
-                          validation.phoneNumber
-                            ? 'focus:outline-red-600 border-red-500'
-                            : ''
-                        } `}
-                        name="phoneNumber"
-                        value={inputValues.phoneNumber}
-                        onChange={e => handleChange(e)}
-                      />
-                      {/* {validation.phoneNumber && (
+                    <div className="flex flex-col md:space-x-2 mb-3 rounded-md pl-5 pr-5 md:flex-row sm:flex-col">
+                      <div className="w-full">
+                        <label className="block">Phone Number</label>
+                        <input
+                          type="number"
+                          className={`rounded-full p-1 w-full border-1 ${
+                            validation.phoneNumber
+                              ? 'focus:outline-red-600 border-red-500'
+                              : ''
+                          } `}
+                          name="phoneNumber"
+                          value={inputValues.phoneNumber}
+                          onChange={e => handleChange(e)}
+                        />
+                        {/* {validation.phoneNumber && (
                         <p className="text-xs text-red-500">
                           {validation.phoneNumber}
                         </p>
                       )} */}
-                    </div>
-                    <div className="w-full">
-                      <label className="block">Company </label>
-                      <input
-                        type="text"
-                        className={`rounded-full p-1 w-full border-1 ${
-                          validation.company
-                            ? 'focus:outline-red-600 border-red-500'
-                            : ''
-                        } `}
-                        name="company"
-                        value={inputValues.company}
-                        onChange={e => handleChange(e)}
-                      />
-                      {/* {validation.company && (
+                      </div>
+                      <div className="w-full">
+                        <label className="block">Company </label>
+                        <input
+                          type="text"
+                          className={`rounded-full p-1 w-full border-1 ${
+                            validation.company
+                              ? 'focus:outline-red-600 border-red-500'
+                              : ''
+                          } `}
+                          name="company"
+                          value={inputValues.company}
+                          onChange={e => handleChange(e)}
+                        />
+                        {/* {validation.company && (
                         <p className="text-xs text-red-500">
                           {validation.company}
                         </p>
                       )} */}
+                      </div>
                     </div>
-                  </div>
-                  <div className="w-full pl-5 pr-5">
-                    <label className="block">Comments</label>
-                    <textarea
-                      className="rounded-md p-1 w-full h-32 border-1"
-                      name="comments"
-                      value={inputValues.comments}
-                      onChange={e => handleChange(e)}
-                    />
-                  </div>
-                  <div className="pl-5 pr-5 w-full sm:w-3/4  mt-3">
-                    <button
-                      className="bg-green-300 w-full sm:w-3/4 text-white font-normal p-1 border-1 rounded-full"
-                      type="submit"
-                    >
-                      Send
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-            {/* form end */}
-            {/* adress start */}
-            <div className="md:w-1/4 mt-2 md:mt-2 sm:mt-10 sm:w-3/4">
-              <div className="flex space-x-5">
-                <div>
-                  {/* icons */}
-                  <Image
-                    src="/images/addressIcon.png"
-                    width={20}
-                    height={20}
-                    alt="Location Icon"
-                  />
-                </div>
-                <div className="space-y-1">
-                  {/* address */}
-
-                  <h1 className="text-sm font-bold text-black">Indore, IN</h1>
-                  <h1 className="text-xs font-normal">
-                    Lorem Ispsum Tower 07, Rd, opp.
-                  </h1>
-                  <h1 className="text-xs font-normal">Lorem Complex</h1>
-                  <h1 className="text-xs font-normal"> Indore (M.P) 45200</h1>
+                    <div className="w-full pl-5 pr-5">
+                      <label className="block">Comments</label>
+                      <textarea
+                        className="rounded-md p-1 w-full h-32 border-1"
+                        name="comments"
+                        value={inputValues.comments}
+                        onChange={e => handleChange(e)}
+                      />
+                    </div>
+                    <div className="pl-5 pr-5 w-full sm:w-3/4  mt-3">
+                      <button
+                        className="bg-green-300 w-full sm:w-3/4 text-white font-normal p-1 border-1 rounded-full"
+                        type="submit"
+                      >
+                        Send
+                      </button>
+                    </div>
+                  </form>
                 </div>
               </div>
-              <div className="flex space-x-5 mt-3">
-                <div>
-                  {/* icons */}
-                  <Image
-                    src="/images/telephone.png"
-                    width={18}
-                    height={18}
-                    alt="Phone Icon"
-                  />
-                </div>
-                <div className="">
-                  {/* address */}
-
-                  <h1 className="text-xs font-normal">+91 00000 00000</h1>
-                </div>
-              </div>
-              <div className="flex space-x-5 mt-3">
-                <div>
-                  {/* icons */}
-                  <Image
-                    src="/images/message-box.png"
-                    width={15}
-                    height={15}
-                    alt="Message Icon"
-                  />
-                </div>
-                <div className="">
-                  {/* address */}
-
-                  <h1 className="text-xs font-normal">hello@nextloop.com</h1>
-                </div>
-              </div>
-              <div className="flex">
-                {Images_DATA.map(img => (
-                  <div
-                    key={img.id}
-                    className="w-3 h-3 mr-2 mt-3 cursor-pointer"
-                  >
+              {/* form end */}
+              {/* adress start */}
+              <div className="md:w-1/4 mt-2 md:mt-2 sm:mt-10 sm:w-3/4">
+                <div className="flex space-x-5">
+                  <div>
+                    {/* icons */}
                     <Image
-                      src={img.image}
-                      width={5}
-                      height={5}
-                      alt={img.alt}
-                      layout="responsive"
+                      src="/images/addressIcon.png"
+                      width={20}
+                      height={20}
+                      alt="Location Icon"
                     />
                   </div>
-                ))}
-              </div>
-              <div className="mt-3 max-w-xs max-h-fit pr-5 sm:pr-0">
-                <Image
-                  src="/images/map.png"
-                  width={300}
-                  height={130}
-                  alt="Map Icon"
-                />
+                  <div className="space-y-1">
+                    {/* address */}
+
+                    <h1 className="text-sm font-bold text-black">Indore, IN</h1>
+                    <h1 className="text-xs font-normal">
+                      Lorem Ispsum Tower 07, Rd, opp.
+                    </h1>
+                    <h1 className="text-xs font-normal">Lorem Complex</h1>
+                    <h1 className="text-xs font-normal"> Indore (M.P) 45200</h1>
+                  </div>
+                </div>
+                <div className="flex space-x-5 mt-3">
+                  <div>
+                    {/* icons */}
+                    <Image
+                      src="/images/telephone.png"
+                      width={18}
+                      height={18}
+                      alt="Phone Icon"
+                    />
+                  </div>
+                  <div className="">
+                    {/* address */}
+
+                    <h1 className="text-xs font-normal">+91 00000 00000</h1>
+                  </div>
+                </div>
+                <div className="flex space-x-5 mt-3">
+                  <div>
+                    {/* icons */}
+                    <Image
+                      src="/images/message-box.png"
+                      width={15}
+                      height={15}
+                      alt="Message Icon"
+                    />
+                  </div>
+                  <div className="">
+                    {/* address */}
+
+                    <h1 className="text-xs font-normal">hello@nextloop.com</h1>
+                  </div>
+                </div>
+                <div className="flex">
+                  {Images_DATA.map(img => (
+                    <div
+                      key={img.id}
+                      className="w-3 h-3 mr-2 mt-3 cursor-pointer"
+                    >
+                      <Image
+                        src={img.image}
+                        width={5}
+                        height={5}
+                        alt={img.alt}
+                        layout="responsive"
+                      />
+                    </div>
+                  ))}
+                </div>
+                <div className="mt-3 max-w-xs max-h-fit pr-5 sm:pr-0">
+                  <Image
+                    src="/images/map.png"
+                    width={300}
+                    height={130}
+                    alt="Map Icon"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

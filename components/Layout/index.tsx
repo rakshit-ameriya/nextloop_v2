@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Constants from '../../constants';
 import { TEXT_CONSTANTS } from '../../types/enum';
 import { useRouter } from 'next/router';
+import Footer from 'components/Footer';
 
 const Layout = (props: any) => {
   const router = useRouter();
@@ -44,6 +45,7 @@ const Layout = (props: any) => {
         </nav>
       </div>
       {props.children}
+      <Footer />
     </div>
   );
 };

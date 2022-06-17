@@ -6,29 +6,29 @@ const IMAGES_DATA = {
   imgData_1: [
     {
       id: 1,
-      image: '/happyCustomers1.png',
+      image: '/images/happyCustomers1.png',
     },
     {
       id: 2,
-      image: '/happyCustomers2.png',
+      image: '/images/happyCustomers2.png',
     },
     {
       id: 3,
-      image: '/happyCustomers3.png',
+      image: '/images/happyCustomers3.png',
     },
   ],
   imgData_2: [
     {
       id: 1,
-      image: '/happyCustomers4.png',
+      image: '/images/happyCustomers4.png',
     },
     {
       id: 2,
-      image: '/happyCustomers5.png',
+      image: '/images/happyCustomers5.png',
     },
     {
       id: 3,
-      image: '/happyCustomers6.png',
+      image: '/images/happyCustomers6.png',
     },
   ],
 };
@@ -36,10 +36,10 @@ const IMAGES_DATA = {
 function HappyCustomers() {
   return (
     <div>
-      <div className="text-center mt-2">
+      <div className="text-center">
         <div>
           <div>
-            <h1 className="text-3xl font-extrabold">
+            <h1 className="sm:text-3xl text-xl font-extrabold">
               {TEXT_CONSTANTS.HAPPY_SERVICES}
             </h1>
           </div>
@@ -49,30 +49,28 @@ function HappyCustomers() {
           {TEXT_CONSTANTS.WE_COOPERATE_WITH_GLOBAL_BRANDS}
         </p>
       </div>
-      <div className=" mt-5 w-full h-screen flex justify-items-center">
-        <div className=" w-1/2">
-          <div className=" flex justify-evenly mt-16 ml-24">
-            <div className="h-24 w-28 flex flex-col space-y-12">
+      <div className=" w-full h-screen flex flex-col sm:flex sm:flex-row justify-evenly mt-5">
+        <div className="">
+          <div className="flex sm:justify-evenly justify-center  sm:space-x-16 space-x-10">
+            <div className="flex flex-col space-y-12 ">
               {IMAGES_DATA.imgData_1.map(img => (
                 <div key={img.id}>
                   <Image
                     src={img.image}
-                    width={'20'}
-                    height={'20'}
-                    layout="responsive"
+                    width={100}
+                    height={100}
                     alt={img.image}
                   />
                 </div>
               ))}
             </div>
-            <div className="h-24 w-28 flex flex-col space-y-12">
+            <div className="flex flex-col sm:flex sm:flex-col space-y-12">
               {IMAGES_DATA.imgData_2.map(img => (
                 <div key={img.id}>
                   <Image
                     src={img.image}
-                    width={'20'}
-                    height={'20'}
-                    layout="responsive"
+                    width={100}
+                    height={100}
                     alt={img.image}
                   />
                 </div>
@@ -81,42 +79,40 @@ function HappyCustomers() {
           </div>
         </div>
         <div>
-          <div className="ml-28 mt-28">
-            <div className="w-14 h-10 ">
+          <div className="p-5">
+            <div className="">
               <Image
-                src={'/happyCustomers7.PNG'}
-                width={20}
-                height={20}
-                layout="responsive"
+                src={'/images/happyCustomers7.png'}
+                width={35}
+                height={35}
                 alt="Statue of Liberty"
               />
             </div>
-            <div className="text-3xl font-bold mt-8">
-              <p>{TEXT_CONSTANTS.BEST_WEB_STUDIO}</p>
+            <div className="text-2xl font-bold mt-3">
+              <h1>{TEXT_CONSTANTS.BEST_WEB_STUDIO}</h1>
               <span>{TEXT_CONSTANTS.IN_NEWYORK}</span>
-              <span className="text-3xl font-normal">
+              <span className="text-2xl font-normal">
                 {TEXT_CONSTANTS.ACCORDING}
               </span>
             </div>
 
-            <div className="text-3xl">
+            <div className="text-2xl">
               <p>{TEXT_CONSTANTS.TO_MAGAZINE_DEVELOPER}</p>
             </div>
-            <div className=" h-screen flex justify-start">
-              <div className="w-28 h-24 mt-10">
+            <div className="flex justify-start mt-4">
+              <div className="">
                 <Image
-                  src={'/happyCustomers8.PNG'}
-                  width={10}
-                  height={10}
-                  layout="responsive"
+                  src={'/images/happyCustomers8.png'}
+                  width={90}
+                  height={90}
                   alt="Signature"
                 />
               </div>
               <div>
-                <div className="text-base font-bold leading-5 mt-20 ml-2 text-gray-500">
+                <div className="text-base font-bold leading-5  text-gray-500">
                   <p>{TEXT_CONSTANTS.RICHARD_JACOBSON}</p>
                 </div>
-                <div className="text-base font-normal leading-5 ml-2 text-gray-500">
+                <div className="text-base font-normal leading-5  text-gray-500">
                   <p>{TEXT_CONSTANTS.MAGAZINE_EDITOR}</p>
                 </div>
               </div>

@@ -19,6 +19,7 @@ const constants = {
     'Lorem ispsum tower',
     'Complex',
     'Indore (M.P), 452001',
+  ],
   Navigation: [
     {
       id: 'home',

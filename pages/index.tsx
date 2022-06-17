@@ -1,5 +1,3 @@
-
-import Footer from 'components/Footer';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import HappyCustomers from 'components/HappyCustomers';
@@ -24,10 +22,9 @@ const Home: NextPage = () => {
       <WhyUs />
       <AboutUs />
       <Solutions />
-        <HappyCustomers />
+      <HappyCustomers />
       <OurClinetsSay />
       <Letstalk />
-       <Footer />
     </div>
   );
 };
