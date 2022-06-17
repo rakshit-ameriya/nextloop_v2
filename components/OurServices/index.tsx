@@ -6,22 +6,22 @@ const OurServices = () => {
     {
       id: 1,
       title: 'Cloud Computing',
-      image: '/cloudcomputing.svg',
+      image: '/images/cloudcomputing.svg',
     },
     {
       id: 2,
       title: 'Web Development',
-      image: '/webdevelopment.svg',
+      image: '/images/webdevelopment.svg',
     },
     {
       id: 3,
       title: 'Mobile Development',
-      image: '/mobiledevelopment.svg',
+      image: '/images/mobiledevelopment.svg',
     },
   ];
   return (
     <div className="w-full">
-      <div className="bg-[#010028]">
+      <div className="bg-[#010028] border-none ">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="#fff"
@@ -30,7 +30,7 @@ const OurServices = () => {
           ></path>
         </svg>
       </div>
-      <div className="flex md:justify-center md:flex-row sm:flex-col  space-x-4 pb-10">
+      <div className="flex justify-center flex-col items-center sm:flex-row space-y-10 mt-5  sm:space-y-5  space-x-4 pb-10">
         {CARD_DATA.map(item => (
           <Card
             key={item.id}

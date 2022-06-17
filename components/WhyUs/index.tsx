@@ -1,13 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
-import styles from '../../styles/whyus.module.css';
 import { TEXT_CONSTANTS } from 'types/enum';
 
 const WhyUs = () => {
   return (
     <div>
-      <div className=" relative flex justify-center space-x-36 items-center  w-full h-1/2 my-20">
-        <div className={`${styles.backcolor} w-10 flex justify-center`}></div>
+      <div className=" relative flex justify-center flex-col sm:flex-row sm:space-x-36 space-x-0 items-center  w-full h-screen my-20">
         <div className="w-56 flex flex-col py-20">
           <div className="relative bg-[#0AD4A5] w-20 h-3">
             <div className="absolute -bottom-0.5 text-[22px] font-bold ">
@@ -22,8 +20,8 @@ const WhyUs = () => {
             <h1>{TEXT_CONSTANTS.WE_ARE_STRONG_AND_WORTHY}</h1>
           </div>
         </div>
-        <div className="flex justify-start rounded-md ">
-          <Image src="/whyus.png" width={400} height={350} alt="whyus" />
+        <div className="">
+          <Image src="/images/whyus.png" width={400} height={350} alt="whyus" />
         </div>
       </div>
     </div>

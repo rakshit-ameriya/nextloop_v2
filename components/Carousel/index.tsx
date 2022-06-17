@@ -5,24 +5,24 @@ const Carousel = () => {
   const ImageData = [
     {
       id: 2,
-      image: '/Rectangle.png',
+      image: '/images/Rectangle.png',
       alt: 'loop-1',
     },
     {
       id: 3,
-      image: '/Rectangle.png',
+      image: '/images/Rectangle.png',
       alt: 'loop-2',
     },
   ];
   return (
     <div>
-      <div className="w-full h-screen relative">
+      <div className="w-full h-screen relative top-40 right-20 sm:top-0 sm:relative">
         <div
           id="demo"
           className="carousel slide bg-cover "
           data-bs-ride="carousel"
         >
-          <div className="carousel-indicators px-2.5 my-32 gap-3 flex justify-start flex-col ">
+          <div className="carousel-indicators px-24 sm:px-24 sm:my-20 -my-80  gap-0 sm:flex justify-start sm:flex-col ">
             <button
               type="button"
               data-bs-target="#demo"
@@ -44,7 +44,7 @@ const Carousel = () => {
           <div className={`carousel-inner ${styles.animateCarousel}`}>
             <div className="carousel-item active ">
               <Image
-                src="/Rectangle.png"
+                src="/images/Rectangle.png"
                 height={230}
                 width={500}
                 alt="loop-3"
