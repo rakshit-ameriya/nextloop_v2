@@ -1,0 +1,15 @@
+@keyframes carouselanimate {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(0.8, 0.8) rotate(15deg);
+  }
+}
+
+.animateCarousel {
+  animation-name: carouselanimate;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
