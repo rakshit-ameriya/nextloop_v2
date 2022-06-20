@@ -1,5 +1,4 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
 import HappyCustomers from 'components/HappyCustomers';
 import Header from 'components/Header';
 import OurServices from 'components/OurServices';
