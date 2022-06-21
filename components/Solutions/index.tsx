@@ -21,23 +21,23 @@ const Solutions = () => {
     },
   ];
   return (
-    <div className="w-full h-screen  flex justify-center items-center">
+    <div className="w-full h-screen  flex justify-center items-center my-5  ">
       <div
-        className={`relative bg-solutions_bg_image  bg-no-repeat bg-center  bg-contain w-full h-3/4   flex justify-center `}
+        className={` relative bg-solutions_bg_image  bg-no-repeat bg-center  bg-cover  w-full h-screen  flex justify-center `}
       >
-        <div className="absolute top-1 sm:absolute sm:top-16 flex justify-center">
-          <div className="relative bg-[#0AD4A5] w-28 h-3">
-            <h1 className="absolute -bottom-2 p-1 text-2xl font-bold ">
+        <div className="absolute top-1 sm:absolute sm:top-16 xl:absolute xl:top-16 2xl:absolute 2xl:top-36  flex justify-center">
+          <div className="relative bg-[#0AD4A5] w-28 h-3 xl:w-28 xl:h-3 2xl:w-56 2xl:h-4">
+            <h1 className="absolute -bottom-2 p-1 text-2xl xl:2xl 2xl:text-5xl font-bold ">
               {TEXT_CONSTANTS.SOLUTIONS}
             </h1>
           </div>
         </div>
-        <div className="text-center flex  flex-wrap absolute top-5 sm:absolute sm:top-24">
-          <p className="max-w-md text-[12px]">
+        <div className="text-center flex  flex-wrap absolute top-5 xl:absolute xl:top-28 2xl:absolute 2xl:top-48 sm:absolute sm:top-24">
+          <p className="max-w-md text-[12px] xl:text-[14px] 2xl:text-lg 2xl:max-w-sm">
             {TEXT_CONSTANTS.LOREM_IPSUM_DOLAR_1}
           </p>
         </div>
-        <div className="mt-20 sm:mt-40 flex flex-col justify-center items-center sm:flex-row  space-x-4 space-y-5 sm:space-y-0 ">
+        <div className="mt-20 sm:mt-10 flex flex-col justify-center items-center sm:flex-row space-x-10 space-y-5 ">
           {CARD_DATA.map(item => (
             <Card
               key={item.id}

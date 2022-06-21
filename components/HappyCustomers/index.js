@@ -39,17 +39,17 @@ function HappyCustomers() {
       <div className="text-center">
         <div>
           <div>
-            <h1 className="sm:text-3xl text-xl font-extrabold">
+            <h1 className="sm:text-3xl text-xl xl:text-3xl 2xl:text-3xl font-extrabold">
               {TEXT_CONSTANTS.HAPPY_SERVICES}
             </h1>
           </div>
         </div>
 
-        <p className=" mt-3">
+        <h1 className=" mt-3 2xl:text-lg xl:text-md">
           {TEXT_CONSTANTS.WE_COOPERATE_WITH_GLOBAL_BRANDS}
-        </p>
+        </h1>
       </div>
-      <div className=" w-full h-screen flex flex-col sm:flex sm:flex-row justify-evenly mt-5">
+      <div className=" w-full h-1/2 flex flex-col sm:flex sm:flex-row justify-evenly mt-5">
         <div className="">
           <div className="flex sm:justify-evenly justify-center  sm:space-x-16 space-x-10">
             <div className="flex flex-col space-y-12 ">

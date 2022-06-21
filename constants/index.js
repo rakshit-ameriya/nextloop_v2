@@ -1,5 +1,32 @@
 const constants = {
-  DISCOVER: ['Home', 'Service', 'Portfolio', 'Elements', 'About Us'],
+  DISCOVER: [
+    {
+      id: 'home',
+      name: 'Home',
+      link: '/',
+    },
+    {
+      id: 'service',
+      name: 'Service',
+      link: '/#service',
+    },
+    {
+      id: 'portfolio',
+      name: 'Portfolio',
+      link: '/#portfolio',
+    },
+    {
+      id: 'elements',
+      name: 'Elements',
+      link: '/#elements',
+    },
+
+    {
+      id: 'aboutUs',
+      name: 'About Us',
+      link: '/#aboutUs',
+    },
+  ],
   INFORMATION: [
     'Company & Contact Info',
     'Blog & Articles',
@@ -29,12 +56,12 @@ const constants = {
     {
       id: 'service',
       name: 'Service',
-      // link: "/service"
+      link: '/#service',
     },
     {
       id: 'aboutus',
       name: 'About Us',
-      // link: "/aboutUs"
+      link: '/#aboutUs',
     },
     {
       id: 'career',

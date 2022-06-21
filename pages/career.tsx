@@ -5,18 +5,18 @@ const Career = () => {
   return (
     <>
       <div className="w-full h-3/4 relative top-0 -z-50 bg-[#010028]  ">
-        <div className="mix-blend-normal opacity-30 ">
+        <div className="mix-blend-normal opacity-30 bg-cover bg-center">
           <Image
             src="/images/group-discuss.jpg"
             width={1300}
-            height={480}
+            height={500}
             layout="responsive"
             alt="group-discuss"
-            className="bg-contain "
+            className="bg-cover bg-center"
           />
         </div>
 
-        <div className="relative sm:relative top-5 sm:-top-36 z-10 h-16">
+        <div className="relative sm:relative top-5 sm:-top-52 z-10 h-16">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path
               fill="#fff"
@@ -26,10 +26,10 @@ const Career = () => {
           </svg>
         </div>
         <div className="z-10 sm:absolute sm:top-1/3 sm:left-1/3 absolute top-1/3  flex justify-center flex-col items-center">
-          <h1 className="sm:text-4xl text-xl  text-white font-bold  font-montserrat p-2 ">
+          <h1 className="sm:text-4xl text-xl xl:text-4xl 2xl:text-5xl  text-white font-bold  font-montserrat p-2 ">
             Current Openings
           </h1>
-          <p className="text-xs text-white font-light max-w-md text-center mt-2 p-3 ">
+          <p className="text-xs xl:text-md 2xl:text-xl text-white font-light max-w-md text-center mt-2 p-3 ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
@@ -371,7 +371,7 @@ const Career = () => {
                     </ul>
                   </div>
                 </div>
-                <div className="max-w-xs  h-52 flex flex-col place-content-end">
+                <div className="max-w-xs  flex flex-col place-content-end cursor-pointer">
                   <div className="bg-[#0AD4A5] mt-5 max-w-xs p-1 rounded-2xl text-center text-white ">
                     <button>Apply</button>
                   </div>
