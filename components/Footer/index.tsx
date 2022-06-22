@@ -3,6 +3,7 @@ import Constants from '../../constants';
 import { TEXT_CONSTANTS } from '../../types/enum';
 import Image from 'next/image';
 import Link from 'next/link';
+import { scrollToTop } from '../../utils/scrollToTop';
 
 const images = [
   {
@@ -24,15 +25,9 @@ const images = [
 ];
 
 function Footer() {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth', // for smoothly scrolling
-    });
-  };
   return (
     <>
-      <div className="bg-[#010028] h-1/2 w-full flex justify-center items-center p-5 relative  ">
+      <div className="bg-primaryBg  h-1/2 w-full flex justify-center items-center p-5 relative  ">
         <div className="grid sm:grid-cols-5 grid-cols-2 gap-x-4">
           <div className="">
             <h1 className="text-white font-bold text-3xl xl:text-3xl 2xl:text-3xl">
@@ -41,7 +36,7 @@ function Footer() {
             <h1 className="text-white text-sm font-light">
               {TEXT_CONSTANTS.TECHNOLOGIES}
             </h1>
-            <div className="text-[#CECECE] text-xs xl:text-md 2xl:text-lg my-3">
+            <div className="text-primaryGrayText text-xs xl:text-md 2xl:text-lg my-3">
               <h1>{TEXT_CONSTANTS.OUR_WEB_STUDIO_CREATES_AND_PROMOTES}</h1>
               <h1>{TEXT_CONSTANTS.WEBSITE_WE_WORK_FOR_THE_RESULT}</h1>
             </div>
@@ -64,7 +59,7 @@ function Footer() {
               {Constants.DISCOVER.map(items => (
                 <li
                   key={items.id}
-                  className="text-[#CECECE] text-xs xl:text-md 2xl:text-lg my-1 font-normal hover:text-black cursor-pointer"
+                  className="text-primaryGrayText text-xs xl:text-md 2xl:text-lg my-1 font-normal hover:text-black cursor-pointer"
                 >
                   <Link href={items.link}>
                     <a> {items.name}</a>
@@ -81,7 +76,7 @@ function Footer() {
               {Constants.INFORMATION.map((items, id) => (
                 <li
                   key={id}
-                  className="text-[#CECECE]  text-xs xl:text-md 2xl:text-lg my-1  font-normal hover:text-black cursor-pointer"
+                  className="text-primaryGrayText  text-xs xl:text-md 2xl:text-lg my-1  font-normal hover:text-black cursor-pointer"
                 >
                   {items}
                 </li>
@@ -96,7 +91,7 @@ function Footer() {
               {Constants.SUPPORT.map((items, id) => (
                 <li
                   key={id}
-                  className="text-[#CECECE]  text-xs xl:text-md 2xl:text-lg my-1 font-normal hover:text-black cursor-pointer"
+                  className="text-primaryGrayText  text-xs xl:text-md 2xl:text-lg my-1 font-normal hover:text-black cursor-pointer"
                 >
                   {items}
                 </li>
@@ -111,7 +106,7 @@ function Footer() {
               {Constants.CONTACT.map((items, id) => (
                 <li
                   key={id}
-                  className="text-[#CECECE]  text-xs xl:text-md 2xl:text-lg my-1 font-normal hover:text-black cursor-pointer"
+                  className="text-primaryGrayText  text-xs xl:text-md 2xl:text-lg my-1 font-normal hover:text-black cursor-pointer"
                 >
                   {items}
                 </li>
@@ -131,8 +126,8 @@ function Footer() {
         </div>
       </div>
 
-      <div className="text-center border-t-[1px] border-[#7A7A7A]   bg-[#010028]">
-        <h1 className=" text-[#CECECE] text-sm  font-normal p-2">
+      <div className="text-center border-t-[1px] border-secondaryGrayText  bg-primaryBg">
+        <h1 className=" text-primaryGrayText text-sm  font-normal p-2">
           {TEXT_CONSTANTS.ALL_RIGHT_RESERVED}
         </h1>
       </div>

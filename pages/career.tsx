@@ -328,7 +328,7 @@ const Career = () => {
                 </div>
                 <div>
                   <h1 className="font-bold text-[#7A7A7A] mt-3">
-                    Whe would like you to bring along
+                    We would like you to bring along
                   </h1>
                   <div className="pl-5 mt-4 text-[#7A7A7A] text-sm">
                     <ul className="list-disc pl-8">
