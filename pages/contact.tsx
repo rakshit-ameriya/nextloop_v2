@@ -133,10 +133,10 @@ const Contact: NextPage = () => {
   };
   return (
     <div>
-      <div className="w-full h-96 -z-50 relative  bg-[#010028]  ">
+      <div className="w-full h-96 -z-50 relative top-0 bg-[#010028]  ">
         <div className="">
           <svg
-            className="absolute top-80 sm:absolute sm:top-60"
+            className="absolute top-80 sm:absolute sm:top-60 xl:absolute xl:top-48 2xl:absolute 2xl:top-48"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1440 320"
           >
@@ -148,8 +148,8 @@ const Contact: NextPage = () => {
           </svg>
         </div>
       </div>
-      <div className="relative -top-36 sm:relative sm:-top-56">
-        <div className="w-full h-screen  flex justify-center items-center z-50">
+      <div className="relative -top-32 sm:relative sm:-top-64 xl:-top-48 2xl:-top-80">
+        <div className="w-full h-screen   flex justify-center items-center z-50">
           <div className="w-5/4 sm:w-3/5   sm:p-10 bg-white max-h-fit overflow-hidden border-2 rounded-2xl shadow-md hover:shadow-none">
             <div className="pl-5 pr-5 mb-3">
               <h1 className="text-3xl font-bold">Lets Connect</h1>
@@ -160,16 +160,18 @@ const Contact: NextPage = () => {
             </div>
 
             <div className="flex flex-col justify-center items-center space-x-5 sm:flex-col md:flex-row">
-              <div className="w-full sm:w-full md:w-3/4">
+              <div className="w-full sm:w-full md:w-3/4 ">
                 {/* form start */}
                 <div>
                   <form onSubmit={handleSubmit}>
                     <div className="flex flex-col  md:space-x-2 mb-3 justify-center rounded-md pl-5 pr-5 md:flex-row sm:flex-col">
                       <div className="w-full">
-                        <label className="block">Full Name</label>
+                        <label className="block p-2 xl:text-lg 2xl:text-2xl">
+                          Full Name
+                        </label>
                         <input
                           type="text"
-                          className={`rounded-full p-1 w-full border-1 ${
+                          className={`rounded-full  w-full 2xl:p-4 xl:p-1 border-1 text-xl ${
                             validation.fullName
                               ? 'focus:outline-red-600 border-red-500'
                               : ''
@@ -185,10 +187,12 @@ const Contact: NextPage = () => {
                       )} */}
                       </div>
                       <div className="w-full">
-                        <label className="block">Email</label>
+                        <label className="block p-2 xl:text-lg 2xl:text-2xl">
+                          Email
+                        </label>
                         <input
                           type="text"
-                          className={`rounded-full p-1 w-full border-1 ${
+                          className={`rounded-full  w-full 2xl:p-4 xl:p-1 border-1 text-xl ${
                             validation.email
                               ? 'focus:outline-red-600 border-red-500'
                               : ''
@@ -206,10 +210,12 @@ const Contact: NextPage = () => {
                     </div>
                     <div className="flex flex-col md:space-x-2 mb-3 rounded-md pl-5 pr-5 md:flex-row sm:flex-col">
                       <div className="w-full">
-                        <label className="block">Phone Number</label>
+                        <label className="block p-2 xl:text-lg 2xl:text-2xl">
+                          Phone Number
+                        </label>
                         <input
                           type="number"
-                          className={`rounded-full p-1 w-full border-1 ${
+                          className={`rounded-full  w-full 2xl:p-4 xl:p-1 border-1 text-xl ${
                             validation.phoneNumber
                               ? 'focus:outline-red-600 border-red-500'
                               : ''
@@ -225,10 +231,12 @@ const Contact: NextPage = () => {
                       )} */}
                       </div>
                       <div className="w-full">
-                        <label className="block">Company </label>
+                        <label className="block p-2 xl:text-lg 2xl:text-2xl">
+                          Company{' '}
+                        </label>
                         <input
                           type="text"
-                          className={`rounded-full p-1 w-full border-1 ${
+                          className={`rounded-full  w-full 2xl:p-4 xl:p-1 border-1 text-xl ${
                             validation.company
                               ? 'focus:outline-red-600 border-red-500'
                               : ''
@@ -245,9 +253,11 @@ const Contact: NextPage = () => {
                       </div>
                     </div>
                     <div className="w-full pl-5 pr-5">
-                      <label className="block">Comments</label>
+                      <label className="block p-2 xl:text-lg 2xl:text-2xl">
+                        Comments
+                      </label>
                       <textarea
-                        className="rounded-md p-1 w-full h-32 border-1"
+                        className="rounded-md  w-full 2xl:p-4 xl:p-1 h-32 border-1 text-xl"
                         name="comments"
                         value={inputValues.comments}
                         onChange={e => handleChange(e)}
@@ -255,7 +265,7 @@ const Contact: NextPage = () => {
                     </div>
                     <div className="pl-5 pr-5 w-full sm:w-3/4  mt-3">
                       <button
-                        className="bg-green-300 w-full sm:w-3/4 text-white font-normal p-1 border-1 rounded-full"
+                        className="bg-green-300 w-full  sm:w-3/4 text-white font-normal xl:p-2 2xl:p-3 2xl:text-2xl border-1 rounded-full"
                         type="submit"
                       >
                         Send

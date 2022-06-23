@@ -16,6 +16,14 @@
     font-weight: 400;
     font-style: 'normal';
   }
+
+  :root {
+    --color-primary-bg: #010028;
+    --color-white-text: #ffffff;
+    --color-gray-text: #cecece;
+    --color-green-text: #0ad4a5;
+    --color-darkGray-text: #7a7a7a;
+  }
 }
 
 html,

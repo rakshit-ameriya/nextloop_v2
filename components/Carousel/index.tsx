@@ -16,13 +16,13 @@ const Carousel = () => {
   ];
   return (
     <div>
-      <div className="w-full h-screen relative top-40 right-20 sm:top-0 sm:relative">
+      <div className="w-full h-screen relative top-40 right-20 sm:top-72 sm:relative xl:relative xl:top-0 xl:left-0 2xl:relative 2xl:top-0">
         <div
           id="demo"
-          className="carousel slide bg-cover "
+          className="carousel slide bg-cover relative"
           data-bs-ride="carousel"
         >
-          <div className="carousel-indicators px-24 sm:px-24 sm:my-20 -my-80  gap-0 sm:flex justify-start sm:flex-col ">
+          <div className="absolute top-80 left-20 bottom-0 sm:absolute sm:top-1/2  xl:absolute xl:top-2/3 xl:left-5 2xl:absolute 2xl:left-28 2xl:bottom-0 carousel-indicators  gap-0 sm:flex justify-start sm:flex-col ">
             <button
               type="button"
               data-bs-target="#demo"
@@ -42,25 +42,28 @@ const Carousel = () => {
           </div>
 
           <div className={`carousel-inner ${styles.animateCarousel}`}>
-            <div className="carousel-item active ">
+            <div className="carousel-item active object-cover object-center ">
               <Image
                 src="/images/Rectangle.png"
                 height={230}
                 width={500}
                 alt="loop-3"
                 layout="responsive"
-                className="d-block w-full h-screen"
+                className="d-block w-full h-screen object-cover object-center"
               />
             </div>
             {ImageData.map(item => (
-              <div key={item.id} className={`carousel-item `}>
+              <div
+                key={item.id}
+                className={`carousel-item object-cover object-center  `}
+              >
                 <Image
                   src={item.image}
                   height={230}
                   width={500}
                   layout="responsive"
                   alt={item.alt}
-                  className="d-block w-full h-screen"
+                  className="d-block w-full h-screen object-cover object-center"
                 />
               </div>
             ))}

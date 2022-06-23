@@ -1,5 +1,5 @@
 import Card from 'components/Card';
-import React from 'react';
+import React, { useRef } from 'react';
 
 const OurServices = () => {
   const CARD_DATA = [
@@ -19,8 +19,9 @@ const OurServices = () => {
       image: '/images/mobiledevelopment.svg',
     },
   ];
+  const service = useRef<HTMLInputElement>(null);
   return (
-    <div className="w-full">
+    <div className="w-full" ref={service} id="service">
       <div className="bg-[#010028] border-none ">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path

@@ -36,12 +36,12 @@ const OurClinetsSay: NextPage = () => {
   ];
 
   return (
-    <div className="w-full h-screen mt-20">
+    <div className="w-full h-2/3 my-20">
       <div className="text-center my-4">
-        <h1 className="text-xl font-bold mb-2">
+        <h1 className="text-xl xl:text-xl 2xl:text-3xl font-bold mb-2">
           {TEXT_CONSTANTS.OUR_CLIENT_SAYS}
         </h1>
-        <h1 className="text-xs font-thin">
+        <h1 className="text-xs xl:twxt-sm 2xl:text-lg font-thin">
           {TEXT_CONSTANTS.OUR_CLIENT_VALUE_US}
         </h1>
       </div>

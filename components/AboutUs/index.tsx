@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Image from 'next/image';
 import { TEXT_CONSTANTS } from 'types/enum';
 
 const AboutUs = () => {
   const [progress] = useState(60);
+  const aboutUs = useRef<HTMLInputElement>(null);
   return (
-    <div className=" relative  w-full h-screen  ">
+    <div className=" relative  w-full h-1/2" ref={aboutUs} id="aboutUs">
       <div className="object-cover bg-cover  flex justify-center  w-2/3 h-2/3 absolute top-52 sm:absolute sm:-top-36 sm:left-24 text-black -z-50">
         <Image
           src="/images/Vector 39.svg"
@@ -21,23 +22,23 @@ const AboutUs = () => {
               {TEXT_CONSTANTS.ABOUT_US}
             </div>
           </div>
-          <div className="flex flex-wrap justify-start font-light  text-[12px] mt-2">
+          <div className="flex flex-wrap justify-start font-light  text-[12px] mt-2 xl:text-md 2xl:text-lg">
             <h1>{TEXT_CONSTANTS.WE_ARE_MORE_THAN}</h1>
           </div>
           <div className="my-3">
-            <h1 className="leading-4 text-[11px] font-normal text-[#7A7A7A]">
+            <h1 className="leading-4 text-[11px] font-normal text-[#7A7A7A] xl:text-md 2xl:text-lg">
               {TEXT_CONSTANTS.WE_ARE_STRONG_AND_WORTHY}
             </h1>
           </div>
           <div className="">
-            <div className="mt-4">
+            <div className="mt-4 ">
               <div className="flex justify-start text-xs text-gray-400">
                 <div>
-                  <h1 className="flex justify-start text-xs pb-2 font-sans font-semibold text-black">
+                  <h1 className="flex justify-start text-xs pb-2 font-sans font-semibold text-black xl:text-md 2xl:text-[15px]">
                     {TEXT_CONSTANTS.REGULAR_CUSTOMERS}
                   </h1>
                 </div>
-                <h1 className="mx-6">{progress}%</h1>
+                <h1 className="mx-6 xl:text-md 2xl:text-lg">{progress}%</h1>
               </div>
               <div className="w-full bg-gray-400 rounded-md">
                 <div
@@ -49,11 +50,11 @@ const AboutUs = () => {
             <div className="mt-3">
               <div className="flex justify-start text-xs text-gray-400">
                 <div>
-                  <h1 className="flex justify-start text-xs pb-2 font-sans font-semibold text-black">
+                  <h1 className="flex justify-start text-xs pb-2 font-sans font-semibold text-black xl:text-md 2xl:text-[15px]">
                     {TEXT_CONSTANTS.REGULAR_CUSTOMERS}
                   </h1>
                 </div>
-                <h1 className="mx-6">{progress}%</h1>
+                <h1 className="mx-6 xl:text-md 2xl:text-lg">{progress}%</h1>
               </div>
               <div className="w-full bg-gray-400 rounded-md">
                 <div
@@ -65,11 +66,11 @@ const AboutUs = () => {
             <div className="mt-3">
               <div className="flex justify-start text-xs text-gray-400">
                 <div>
-                  <h1 className="flex justify-start text-xs pb-2 font-sans font-semibold  text-black">
+                  <h1 className="flex justify-start text-xs pb-2 font-sans font-semibold  text-black xl:text-md 2xl:text-[15px]">
                     {TEXT_CONSTANTS.REGULAR_CUSTOMERS}
                   </h1>
                 </div>
-                <h1 className="mx-6">{progress}%</h1>
+                <h1 className="mx-6 xl:text-md 2xl:text-lg">{progress}%</h1>
               </div>
               <div className="w-full bg-gray-400 rounded-md">
                 <div
