@@ -17,9 +17,12 @@ const AboutUs = () => {
       </div>
       <div className="relative flex justify-center flex-col sm:flex-row space-y-10 sm:space-y-0 sm:space-x-28 space-x-0  w-full h-screen items-center  my-20">
         <div className="w-56 flex flex-col">
-          <div className="relative bg-[#0AD4A5] w-28 h-3">
-            <div className="absolute -bottom-1 text-[24px] font-bold ">
-              {TEXT_CONSTANTS.ABOUT_US}
+          <div className="relative bg-[#0AD4A5] w-24 h-3 xl:w-32 2xl:w-40">
+            <div className="absolute -bottom-1 w-64">
+              <h1 className="font-bold sm:text-2xl text-xl xl:text-3xl 2xl:text-4xl  ">
+                {' '}
+                {TEXT_CONSTANTS.ABOUT_US}
+              </h1>
             </div>
           </div>
           <div className="flex flex-wrap justify-start font-light  text-[12px] mt-2 xl:text-md 2xl:text-lg">

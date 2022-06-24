@@ -11,7 +11,7 @@ const OurClinetsSay: NextPage = () => {
         <Image
           src={'/images/Vector 40.png'}
           width={650}
-          height={230}
+          height={240}
           alt="testimonials-1"
         />
       ),
@@ -25,7 +25,7 @@ const OurClinetsSay: NextPage = () => {
         <Image
           src={'/images/Vector 40.png'}
           width={650}
-          height={230}
+          height={240}
           alt="testimonials-1"
         />
       ),
@@ -37,14 +37,20 @@ const OurClinetsSay: NextPage = () => {
 
   return (
     <div className="w-full h-2/3 my-20">
-      <div className="text-center my-4">
-        <h1 className="text-xl xl:text-xl 2xl:text-3xl font-bold mb-2">
-          {TEXT_CONSTANTS.OUR_CLIENT_SAYS}
-        </h1>
-        <h1 className="text-xs xl:twxt-sm 2xl:text-lg font-thin">
-          {TEXT_CONSTANTS.OUR_CLIENT_VALUE_US}
-        </h1>
+      <div className="flex justify-center my-3">
+        <div className="relative bg-[#0AD4A5] w-40 h-3 sm:48 xl:w-44 2xl:w-64">
+          <div className="absolute -bottom-1 w-56 xl:w-80 2xl:w-80 ">
+            <h1 className="font-bold sm:text-2xl text-xl xl:text-2xl 2xl:text-4xl  ">
+              {' '}
+              {TEXT_CONSTANTS.OUR_CLIENT_SAYS}
+            </h1>
+          </div>
+        </div>
       </div>
+      <h1 className="text-xs xl:twxt-sm 2xl:text-lg text-center my-3">
+        {TEXT_CONSTANTS.OUR_CLIENT_VALUE_US}
+      </h1>
+
       <div
         id="carouselExampleCaptions"
         className="carousel slide relative "
@@ -79,7 +85,7 @@ const OurClinetsSay: NextPage = () => {
                 <Image
                   src={'/images/Vector 40.png'}
                   width={650}
-                  height={230}
+                  height={240}
                   alt="testimonials-1"
                 />
               </div>
@@ -95,11 +101,11 @@ const OurClinetsSay: NextPage = () => {
                 />
               </div>
 
-              <div className="absolute top-36 left-auto">
-                <p className="text-[13px] mx-auto text-white max-w-lg mb-3 ">
+              <div className="absolute top-36 xl:top-32 2xl:top-28 left-auto">
+                <p className="text-[13px] mx-auto xl:text-md 2xl:text-lg text-white max-w-lg mb-3 ">
                   {TEXT_CONSTANTS.CAN_WE_SAY_ABOUT_THESE_GUY}
                 </p>
-                <h1 className="text-white text-lg">
+                <h1 className="text-white text-lg font-semibold">
                   {TEXT_CONSTANTS.DEVELOPMENT_SERVER}
                 </h1>
               </div>
@@ -122,11 +128,11 @@ const OurClinetsSay: NextPage = () => {
                   />
                 </div>
 
-                <div className="absolute top-36 left-auto">
-                  <p className="text-[13px] mx-auto text-white max-w-lg mb-3">
+                <div className="absolute top-36 xl:top-32 2xl:top-28 left-auto">
+                  <p className="text-[13px] mx-auto xl:text-md 2xl:text-lg text-white max-w-lg mb-3">
                     {item.paragraph}
                   </p>
-                  <h1 className="text-white text-sm font-semibold">
+                  <h1 className="text-white text-lg font-semibold">
                     {item.title}
                   </h1>
                 </div>

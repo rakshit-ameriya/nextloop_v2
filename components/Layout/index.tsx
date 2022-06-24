@@ -24,7 +24,7 @@ const Layout = (props: any) => {
             </h5>
           </a>
           <div
-            className={`text-white font-bold text-xs sm:text-sm 2xl:text-3xl md:static md:bg-transparent md:flex items-center space-y-8 md:space-y-0 md:space-x-8 lg:space-x-14`}
+            className={`text-white font-bold text-xs sm:text-sm 2xl:text-2xl md:static md:bg-transparent md:flex items-center space-y-8 md:space-y-0 md:space-x-8 lg:space-x-14`}
           >
             <ul className="flex flex-row  space-x-2 md:flex-row items-center  md:space-y-0 md:space-x-8 lg:md:-x-8">
               {Constants.Navigation.map(item => (
