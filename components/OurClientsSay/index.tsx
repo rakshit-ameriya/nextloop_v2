@@ -38,7 +38,7 @@ const OurClinetsSay: NextPage = () => {
   return (
     <div className="w-full h-2/3 my-20">
       <div className="flex justify-center my-3">
-        <div className="relative bg-[#0AD4A5] w-40 h-3 sm:48 xl:w-44 2xl:w-64">
+        <div className="relative bg-primaryGreenText w-40 h-3 sm:48 xl:w-44 2xl:w-64">
           <div className="absolute -bottom-1 w-56 xl:w-80 2xl:w-80 ">
             <h1 className="font-bold sm:text-2xl text-xl xl:text-2xl 2xl:text-4xl  ">
               {' '}

@@ -37,7 +37,7 @@ function HappyCustomers() {
   return (
     <div>
       <div className="flex justify-center">
-        <div className="relative bg-[#0AD4A5] w-40 h-3 xl:w-64 2xl:w-72">
+        <div className="relative bg-primaryGreenText w-40 h-3 xl:w-64 2xl:w-72">
           <div className="absolute -bottom-1 w-56 xl:w-80 2xl:w-80">
             <h1 className="font-bold sm:text-2xl text-xl xl:text-3xl 2xl:text-4xl  ">
               {TEXT_CONSTANTS.HAPPY_SERVICES}
