@@ -22,7 +22,7 @@ const Carousel = () => {
           className="carousel slide bg-cover relative"
           data-bs-ride="carousel"
         >
-          <div className="absolute top-80 left-20 bottom-0 sm:absolute sm:top-1/2  xl:absolute xl:top-2/3 xl:left-5 2xl:absolute 2xl:left-28 2xl:bottom-0 carousel-indicators  gap-0 sm:flex justify-start sm:flex-col ">
+          <div className="absolute top-80 left-20 bottom-0 sm:absolute sm:top-1/2  xl:absolute xl:top-2/3 xl:left-5 2xl:absolute 2xl:left-36 2xl:bottom-0 carousel-indicators  gap-0 sm:flex justify-start sm:flex-col ">
             <button
               type="button"
               data-bs-target="#demo"

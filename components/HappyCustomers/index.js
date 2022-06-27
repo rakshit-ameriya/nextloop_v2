@@ -36,19 +36,19 @@ const IMAGES_DATA = {
 function HappyCustomers() {
   return (
     <div>
-      <div className="text-center">
-        <div>
-          <div>
-            <h1 className="sm:text-3xl text-xl xl:text-3xl 2xl:text-3xl font-extrabold">
+      <div className="flex justify-center">
+        <div className="relative bg-primaryGreenText w-40 h-3 xl:w-64 2xl:w-72">
+          <div className="absolute -bottom-1 w-56 xl:w-80 2xl:w-80">
+            <h1 className="font-bold sm:text-2xl text-xl xl:text-3xl 2xl:text-4xl  ">
               {TEXT_CONSTANTS.HAPPY_SERVICES}
             </h1>
           </div>
         </div>
-
-        <h1 className=" mt-3 2xl:text-lg xl:text-md">
-          {TEXT_CONSTANTS.WE_COOPERATE_WITH_GLOBAL_BRANDS}
-        </h1>
       </div>
+      <h1 className=" mt-3 2xl:text-lg xl:text-md text-center">
+        {TEXT_CONSTANTS.WE_COOPERATE_WITH_GLOBAL_BRANDS}
+      </h1>
+
       <div className=" w-full h-1/2 flex flex-col sm:flex sm:flex-row justify-evenly mt-5">
         <div className="">
           <div className="flex sm:justify-evenly justify-center  sm:space-x-16 space-x-10">

@@ -22,7 +22,7 @@ const OurServices = () => {
   const service = useRef<HTMLInputElement>(null);
   return (
     <div className="w-full" ref={service} id="service">
-      <div className="bg-[#010028] border-none ">
+      <div className="bg-primaryBg border-none ">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="#fff"
@@ -36,7 +36,7 @@ const OurServices = () => {
           <Card
             key={item.id}
             title={item.title}
-            className="bg-white-400 hover:bg-[#010028] border"
+            className="bg-white-400 hover:bg-primaryBg border"
             image={item.image}
             description={
               'Lorem ipsum dolor sit amet,  fghyjj consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. '

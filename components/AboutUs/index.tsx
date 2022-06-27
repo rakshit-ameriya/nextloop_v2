@@ -17,16 +17,19 @@ const AboutUs = () => {
       </div>
       <div className="relative flex justify-center flex-col sm:flex-row space-y-10 sm:space-y-0 sm:space-x-28 space-x-0  w-full h-screen items-center  my-20">
         <div className="w-56 flex flex-col">
-          <div className="relative bg-[#0AD4A5] w-28 h-3">
-            <div className="absolute -bottom-1 text-[24px] font-bold ">
-              {TEXT_CONSTANTS.ABOUT_US}
+          <div className="relative bg-primaryGreenText w-24 h-3 xl:w-32 2xl:w-40">
+            <div className="absolute -bottom-1 w-64">
+              <h1 className="font-bold sm:text-2xl text-xl xl:text-3xl 2xl:text-4xl  ">
+                {' '}
+                {TEXT_CONSTANTS.ABOUT_US}
+              </h1>
             </div>
           </div>
           <div className="flex flex-wrap justify-start font-light  text-[12px] mt-2 xl:text-md 2xl:text-lg">
             <h1>{TEXT_CONSTANTS.WE_ARE_MORE_THAN}</h1>
           </div>
           <div className="my-3">
-            <h1 className="leading-4 text-[11px] font-normal text-[#7A7A7A] xl:text-md 2xl:text-lg">
+            <h1 className="leading-4 text-[11px] font-normal text-secondaryGrayText xl:text-md 2xl:text-lg">
               {TEXT_CONSTANTS.WE_ARE_STRONG_AND_WORTHY}
             </h1>
           </div>
@@ -42,7 +45,7 @@ const AboutUs = () => {
               </div>
               <div className="w-full bg-gray-400 rounded-md">
                 <div
-                  className="bg-[#0AD4A5] text-xs font-medium text-blue-100 text-center p-0.5 leading-none  h-2 rounded-md"
+                  className="bg-primaryGreenText text-xs font-medium text-blue-100 text-center p-0.5 leading-none  h-2 rounded-md"
                   style={{ width: `${progress}%` }}
                 ></div>
               </div>
@@ -58,7 +61,7 @@ const AboutUs = () => {
               </div>
               <div className="w-full bg-gray-400 rounded-md">
                 <div
-                  className="bg-[#0AD4A5] text-xs font-medium text-blue-100 text-center p-0.5 leading-none  h-2 rounded-md"
+                  className="bg-primaryGreenText text-xs font-medium text-blue-100 text-center p-0.5 leading-none  h-2 rounded-md"
                   style={{ width: `${progress}%` }}
                 ></div>
               </div>
@@ -74,7 +77,7 @@ const AboutUs = () => {
               </div>
               <div className="w-full bg-gray-400 rounded-md">
                 <div
-                  className="bg-[#0AD4A5] text-xs font-medium text-blue-100 text-center p-0.5 leading-none  h-2 rounded-md"
+                  className="bg-primaryGreenText text-xs font-medium text-blue-100 text-center p-0.5 leading-none  h-2 rounded-md"
                   style={{ width: `${progress}%` }}
                 ></div>
               </div>

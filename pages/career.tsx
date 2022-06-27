@@ -381,8 +381,7 @@ const Career = () => {
           </div>
         </div>
         <div className="font-bold  text-[#7A7A7A] mt-5">
-          <button>VIEW ALL OPENINGS</button>
-          <span className="text-[20px] font-normal">{` >> `}</span>
+          <button className="text-xl">VIEW ALL OPENINGS {` >> `}</button>
         </div>
       </div>
     </>
