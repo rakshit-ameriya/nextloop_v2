@@ -27,7 +27,7 @@ const Solutions = () => {
       >
         <div className="absolute top-1 sm:absolute sm:top-16 xl:absolute xl:top-16 2xl:absolute 2xl:top-36  flex justify-center">
           <div className="relative bg-[#0AD4A5] w-28 h-3 xl:w-28 xl:h-3 2xl:w-44 2xl:h-4">
-            <h1 className="absolute -bottom-2 p-1 text-2xl xl:2xl 2xl:text-4xl font-bold ">
+            <h1 className="absolute -bottom-2 p-1 text-2xl xl:text-3xl 2xl:text-4xl font-bold ">
               {TEXT_CONSTANTS.SOLUTIONS}
             </h1>
           </div>

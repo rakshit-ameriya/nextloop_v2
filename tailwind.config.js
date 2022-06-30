@@ -45,12 +45,16 @@ module.exports = {
         primaryGreenText: 'var(--color-green-text)',
       },
       fontFamily: {
-        montserrat: 'Montserrat',
+        montserratBold: ['Montserrat-bold'],
+        montserratRegular: ['Montserrat-regular'],
       },
     },
   },
   plugins: [],
   variants: {
     fluidType: ['responsive'],
+  },
+  corePlugins: {
+    fontFamily: true,
   },
 };
