@@ -17,10 +17,10 @@ const WhyUs = () => {
           </div>
 
           <div className="flex flex-wrap justify-start  text-xs xl:text-xs 2xl:text-lg mt-3 font-montserrat">
-            <h1>{TEXT_CONSTANTS.LOREM_IPSUM_DOLAR_1}</h1>
+            <h1>{TEXT_CONSTANTS.TECH_ENTHUSIASTS}</h1>
           </div>
           <div className="text-sm font-light my-3 xl:text-md 2xl:text-lg">
-            <h1>{TEXT_CONSTANTS.WE_ARE_STRONG_AND_WORTHY}</h1>
+            <h1>{TEXT_CONSTANTS.WE_PRIDE_OURSELVES}</h1>
           </div>
         </div>
         <div className="">

@@ -31,7 +31,7 @@ const Card = (props: CardInterface) => {
           {title}
         </div>
         <div className="flex flex-wrap text-[10px] xl:text-sm 2xl:text-sm text-center p-2 font-normal hover:text-white">
-          {description}
+          {description ? description : ''}
         </div>
       </div>
     </div>

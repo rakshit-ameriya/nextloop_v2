@@ -25,12 +25,22 @@ const AboutUs = () => {
               </h1>
             </div>
           </div>
-          <div className="flex flex-wrap justify-start font-light  text-[12px] mt-2 xl:text-md 2xl:text-lg">
-            <h1>{TEXT_CONSTANTS.WE_ARE_MORE_THAN}</h1>
+          <div className="flex flex-wrap justify-start font-light  text-[14px] mt-2 xl:text-md 2xl:text-lg">
+            <h1>{TEXT_CONSTANTS.ONE_TEAM_MANY_TALENTS}</h1>
           </div>
-          <div className="my-3">
-            <h1 className="leading-4 text-[11px] font-normal text-secondaryGrayText xl:text-md 2xl:text-lg">
-              {TEXT_CONSTANTS.WE_ARE_STRONG_AND_WORTHY}
+          <div className="mt-1">
+            <h1 className="leading-4 text-[10px] font-normal text-secondaryGrayText xl:text-md 2xl:text-lg">
+              {TEXT_CONSTANTS.FOUNDED_IN_2020}
+            </h1>
+          </div>
+          <div className="mt-2">
+            <h1 className="leading-4 text-[10px] font-normal text-secondaryGrayText xl:text-md 2xl:text-lg">
+              {TEXT_CONSTANTS.BORN_IN}
+            </h1>
+          </div>
+          <div className="mt-2">
+            <h1 className="leading-4 text-[10px] font-normal text-secondaryGrayText xl:text-md 2xl:text-lg">
+              {TEXT_CONSTANTS.PARTNER_WITH_US}
             </h1>
           </div>
           <div className="">

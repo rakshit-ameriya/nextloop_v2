@@ -34,7 +34,7 @@ const Solutions = () => {
         </div>
         <div className="text-center flex  flex-wrap absolute top-5 xl:absolute xl:top-28 2xl:absolute 2xl:top-48 sm:absolute sm:top-24">
           <p className="max-w-md text-[12px] xl:text-[14px] 2xl:text-lg 2xl:max-w-sm">
-            {TEXT_CONSTANTS.LOREM_IPSUM_DOLAR_1}
+            {TEXT_CONSTANTS.WE_COMMIT_DESIRING}
           </p>
         </div>
         <div className="mt-20 sm:mt-10 flex flex-col justify-center items-center sm:flex-row space-x-0 xl:space-x-10 2xl:space-x-10 space-y-5 ">
