@@ -282,9 +282,10 @@ const Contact: NextPage = () => {
                     {/* icons */}
                     <Image
                       src="/images/addressIcon.png"
-                      width={20}
-                      height={20}
+                      width={30}
+                      height={30}
                       alt="Location Icon"
+                      className="object-contain"
                     />
                   </div>
                   <div className="space-y-1">
@@ -306,6 +307,7 @@ const Contact: NextPage = () => {
                       width={18}
                       height={18}
                       alt="Phone Icon"
+                      className="object-contain"
                     />
                   </div>
                   <div className="">
@@ -322,6 +324,7 @@ const Contact: NextPage = () => {
                       width={15}
                       height={15}
                       alt="Message Icon"
+                      className="object-contain"
                     />
                   </div>
                   <div className="">
@@ -334,14 +337,15 @@ const Contact: NextPage = () => {
                   {Images_DATA.map(img => (
                     <div
                       key={img.id}
-                      className="w-3 h-3 mr-2 mt-3 cursor-pointer"
+                      className="w-4 h-4 mr-2 mt-3 cursor-pointer"
                     >
                       <Image
                         src={img.image}
-                        width={5}
-                        height={5}
+                        width={10}
+                        height={10}
                         alt={img.alt}
                         layout="responsive"
+                        className="object-contain"
                       />
                     </div>
                   ))}
@@ -352,6 +356,7 @@ const Contact: NextPage = () => {
                     width={300}
                     height={130}
                     alt="Map Icon"
+                    className="object-contain"
                   />
                 </div>
               </div>

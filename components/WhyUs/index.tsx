@@ -24,7 +24,13 @@ const WhyUs = () => {
           </div>
         </div>
         <div className="">
-          <Image src="/images/whyus.png" width={400} height={350} alt="whyus" />
+          <Image
+            src="/images/whyus.png"
+            width={400}
+            height={350}
+            alt="whyus"
+            className="object-contain"
+          />
         </div>
       </div>
     </div>

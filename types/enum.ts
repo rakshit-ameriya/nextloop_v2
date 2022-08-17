@@ -36,7 +36,7 @@ export enum TEXT_CONSTANTS {
   WHY_US = 'Who We Are?',
   TECH_ENTHUSIASTS = 'Tech enthusiasts, who create great solutions.',
   LOREM_IPSUM_DOLAR_1 = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  WE_PRIDE_OURSELVES = 'We pride ourselves in delivering exceptional services and experiences with a fast, highly disciplined team. We wish to help our clients with continuous innovation and progress by building strong and lasting partnerships.. ',
+  WE_PRIDE_OURSELVES = 'We pride ourselves in delivering exceptional services and experiences with a fast, highly disciplined team. We wish to help our clients with continuous innovation and progress by building strong and lasting partnerships.',
   ABOUT_US = 'About Us',
   ONE_TEAM_MANY_TALENTS = 'One team, many talents.',
   FOUNDED_IN_2020 = 'Founded in 2020 with a vision of driving the loop towards new age technologies. Next loop has evolved into a thriving enterprise where unique minds shape innovative experiences for millions of users.',

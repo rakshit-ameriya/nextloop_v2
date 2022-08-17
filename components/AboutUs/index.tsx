@@ -101,6 +101,7 @@ const AboutUs = () => {
               height={90}
               width={90}
               alt="platbutton"
+              className="object-contain"
             />
           </div>
           <Image
@@ -108,7 +109,7 @@ const AboutUs = () => {
             width={450}
             height={450}
             alt="ellipse"
-            className="absolute top-0"
+            className="absolute top-0 object-contain"
           />
         </div>
       </div>
@@ -118,6 +119,7 @@ const AboutUs = () => {
           width={1000}
           height={850}
           alt="loop"
+          className="object-contain"
         />
       </div>
     </div>

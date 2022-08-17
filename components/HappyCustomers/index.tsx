@@ -60,6 +60,7 @@ function HappyCustomers() {
                     width={100}
                     height={100}
                     alt={img.image}
+                    className="object-contain"
                   />
                 </div>
               ))}
@@ -72,6 +73,7 @@ function HappyCustomers() {
                     width={100}
                     height={100}
                     alt={img.image}
+                    className="object-contain"
                   />
                 </div>
               ))}
@@ -86,6 +88,7 @@ function HappyCustomers() {
                 width={35}
                 height={35}
                 alt="Statue of Liberty"
+                className="object-contain"
               />
             </div>
             <div className="text-2xl font-bold mt-3">
@@ -106,6 +109,7 @@ function HappyCustomers() {
                   width={90}
                   height={90}
                   alt="Signature"
+                  className="object-contain"
                 />
               </div>
               <div>
