@@ -16,8 +16,8 @@ const OurClinetsSay: NextPage = () => {
         />
       ),
       image_2: '/images/Ellipse 54.png',
-      paragraph: TEXT_CONSTANTS.CAN_WE_SAY_ABOUT_THESE_GUY,
-      title: TEXT_CONSTANTS.DEVELOPMENT_SERVER,
+      paragraph: TEXT_CONSTANTS.UNDER_TIGHT_DEADLINES,
+      title: TEXT_CONSTANTS.HARRY_ADITOLA_CEO,
     },
     {
       id: 2,
@@ -30,8 +30,8 @@ const OurClinetsSay: NextPage = () => {
         />
       ),
       image_2: '/images/Ellipse 54.png',
-      paragraph: TEXT_CONSTANTS.CAN_WE_SAY_ABOUT_THESE_GUY,
-      title: TEXT_CONSTANTS.DEVELOPMENT_SERVER,
+      paragraph: TEXT_CONSTANTS.AFTER_EVALUATING_A_FEW_OUTSOURCERS,
+      title: TEXT_CONSTANTS.MR_HENRY_CEO,
     },
   ];
 
@@ -103,10 +103,10 @@ const OurClinetsSay: NextPage = () => {
 
               <div className="absolute top-36 xl:top-32 2xl:top-28 left-auto">
                 <p className="text-[13px] mx-auto xl:text-md 2xl:text-lg text-white max-w-lg mb-3 ">
-                  {TEXT_CONSTANTS.CAN_WE_SAY_ABOUT_THESE_GUY}
+                  {TEXT_CONSTANTS.WE_WOULD_LIKE_TO_EXPRESS}
                 </p>
                 <h1 className="text-white text-lg font-semibold">
-                  {TEXT_CONSTANTS.DEVELOPMENT_SERVER}
+                  {TEXT_CONSTANTS.RAHUL_JAIN_CEO}
                 </h1>
               </div>
             </div>

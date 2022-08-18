@@ -56,4 +56,10 @@ export enum TEXT_CONSTANTS {
   FEDALITY_TO_OUR_PROCESS = 'Fidelity to our process and methodology matters; we practice what we preach, constantly seeking improvement to our way of doing things.',
   OUR_VALUES = 'Our Values',
   DELIVERING_BEST_EXPERIENCE = 'Delivering Best Experiences',
+  WE_WOULD_LIKE_TO_EXPRESS = 'We would like to express our satisfaction on the cooperation regarding the development of our web application. the Nextloop team did a very professional job. We are satisfied with the solution given to us and with the communication flow through the project. We would like to recommend Nextloop Technologies. We look forward to working with them in future projects.',
+  RAHUL_JAIN_CEO = '- Rahul Jain , CEO, Deepiotics',
+  UNDER_TIGHT_DEADLINES = "Under tight deadlines and with high expectations, Nextloop Technologies was a pleasure to partner with. Professional, conscientious and thoroughly competent - I wouldn't hesitate in recommending them to other agencies.",
+  HARRY_ADITOLA_CEO = '- Harry Adetola, CEO , Harris Energy',
+  AFTER_EVALUATING_A_FEW_OUTSOURCERS = 'After evaluating a few outsourcers I decided to work with Nextloop Technologies because of their professional approach and ability to make changes to what we wanted. In the beginning, we had to make adjustments to the task every week. Nextloop was very responsive to these changes. I am very satisfied with our engagement and would consider working together on future projects too. I appreciate their promptness, quality of work, IT expertise and would recommend their services.',
+  MR_HENRY_CEO = '-  Mr. Henry, COO, Millenialz ',
 }
