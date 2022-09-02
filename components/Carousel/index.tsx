@@ -2,27 +2,27 @@ import Image from 'next/image';
 import styles from '../../styles/carousel.module.css';
 
 const Carousel = () => {
-  const ImageData = [
-    {
-      id: 2,
-      image: '/images/Rectangle.png',
-      alt: 'loop-1',
-    },
-    {
-      id: 3,
-      image: '/images/Rectangle.png',
-      alt: 'loop-2',
-    },
-  ];
+  // const ImageData = [
+  //   {
+  //     id: 2,
+  //     image: '/images/Rectangle.png',
+  //     alt: 'loop-1',
+  //   },
+  //   {
+  //     id: 3,
+  //     image: '/images/Rectangle.png',
+  //     alt: 'loop-2',
+  //   },
+  // ];
   return (
-    <div>
+    <>
       <div className="w-full h-screen relative top-40 right-20 sm:top-72 sm:relative xl:relative xl:top-0 xl:left-0 2xl:relative 2xl:top-0">
         <div
           id="demo"
           className="carousel slide bg-cover relative"
           data-bs-ride="carousel"
         >
-          <div className="absolute top-80 left-20 bottom-0 sm:absolute sm:top-1/2  xl:absolute xl:top-2/3 xl:left-5 2xl:absolute 2xl:left-36 2xl:bottom-0 carousel-indicators  gap-0 sm:flex justify-start sm:flex-col ">
+          {/* <div className="absolute top-80 left-20 bottom-0 sm:absolute sm:top-1/2  xl:absolute xl:top-2/3 xl:left-5 2xl:absolute 2xl:left-36 2xl:bottom-0 carousel-indicators  gap-0 sm:flex justify-start sm:flex-col ">
             <button
               type="button"
               data-bs-target="#demo"
@@ -39,20 +39,20 @@ const Carousel = () => {
               data-bs-target="#demo"
               data-bs-slide-to="2"
             ></button>
-          </div>
+          </div> */}
 
           <div className={`carousel-inner ${styles.animateCarousel}`}>
-            <div className="carousel-item active object-cover object-center ">
+            <div className="carousel-item active w-full h-full object-contain">
               <Image
                 src="/images/Rectangle.png"
-                height={230}
-                width={500}
+                height={430}
+                width={800}
                 alt="loop-3"
                 layout="responsive"
-                className="d-block w-full h-screen object-cover object-center"
+                className="object-contain"
               />
             </div>
-            {ImageData.map(item => (
+            {/* {ImageData.map(item => (
               <div
                 key={item.id}
                 className={`carousel-item object-cover object-center  `}
@@ -66,11 +66,11 @@ const Carousel = () => {
                   className="d-block w-full h-screen object-cover object-center"
                 />
               </div>
-            ))}
+            ))} */}
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

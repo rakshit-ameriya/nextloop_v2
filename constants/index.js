@@ -36,8 +36,8 @@ const constants = {
   ],
   SUPPORT: [
     'Live Chat',
-    'FaQ',
-    'How to Stay Safe',
+    // 'FaQ',
+    // 'How to Stay Safe',
     'Terms & Conditions',
     'Contact Us',
   ],

@@ -6,25 +6,25 @@ const IMAGES_DATA = {
   imgData_1: [
     {
       id: 1,
-      image: '/images/happyCustomers1.png',
+      image: '/images/millennialz-2.jpeg',
     },
     {
       id: 2,
-      image: '/images/happyCustomers2.png',
+      image: '/images/mygyde.png',
     },
     {
       id: 3,
-      image: '/images/happyCustomers3.png',
+      image: '/images/chwala-bearings.jpeg',
     },
   ],
   imgData_2: [
     {
       id: 1,
-      image: '/images/happyCustomers4.png',
+      image: '/images/milenialz.png',
     },
     {
       id: 2,
-      image: '/images/happyCustomers5.png',
+      image: '/images/blue-bird-logo.png',
     },
     {
       id: 3,
@@ -37,9 +37,9 @@ function HappyCustomers() {
   return (
     <div>
       <div className="flex justify-center">
-        <div className="relative bg-primaryGreenText w-40 h-3 xl:w-64 2xl:w-72">
-          <div className="absolute -bottom-1 w-56 xl:w-80 2xl:w-80">
-            <h1 className="font-bold sm:text-2xl text-xl xl:text-3xl 2xl:text-4xl  ">
+        <div className="relative bg-primaryGreenText w-40 h-3 xl:w-56 2xl:w-72">
+          <div className="absolute -bottom-1 w-56 xl:w-80 2xl:w-80 ">
+            <h1 className="font-bold sm:text-2xl text-xl xl:text-2xl 2xl:text-4xl   ">
               {TEXT_CONSTANTS.HAPPY_SERVICES}
             </h1>
           </div>
@@ -60,6 +60,7 @@ function HappyCustomers() {
                     width={100}
                     height={100}
                     alt={img.image}
+                    className="object-contain"
                   />
                 </div>
               ))}
@@ -72,6 +73,7 @@ function HappyCustomers() {
                     width={100}
                     height={100}
                     alt={img.image}
+                    className="object-contain"
                   />
                 </div>
               ))}
@@ -86,6 +88,7 @@ function HappyCustomers() {
                 width={35}
                 height={35}
                 alt="Statue of Liberty"
+                className="object-contain"
               />
             </div>
             <div className="text-2xl font-bold mt-3">
@@ -106,6 +109,7 @@ function HappyCustomers() {
                   width={90}
                   height={90}
                   alt="Signature"
+                  className="object-contain"
                 />
               </div>
               <div>

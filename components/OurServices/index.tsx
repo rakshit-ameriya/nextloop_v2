@@ -1,22 +1,26 @@
 import Card from 'components/Card';
 import React, { useRef } from 'react';
+import { TEXT_CONSTANTS } from 'types/enum';
 
 const OurServices = () => {
   const CARD_DATA = [
     {
       id: 1,
-      title: 'Cloud Computing',
+      title: 'We Trust',
       image: '/images/cloudcomputing.svg',
+      description: TEXT_CONSTANTS.WE_BELIEVE_THAT_FOR_GROWTH,
     },
     {
       id: 2,
-      title: 'Web Development',
+      title: 'Curiosity',
       image: '/images/webdevelopment.svg',
+      description: TEXT_CONSTANTS.TO_STAY_IN_THE_LOOP,
     },
     {
       id: 3,
-      title: 'Mobile Development',
+      title: 'Discepline',
       image: '/images/mobiledevelopment.svg',
+      description: TEXT_CONSTANTS.FEDALITY_TO_OUR_PROCESS,
     },
   ];
   const service = useRef<HTMLInputElement>(null);
@@ -31,6 +35,10 @@ const OurServices = () => {
           ></path>
         </svg>
       </div>
+      <div className="text-center">
+        <h1 className="font-bold text-2xl">{TEXT_CONSTANTS.OUR_VALUES}</h1>
+        <p className="text-sm">{TEXT_CONSTANTS.DELIVERING_BEST_EXPERIENCE}</p>
+      </div>
       <div className="flex justify-center flex-col items-center sm:flex-row space-y-10 mt-5  sm:space-y-5  space-x-4 pb-10">
         {CARD_DATA.map(item => (
           <Card
@@ -38,9 +46,7 @@ const OurServices = () => {
             title={item.title}
             className="bg-white-400 hover:bg-primaryBg border"
             image={item.image}
-            description={
-              'Lorem ipsum dolor sit amet,  fghyjj consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. '
-            }
+            description={item.description}
           />
         ))}
       </div>

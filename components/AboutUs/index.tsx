@@ -15,7 +15,7 @@ const AboutUs = () => {
           alt="vector"
         />
       </div>
-      <div className="relative flex justify-center flex-col sm:flex-row space-y-10 sm:space-y-0 sm:space-x-28 space-x-0  w-full h-screen items-center  my-20">
+      <div className="relative flex justify-center flex-col sm:flex-row space-y-10 sm:space-y-0 sm:space-x-28 space-x-0  w-full h-screen items-center  my-40 sm:my-0">
         <div className="w-56 flex flex-col">
           <div className="relative bg-primaryGreenText w-24 h-3 xl:w-32 2xl:w-40">
             <div className="absolute -bottom-1 w-64">
@@ -25,12 +25,22 @@ const AboutUs = () => {
               </h1>
             </div>
           </div>
-          <div className="flex flex-wrap justify-start font-light  text-[12px] mt-2 xl:text-md 2xl:text-lg">
-            <h1>{TEXT_CONSTANTS.WE_ARE_MORE_THAN}</h1>
+          <div className="flex flex-wrap justify-start font-light  text-[14px] mt-2 xl:text-md 2xl:text-lg">
+            <h1>{TEXT_CONSTANTS.ONE_TEAM_MANY_TALENTS}</h1>
           </div>
-          <div className="my-3">
-            <h1 className="leading-4 text-[11px] font-normal text-secondaryGrayText xl:text-md 2xl:text-lg">
-              {TEXT_CONSTANTS.WE_ARE_STRONG_AND_WORTHY}
+          <div className="mt-1">
+            <h1 className="leading-4 text-[10px] font-normal text-secondaryGrayText xl:text-md 2xl:text-lg">
+              {TEXT_CONSTANTS.FOUNDED_IN_2020}
+            </h1>
+          </div>
+          <div className="mt-2">
+            <h1 className="leading-4 text-[10px] font-normal text-secondaryGrayText xl:text-md 2xl:text-lg">
+              {TEXT_CONSTANTS.BORN_IN}
+            </h1>
+          </div>
+          <div className="mt-2">
+            <h1 className="leading-4 text-[10px] font-normal text-secondaryGrayText xl:text-md 2xl:text-lg">
+              {TEXT_CONSTANTS.PARTNER_WITH_US}
             </h1>
           </div>
           <div className="">
@@ -91,6 +101,7 @@ const AboutUs = () => {
               height={90}
               width={90}
               alt="platbutton"
+              className="object-contain"
             />
           </div>
           <Image
@@ -98,7 +109,7 @@ const AboutUs = () => {
             width={450}
             height={450}
             alt="ellipse"
-            className="absolute top-0"
+            className="absolute top-0 object-contain"
           />
         </div>
       </div>
@@ -108,6 +119,7 @@ const AboutUs = () => {
           width={1000}
           height={850}
           alt="loop"
+          className="object-contain"
         />
       </div>
     </div>

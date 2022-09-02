@@ -9,18 +9,22 @@ const images = [
   {
     id: 1,
     image: '/images/Youtube.png',
+    color: `bg-red-700`,
   },
   {
     id: 2,
     image: '/images/Instagram.png',
+    color: `bg-red-400`,
   },
   {
     id: 3,
     image: '/images/Facebook.png',
+    color: `bg-blue-600`,
   },
   {
     id: 4,
     image: '/images/Twitter.png',
+    color: `bg-blue-400`,
   },
 ];
 
@@ -43,10 +47,19 @@ function Footer() {
             <h1 className="text-white font-bold text-md xl:text-lg 2xl:text-lg ">
               {TEXT_CONSTANTS.FOLLOW_US}:
             </h1>
-            <div className="my-3 flex justify-start">
+            <div className="my-3 flex justify-start items-center">
               {images.map(img => (
-                <div key={img.id} className="mr-3 cursor-pointer">
-                  <Image width={15} height={15} src={img.image} alt="Image" />
+                <div
+                  key={img.id}
+                  className={`mr-3 bg-slate-50 object-contain hover:${img.color} cursor-pointer w-6 h-6 sm:w-8 sm:h-8 rounded-full   flex justify-center items-center`}
+                >
+                  <Image
+                    width={15}
+                    height={15}
+                    src={img.image}
+                    alt="Image"
+                    className="object-contain"
+                  />
                 </div>
               ))}
             </div>
