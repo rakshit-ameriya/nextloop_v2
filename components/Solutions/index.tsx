@@ -8,16 +8,19 @@ const Solutions = () => {
       id: 1,
       title: 'Cloud Computing',
       image: '/images/cloudcomputing.svg',
+      description: TEXT_CONSTANTS.DESCRIPTION,
     },
     {
       id: 2,
       title: 'Web Development',
       image: '/images/webdevelopment.svg',
+      description: TEXT_CONSTANTS.DESCRIPTION,
     },
     {
       id: 3,
       title: 'Mobile Development',
       image: '/images/mobiledevelopment.svg',
+      description: TEXT_CONSTANTS.MOBILE_APP_DEVELOPMENT,
     },
   ];
   return (
@@ -44,9 +47,7 @@ const Solutions = () => {
               title={item.title}
               className="bg-white-400 hover:bg-[#010028] border"
               image={item.image}
-              description={
-                'Lorem ipsum dolor sit amet,  fghyjj consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. '
-              }
+              description={item.description}
             />
           ))}
         </div>

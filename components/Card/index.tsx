@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import { TEXT_CONSTANTS } from 'types/enum';
 
 interface CardInterface {
   title: string;
@@ -30,8 +31,8 @@ const Card = (props: CardInterface) => {
         <div className="text-sm font-bold xl:text-lg 2xl:text-2xl p-1">
           {title}
         </div>
-        <div className="flex flex-wrap text-[10px] xl:text-sm 2xl:text-sm text-center p-2 font-normal hover:text-white">
-          {description ? description : ''}
+        <div className="flex flex-wrap text-[10px]  xl:text-[12px] 2xl:text-sm text-center p-2 font-normal hover:text-white">
+          {description ? description : TEXT_CONSTANTS.DESCRIPTION}
         </div>
       </div>
     </div>

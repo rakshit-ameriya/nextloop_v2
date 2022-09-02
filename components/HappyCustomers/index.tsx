@@ -6,25 +6,25 @@ const IMAGES_DATA = {
   imgData_1: [
     {
       id: 1,
-      image: '/images/happyCustomers1.png',
+      image: '/images/millennialz-2.jpeg',
     },
     {
       id: 2,
-      image: '/images/happyCustomers2.png',
+      image: '/images/mygyde.png',
     },
     {
       id: 3,
-      image: '/images/happyCustomers3.png',
+      image: '/images/chwala-bearings.jpeg',
     },
   ],
   imgData_2: [
     {
       id: 1,
-      image: '/images/happyCustomers4.png',
+      image: '/images/milenialz.png',
     },
     {
       id: 2,
-      image: '/images/happyCustomers5.png',
+      image: '/images/blue-bird-logo.png',
     },
     {
       id: 3,
