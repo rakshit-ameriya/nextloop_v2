@@ -18,7 +18,7 @@ export enum TEXT_CONSTANTS {
   FOLLOW_US = 'Follow Us',
   OUR_WEB_STUDIO_CREATES_AND_PROMOTES = 'Our web studio creates and promotes',
   WEBSITE_WE_WORK_FOR_THE_RESULT = 'website, we work for the result',
-  ALL_RIGHT_RESERVED = '© 2022 All rights reserved | Developed at Bana Tech',
+  ALL_RIGHT_RESERVED = '© 2022 All rights reserved',
   WEB_STUDIO_WITH = 'Web Studio with',
   AMBITION = 'ambition',
   OUR_SERVICES = 'Our Services',
@@ -61,7 +61,8 @@ export enum TEXT_CONSTANTS {
   RAHUL_JAIN_CEO = '- Rahul Jain , CEO, Deepiotics',
   UNDER_TIGHT_DEADLINES = "Under tight deadlines and with high expectations, Nextloop Technologies was a pleasure to partner with. Professional, conscientious and thoroughly competent - I wouldn't hesitate in recommending them to other agencies.",
   HARRY_ADITOLA_CEO = '- Harry Adetola, CEO , Harris Energy',
-  AFTER_EVALUATING_A_FEW_OUTSOURCERS = 'After evaluating a few outsourcers I decided to work with Nextloop Technologies because of their professional approach and ability to make changes to what we wanted. In the beginning, we had to make adjustments to the task every week. Nextloop was very responsive to these changes. I am very satisfied with our engagement and would consider working together on future projects too. I appreciate their promptness, quality of work, IT expertise and would recommend their services.',
+  AFTER_EVALUATING_A_FEW_OUTSOURCERS = 'After evaluating a few outsourcers I decided to work with Nextloop Technologies because of their professional approach and ability to make changes to what we wanted. In the beginning, we had to make adjustments to the task every week. Nextloop was very responsive to these changes. I am very satisfied with our engagement and would consider working together on future projects too.',
   MR_HENRY_CEO = '-  Mr. Henry, CEO, Millenialz ',
   MOBILE_APP_DEVELOPMENT = 'Mobile is becoming not only the new digital hub, but also the bridge to the physical world. That’s why mobile will affect more than just your digital operations — it will transform your entire business and with Nextloop you can always have top notch app development solutions.',
+  TECH_SUPPORT = 'We believe that the best customer service is when end users don’t need to reach out to the helpline. We provide technical support to the businesses keeping this point in mind so that we can cater the required services and provide the best in class experience.',
 }

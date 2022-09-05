@@ -8,18 +8,21 @@ import { scrollToTop } from '../../utils/scrollToTop';
 const images = [
   {
     id: 1,
-    image: '/images/Youtube.png',
+    image: '/images/linkedin.png',
     color: `bg-red-700`,
+    link: 'https://www.linkedin.com/company/84372812/admin/',
   },
   {
     id: 2,
     image: '/images/Instagram.png',
     color: `bg-red-400`,
+    link: 'https://www.instagram.com/nextloop_technologies/',
   },
   {
     id: 3,
     image: '/images/Facebook.png',
     color: `bg-blue-600`,
+    link: 'https://www.facebook.com/profile.php?id=100084922563726',
   },
   {
     id: 4,
@@ -49,18 +52,19 @@ function Footer() {
             </h1>
             <div className="my-3 flex justify-start items-center">
               {images.map(img => (
-                <div
-                  key={img.id}
-                  className={`mr-3 bg-slate-50 object-contain hover:${img.color} cursor-pointer w-6 h-6 sm:w-8 sm:h-8 rounded-full   flex justify-center items-center`}
-                >
-                  <Image
-                    width={15}
-                    height={15}
-                    src={img.image}
-                    alt="Image"
-                    className="object-contain"
-                  />
-                </div>
+                <Link key={img.id} href={img.link ? img.link : ''}>
+                  <div
+                    className={`mr-3 bg-slate-50 object-contain hover:${img.color} cursor-pointer w-6 h-6 sm:w-8 sm:h-8 rounded-full   flex justify-center items-center`}
+                  >
+                    <Image
+                      width={15}
+                      height={15}
+                      src={img.image}
+                      alt="Image"
+                      className="object-contain"
+                    />
+                  </div>
+                </Link>
               ))}
             </div>
           </div>

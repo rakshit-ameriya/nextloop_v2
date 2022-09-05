@@ -35,10 +35,21 @@ const OurServices = () => {
           ></path>
         </svg>
       </div>
-      <div className="text-center">
-        <h1 className="font-bold text-2xl">{TEXT_CONSTANTS.OUR_VALUES}</h1>
-        <p className="text-sm">{TEXT_CONSTANTS.DELIVERING_BEST_EXPERIENCE}</p>
+      <div className="flex justify-center">
+        <div className="relative bg-primaryGreenText w-16 h-1 2xl:h-3 xl:w-24 2xl:w-48 mt-10">
+          <div className="absolute -bottom-1 w-64">
+            <h1 className="font-bold  text-[14px] md:text-3xl xl:text-3xl 2xl:text-4xl ">
+              {' '}
+              {TEXT_CONSTANTS.OUR_VALUES}
+            </h1>
+          </div>
+        </div>
       </div>
+      {/* <h1 className="font-bold text-2xl">{TEXT_CONSTANTS.OUR_VALUES}</h1> */}
+      <p className="text-sm 2xl:text-lg text-center">
+        {TEXT_CONSTANTS.DELIVERING_BEST_EXPERIENCE}
+      </p>
+
       <div className="flex justify-center flex-col items-center sm:flex-row space-y-10 mt-5  sm:space-y-5  space-x-4 pb-10">
         {CARD_DATA.map(item => (
           <Card

@@ -6,9 +6,9 @@ const Solutions = () => {
   const CARD_DATA = [
     {
       id: 1,
-      title: 'Cloud Computing',
+      title: 'Technical Support',
       image: '/images/cloudcomputing.svg',
-      description: TEXT_CONSTANTS.DESCRIPTION,
+      description: TEXT_CONSTANTS.TECH_SUPPORT,
     },
     {
       id: 2,
@@ -36,7 +36,7 @@ const Solutions = () => {
           </div>
         </div>
         <div className="text-center flex  flex-wrap absolute top-5 xl:absolute xl:top-28 2xl:absolute 2xl:top-48 sm:absolute sm:top-24">
-          <p className="max-w-md text-[12px] xl:text-[14px] 2xl:text-lg 2xl:max-w-sm">
+          <p className="max-w-md text-[12px] xl:text-[14px] 2xl:text-lg 2xl:max-w-lg">
             {TEXT_CONSTANTS.WE_COMMIT_DESIRING}
           </p>
         </div>

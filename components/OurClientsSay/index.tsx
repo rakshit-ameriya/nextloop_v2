@@ -101,11 +101,11 @@ const OurClinetsSay: NextPage = () => {
                 />
               </div>
 
-              <div className="absolute top-36 xl:top-32 2xl:top-28 left-auto">
-                <p className="text-[13px] mx-auto xl:text-md 2xl:text-lg text-white max-w-lg mb-3 ">
+              <div className="absolute top-28 xl:top-32 2xl:top-28 left-auto">
+                <p className="text-[8px] mx-auto xl:text-md 2xl:text-[14px] text-white max-w-lg mb-3 ">
                   {TEXT_CONSTANTS.WE_WOULD_LIKE_TO_EXPRESS}
                 </p>
-                <h1 className="text-white text-lg font-semibold">
+                <h1 className="text-white text-[8px] 2xl:text-lg font-semibold">
                   {TEXT_CONSTANTS.RAHUL_JAIN_CEO}
                 </h1>
               </div>
@@ -128,11 +128,11 @@ const OurClinetsSay: NextPage = () => {
                   />
                 </div>
 
-                <div className="absolute top-36 xl:top-32 2xl:top-28 left-auto">
-                  <p className="text-[13px] mx-auto xl:text-md 2xl:text-lg text-white max-w-lg mb-3">
+                <div className="absolute top-28 xl:top-32 2xl:top-28 left-auto">
+                  <p className="text-[8px] mx-auto xl:text-md 2xl:text-[14px] text-white max-w-lg mb-3">
                     {item.paragraph}
                   </p>
-                  <h1 className="text-white text-lg font-semibold">
+                  <h1 className="text-white text-[10px] 2xl:text-lg font-semibold">
                     {item.title}
                   </h1>
                 </div>

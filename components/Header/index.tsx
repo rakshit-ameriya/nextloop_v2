@@ -14,12 +14,12 @@ const Header = () => {
               <h1 className="text-2xl xl:text-4xl 2xl:text-6xl  text-primaryGreenText ">
                 {TEXT_CONSTANTS.SOLUTIONS}
               </h1>
-              <p className="text-xs xl:text-md 2xl:text-xl font-normal mt-2 text-primaryGreenText">
+              <p className="text-xs 2xl:max-w-sm xl:text-md 2xl:text-xl font-normal mt-2 text-primaryGreenText">
                 {TEXT_CONSTANTS.COMMITED_TO_DELIVERING_BEST}
               </p>
 
               <div className="max-w-sm xl:max-w-sm mt-4 2xl:text-5xl 2xl:max-w-xl">
-                <h1 className="text-xs xl:text-md 2xl:text-xl font-normal text-primaryGreenText">
+                <h1 className="text-xs 2xl:max-w-sm xl:text-md 2xl:text-xl font-normal text-primaryGreenText">
                   {TEXT_CONSTANTS.OUR_PEOPLE_OUR_ARE_GREATEST}
                 </h1>
               </div>
