@@ -3,6 +3,38 @@ import React from 'react';
 import Accordian from '../components/Accordian';
 
 const Career = () => {
+  const jobDesc = [
+    {
+      id: 1,
+      jobTitle: 'Ionic Developer',
+      location: 'indore/pune',
+      exp: '2+years of exp.',
+    },
+    {
+      id: 2,
+      jobTitle: 'Next js Developer',
+      location: 'indore/pune',
+      exp: '2+years of exp.',
+    },
+    {
+      id: 3,
+      jobTitle: 'Front-End Lead Tech',
+      location: 'indore/pune',
+      exp: '4+years of exp.',
+    },
+    {
+      id: 4,
+      jobTitle: 'BDI(Business Dev Intern)',
+      location: 'indore/pune',
+      exp: 'Fresher.',
+    },
+    {
+      id: 5,
+      jobTitle: 'Human Resources Intern',
+      location: 'indore/pune',
+      exp: 'Fresher.',
+    },
+  ];
   return (
     <>
       <div className="w-full h-3/4 relative top-0 -z-50 bg-[#010028]  ">
@@ -37,31 +69,14 @@ const Career = () => {
         </div>
       </div>
       <div className="flex justify-center flex-col items-center mb-10 mt-5 sm:mt-0 ">
-        <Accordian
-          jobTitle={'Ionic Developer'}
-          location={'indore/pune'}
-          exp={'2+years of exp.'}
-        />
-        <Accordian
-          jobTitle={'Next js Developer'}
-          location={'indore/pune'}
-          exp={'2+years of exp.'}
-        />
-        <Accordian
-          jobTitle={'Front-End Lead Tech'}
-          location={'indore/pune'}
-          exp={'4+years of exp.'}
-        />
-        <Accordian
-          jobTitle={'BDI(Business Dev Intern)'}
-          location={'indore/pune'}
-          exp={'Fresher'}
-        />
-        <Accordian
-          jobTitle={'Human Resources Intern'}
-          location={'indore/pune'}
-          exp={'Fresher.'}
-        />
+        {jobDesc.map(item => (
+          <Accordian
+            key={item.id}
+            jobTitle={item.jobTitle}
+            location={item.location}
+            exp={item.exp}
+          />
+        ))}
         {/* <div className="font-bold  text-[#7A7A7A] mt-5">
           <button className="text-xl">VIEW ALL OPENINGS {` >> `}</button>
         </div> */}
