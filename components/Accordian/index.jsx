@@ -191,52 +191,24 @@ const Accordian = props => {
               ))}
             </div>
             <div>
-              {allRoleTitles.roleTitles.map((item, i) => (
-                <>
-                  <h1 key={i} className="font-bold text-[#7A7A7A] mt-5">
-                    {item.title}
-                  </h1>
-                  <div className="pl-5 mt-4 text-[#7A7A7A] text-sm">
-                    <ul className="list-disc pl-8">
-                      {item.roles.map(list => (
-                        <li key={list.id}>{list.li}</li>
-                      ))}
-                    </ul>
+              {Object.keys(allRoleTitles).map((key, i) => {
+                const item = allRoleTitles[key];
+
+                return (
+                  <div key={i}>
+                    <h1 className="font-bold text-[#7A7A7A] mt-5">
+                      {item[0].title}
+                    </h1>
+                    <div className="pl-5 mt-4 text-[#7A7A7A] text-sm">
+                      <ul className="list-disc pl-8">
+                        {item[0].roles.map(list => (
+                          <li key={list.id}>{list.li}</li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
-                </>
-              ))}
-            </div>
-            <div>
-              {allRoleTitles.loveRoleTitles.map((item, i) => (
-                <>
-                  <h1 key={i} className="font-bold text-[#7A7A7A] mt-5">
-                    {item.title}
-                  </h1>
-                  <div className="pl-5 mt-4 text-[#7A7A7A] text-sm">
-                    <ul className="list-disc pl-8">
-                      {item.roles.map(list => (
-                        <li key={list.id}>{list.li}</li>
-                      ))}
-                    </ul>
-                  </div>
-                </>
-              ))}
-            </div>
-            <div>
-              {allRoleTitles.bringAlongTitle.map((item, i) => (
-                <>
-                  <h1 key={i} className="font-bold text-[#7A7A7A] mt-5">
-                    {item.title}
-                  </h1>
-                  <div className="pl-5 mt-4 text-[#7A7A7A] text-sm">
-                    <ul className="list-disc pl-8">
-                      {item.roles.map(list => (
-                        <li key={list.id}>{list.li}</li>
-                      ))}
-                    </ul>
-                  </div>
-                </>
-              ))}
+                );
+              })}
             </div>
             <div className="max-w-xs  flex flex-col place-content-end cursor-pointer">
               <div className="bg-[#0AD4A5] mt-5 max-w-xs p-1 rounded-2xl text-center text-white ">
