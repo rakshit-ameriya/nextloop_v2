@@ -16,7 +16,7 @@ const AboutUs = () => {
         />
       </div>
       <div className="relative flex justify-center flex-col sm:flex-row space-y-10 sm:space-y-0 sm:space-x-28 space-x-0  w-full h-screen items-center  my-40 sm:my-0">
-        <div className="w-56 flex flex-col">
+        <div className="w-64 md:w-96 2xl:w-96 flex flex-col">
           <div className="relative bg-primaryGreenText w-24 h-3 xl:w-32 2xl:w-40">
             <div className="absolute -bottom-1 w-64">
               <h1 className="font-bold sm:text-2xl text-xl xl:text-3xl 2xl:text-4xl  ">

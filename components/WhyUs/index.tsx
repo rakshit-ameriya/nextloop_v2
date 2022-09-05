@@ -7,7 +7,7 @@ const WhyUs = () => {
     <div>
       <div className=" relative flex justify-center flex-col sm:flex-row sm:space-x-36 space-x-0 items-center  w-full h-1/2 my-20">
         <div className="w-64 flex flex-col py-20">
-          <div className="relative bg-primaryGreenText w-16 h-3 xl:w-24 2xl:w-32">
+          <div className="relative bg-primaryGreenText w-16 h-3 xl:w-24 2xl:w-52">
             <div className="absolute -bottom-1 w-64">
               <h1 className="font-bold sm:text-2xl text-xl xl:text-3xl 2xl:text-4xl ">
                 {' '}

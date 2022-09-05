@@ -13,7 +13,7 @@ const Card = (props: CardInterface) => {
 
   return (
     <div
-      className={`w-80 h-60 xl:w-80 xl:h-60 2xl:w-96 2xl:h-80 hover:text-primaryGreenText  rounded-[200px] flex justify-center items-center   max-w-xl  bottom-1  ${
+      className={`w-80 h-60 xl:w-80 xl:h-60 2xl:w-[414px] 2xl:h-[290px] hover:text-primaryGreenText  rounded-[200px] flex justify-center items-center   max-w-xl  bottom-1  ${
         className ? className : ''
       } border-secondaryGrayText`}
     >
@@ -31,7 +31,7 @@ const Card = (props: CardInterface) => {
         <div className="text-sm font-bold xl:text-lg 2xl:text-2xl p-1">
           {title}
         </div>
-        <div className="flex flex-wrap text-[10px]  xl:text-[12px] 2xl:text-sm text-center p-2 font-normal hover:text-white">
+        <div className="flex flex-wrap text-[10px] max-w-sm  xl:text-[12px] 2xl:text-[12px] text-center p-1 font-normal hover:text-white">
           {description ? description : TEXT_CONSTANTS.DESCRIPTION}
         </div>
       </div>

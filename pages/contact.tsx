@@ -1,22 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import type { NextPage } from 'next';
+import Link from 'next/link';
 
 const Images_DATA = [
   {
     id: 1,
-    image: '/images/Youtube.png',
+    image: '/images/linkedin.png',
     alt: 'Youtube Icon',
+    link: 'https://www.linkedin.com/company/84372812/admin/',
   },
   {
     id: 2,
     image: '/images/Instagram.png',
     alt: 'Instagram Icon',
+    link: 'https://www.instagram.com/nextloop_technologies/',
   },
   {
     id: 3,
     image: '/images/Facebook.png',
     alt: 'Facebook Icon',
+    link: 'https://www.facebook.com/profile.php?id=100084922563726',
   },
   {
     id: 4,
@@ -335,19 +339,18 @@ const Contact: NextPage = () => {
                 </div>
                 <div className="flex">
                   {Images_DATA.map(img => (
-                    <div
-                      key={img.id}
-                      className="w-4 h-4 mr-2 mt-3 cursor-pointer"
-                    >
-                      <Image
-                        src={img.image}
-                        width={10}
-                        height={10}
-                        alt={img.alt}
-                        layout="responsive"
-                        className="object-contain"
-                      />
-                    </div>
+                    <Link key={img.id} href={img.link ? img.link : ''}>
+                      <div className="w-4 h-4 mr-2 mt-3 cursor-pointer">
+                        <Image
+                          src={img.image}
+                          width={10}
+                          height={10}
+                          alt={img.alt}
+                          layout="responsive"
+                          className="object-contain"
+                        />
+                      </div>
+                    </Link>
                   ))}
                 </div>
                 <div className="mt-3 max-w-xs max-h-fit pr-5 sm:pr-0">

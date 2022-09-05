@@ -18,18 +18,18 @@ const IMAGES_DATA = {
     },
   ],
   imgData_2: [
-    {
-      id: 1,
-      image: '/images/milenialz.png',
-    },
+    // {
+    //   id: 1,
+    //   image: '/images/milenialz.png',
+    // },
     {
       id: 2,
       image: '/images/blue-bird-logo.png',
     },
-    {
-      id: 3,
-      image: '/images/happyCustomers6.png',
-    },
+    // {
+    //   id: 3,
+    //   image: '/images/happyCustomers6.png',
+    // },
   ],
 };
 
