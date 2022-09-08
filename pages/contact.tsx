@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import type { NextPage } from 'next';
 import Link from 'next/link';
+import { TEXT_CONSTANTS } from 'types/enum';
 
 const Images_DATA = [
   {
@@ -156,10 +157,11 @@ const Contact: NextPage = () => {
         <div className="w-full h-screen   flex justify-center items-center z-50">
           <div className="w-5/4 sm:w-3/5   sm:p-10 bg-white max-h-fit overflow-hidden border-2 rounded-2xl shadow-md hover:shadow-none">
             <div className="pl-5 pr-5 mb-3">
-              <h1 className="text-3xl font-bold">Lets Connect</h1>
+              <h1 className="text-3xl font-bold">
+                {TEXT_CONSTANTS.LEST_CONNECT}
+              </h1>
               <h1 className="text-xs max-w-xs mt-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                {TEXT_CONSTANTS.GET_IN_TOUCH}
               </h1>
             </div>
 
@@ -184,11 +186,6 @@ const Contact: NextPage = () => {
                           value={inputValues.fullName}
                           onChange={e => handleChange(e)}
                         />
-                        {/* {validation.fullName && (
-                        <p className="text-xs text-red-500">
-                          {validation.fullName}
-                        </p>
-                      )} */}
                       </div>
                       <div className="w-full">
                         <label className="block p-2 xl:text-lg 2xl:text-2xl">
@@ -205,11 +202,6 @@ const Contact: NextPage = () => {
                           value={inputValues.email}
                           onChange={e => handleChange(e)}
                         />
-                        {/* {validation.email && (
-                        <p className="text-xs text-red-500">
-                          {validation.company}
-                        </p>
-                      )} */}
                       </div>
                     </div>
                     <div className="flex flex-col md:space-x-2 mb-3 rounded-md pl-5 pr-5 md:flex-row sm:flex-col">
@@ -228,11 +220,6 @@ const Contact: NextPage = () => {
                           value={inputValues.phoneNumber}
                           onChange={e => handleChange(e)}
                         />
-                        {/* {validation.phoneNumber && (
-                        <p className="text-xs text-red-500">
-                          {validation.phoneNumber}
-                        </p>
-                      )} */}
                       </div>
                       <div className="w-full">
                         <label className="block p-2 xl:text-lg 2xl:text-2xl">
@@ -249,11 +236,6 @@ const Contact: NextPage = () => {
                           value={inputValues.company}
                           onChange={e => handleChange(e)}
                         />
-                        {/* {validation.company && (
-                        <p className="text-xs text-red-500">
-                          {validation.company}
-                        </p>
-                      )} */}
                       </div>
                     </div>
                     <div className="w-full pl-5 pr-5">

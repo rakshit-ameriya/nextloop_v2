@@ -63,6 +63,8 @@ export enum TEXT_CONSTANTS {
   HARRY_ADITOLA_CEO = '- Harry Adetola, CEO , Harris Energy',
   AFTER_EVALUATING_A_FEW_OUTSOURCERS = 'After evaluating a few outsourcers I decided to work with Nextloop Technologies because of their professional approach and ability to make changes to what we wanted. In the beginning, we had to make adjustments to the task every week. Nextloop was very responsive to these changes. I am very satisfied with our engagement and would consider working together on future projects too.',
   MR_HENRY_CEO = '-  Mr. Henry, CEO, Millenialz ',
-  MOBILE_APP_DEVELOPMENT = 'Mobile is becoming not only the new digital hub, but also the bridge to the physical world. That’s why mobile will affect more than just your digital operations — it will transform your entire business and with Nextloop you can always have top notch app development solutions.',
+  MOBILE_APP_DEVELOPMENT = 'Mobile is becoming not only the new digital hub, but also the bridge to the physical world. That’s why mobile will affect more than just your digital operations it will transform your entire business and with Nextloop you can always have top notch app development solutions.',
   TECH_SUPPORT = 'We believe that the best customer service is when end users don’t need to reach out to the helpline. We provide technical support to the businesses keeping this point in mind so that we can cater the required services and provide the best in class experience.',
+  GET_IN_TOUCH = 'Get into the loop of Technical Innovation',
+  LEST_CONNECT = "Let's Connect",
 }

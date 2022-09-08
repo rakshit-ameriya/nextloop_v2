@@ -12,31 +12,23 @@ const IMAGES_DATA = {
       id: 2,
       image: '/images/mygyde.png',
     },
-    {
-      id: 3,
-      image: '/images/chwala-bearings.jpeg',
-    },
   ],
   imgData_2: [
-    // {
-    //   id: 1,
-    //   image: '/images/milenialz.png',
-    // },
+    {
+      id: 1,
+      image: '/images/chwala-bearings.jpeg',
+    },
     {
       id: 2,
       image: '/images/blue-bird-logo.png',
     },
-    // {
-    //   id: 3,
-    //   image: '/images/happyCustomers6.png',
-    // },
   ],
 };
 
 function HappyCustomers() {
   return (
     <div>
-      <div className="flex justify-center">
+      <div className="flex justify-center my-24">
         <div className="relative bg-primaryGreenText w-40 h-3 xl:w-56 2xl:w-72">
           <div className="absolute -bottom-1 w-56 xl:w-80 2xl:w-80 ">
             <h1 className="font-bold sm:text-2xl text-xl xl:text-2xl 2xl:text-4xl   ">
@@ -49,7 +41,7 @@ function HappyCustomers() {
         {TEXT_CONSTANTS.WE_COOPERATE_WITH_GLOBAL_BRANDS}
       </h1>
 
-      <div className=" w-full h-1/2 flex flex-col sm:flex sm:flex-row justify-evenly mt-5">
+      <div className=" w-full h-1/2 flex flex-col sm:flex-col md:flex-row justify-evenly mt-5">
         <div className="">
           <div className="flex sm:justify-evenly justify-center  sm:space-x-16 space-x-10">
             <div className="flex flex-col space-y-12 ">

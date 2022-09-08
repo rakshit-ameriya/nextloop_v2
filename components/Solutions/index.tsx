@@ -24,33 +24,25 @@ const Solutions = () => {
     },
   ];
   return (
-    <div className="w-full h-screen  flex justify-center items-center my-5  ">
-      <div
-        className={` relative bg-solutions_bg_image  bg-no-repeat bg-center  bg-cover  w-full h-screen  flex justify-center `}
-      >
-        <div className="absolute top-1 sm:absolute sm:top-16 xl:absolute xl:top-16 2xl:absolute 2xl:top-36  flex justify-center">
-          <div className="relative bg-[#0AD4A5] w-28 h-3 xl:w-28 xl:h-3 2xl:w-44 2xl:h-4">
-            <h1 className="absolute -bottom-2 p-1 text-2xl xl:text-3xl 2xl:text-4xl font-bold ">
-              {TEXT_CONSTANTS.SOLUTIONS}
-            </h1>
-          </div>
-        </div>
-        <div className="text-center flex  flex-wrap absolute top-5 xl:absolute xl:top-28 2xl:absolute 2xl:top-48 sm:absolute sm:top-24">
-          <p className="max-w-md text-[12px] xl:text-[14px] 2xl:text-lg 2xl:max-w-lg">
-            {TEXT_CONSTANTS.WE_COMMIT_DESIRING}
-          </p>
-        </div>
-        <div className="mt-20 sm:mt-10 flex flex-col justify-center items-center sm:flex-row space-x-0 xl:space-x-10 2xl:space-x-10 space-y-5 ">
-          {CARD_DATA.map(item => (
-            <Card
-              key={item.id}
-              title={item.title}
-              className="bg-white-400 hover:bg-[#010028] border"
-              image={item.image}
-              description={item.description}
-            />
-          ))}
-        </div>
+    <div className="w-full min-h-[70vh] mt-24">
+      <div className="">
+        <h1 className="text-center text-2xl xl:text-3xl 2xl:text-4xl font-bold ">
+          {' '}
+          {TEXT_CONSTANTS.SOLUTIONS}
+        </h1>
+        <h1 className="text-center">{TEXT_CONSTANTS.WE_COMMIT_DESIRING}</h1>
+      </div>
+
+      <div className="flex justify-center flex-col items-center md:flex-row space-y-10 mt-5  sm:space-y-5  sm:space-x-4 pb-10  px-4 sm:px-0">
+        {CARD_DATA.map(item => (
+          <Card
+            key={item.id}
+            title={item.title}
+            className="bg-white-400 hover:bg-[#010028] border"
+            image={item.image}
+            description={item.description}
+          />
+        ))}
       </div>
     </div>
   );

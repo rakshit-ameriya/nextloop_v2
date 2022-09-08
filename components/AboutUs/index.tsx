@@ -6,16 +6,8 @@ const AboutUs = () => {
   const [progress] = useState(60);
   const aboutUs = useRef<HTMLInputElement>(null);
   return (
-    <div className=" relative  w-full h-1/2" ref={aboutUs} id="aboutUs">
-      <div className="object-cover bg-cover  flex justify-center  w-2/3 h-2/3 absolute top-52 sm:absolute sm:-top-36 sm:left-24 text-black -z-50">
-        <Image
-          src="/images/Vector 39.svg"
-          width={900}
-          height={500}
-          alt="vector"
-        />
-      </div>
-      <div className="relative flex justify-center flex-col sm:flex-row space-y-10 sm:space-y-0 sm:space-x-28 space-x-0  w-full h-screen items-center  my-40 sm:my-0">
+    <div className="2xl:w-4/5 mx-auto  my-14 px-5" ref={aboutUs} id="aboutUs">
+      <div className="relative flex justify-center flex-col sm:flex-row space-y-10 sm:space-y-0 sm:space-x-28 space-x-0   items-center ">
         <div className="w-64 md:w-96 2xl:w-96 flex flex-col">
           <div className="relative bg-primaryGreenText w-24 h-3 xl:w-32 2xl:w-40">
             <div className="absolute -bottom-1 w-64">
@@ -94,8 +86,8 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        <div className="relative flex  justify-start items-start rounded-full">
-          <div className="absolute top-8 left-3 z-50">
+        <div className="w-[280px] h-[300px]  2xl:w-[640px] 2xl:h-[470px] relative">
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 2xl:top-24 2xl:left-28 z-50">
             <Image
               src="/images/playbutton.png"
               height={90}
@@ -106,21 +98,11 @@ const AboutUs = () => {
           </div>
           <Image
             src="/images/Ellipse 80.png"
-            width={450}
-            height={450}
+            layout="fill"
             alt="ellipse"
-            className="absolute top-0 object-contain"
+            className="object-contain"
           />
         </div>
-      </div>
-      <div className="sm:absolute sm:-top-10 sm:left-36 absolute top-96 object-cover bg-cover  -z-50">
-        <Image
-          src="/images/Group 12444.svg"
-          width={1000}
-          height={850}
-          alt="loop"
-          className="object-contain"
-        />
       </div>
     </div>
   );

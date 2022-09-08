@@ -55,8 +55,8 @@ const constants = {
     },
     {
       id: 'service',
-      name: 'Service',
-      link: '/#service',
+      name: 'OurValues',
+      link: '/#ourvalues',
     },
     {
       id: 'aboutus',

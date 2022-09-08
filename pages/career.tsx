@@ -49,7 +49,7 @@ const Career = () => {
           />
         </div>
 
-        <div className="relative sm:relative top-5 sm:-top-52 z-10 h-16">
+        <div className="relative  xl:-top-36 2xl:-top-56  z-10 h-16 w-full ">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path
               fill="#fff"
@@ -58,11 +58,11 @@ const Career = () => {
             ></path>
           </svg>
         </div>
-        <div className="z-10 sm:absolute sm:top-1/3 sm:left-1/3 absolute top-1/3  flex justify-center flex-col items-center">
-          <h1 className="sm:text-4xl text-xl xl:text-4xl 2xl:text-5xl  text-white font-bold  font-montserrat p-2 ">
+        <div className="z-10  w-full sm:w-3/4 xl:w-1/2 2xl:w-1/3 absolute top-1/2 left-1/2  transform  -translate-x-1/2 -translate-y-1/2 ">
+          <h1 className="sm:text-4xl text-center text-sm xl:text-4xl 2xl:text-5xl  text-white font-bold  font-montserrat p-2 ">
             Current Openings
           </h1>
-          <p className="text-xs xl:text-md 2xl:text-xl text-white font-light max-w-md text-center mt-2 p-3 ">
+          <p className="text-[8px] xl:text-[14px] 2xl:text-xl text-white   text-center mt-2 p-3 ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>

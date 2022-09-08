@@ -4,11 +4,11 @@ import { TEXT_CONSTANTS } from 'types/enum';
 
 const WhyUs = () => {
   return (
-    <div>
-      <div className=" relative flex justify-center flex-col sm:flex-row sm:space-x-36 space-x-0 items-center  w-full h-1/2 my-20">
-        <div className="w-64 flex flex-col py-20">
+    <div className="2xl:w-4/5 mx-auto">
+      <div className="relative flex justify-center flex-col px-5 sm:flex-row sm:gap-x-40 items-center  w-full h-1/2 my-10">
+        <div className="w-full sm:w-72 2xl:w-80 flex flex-col py-10 ">
           <div className="relative bg-primaryGreenText w-16 h-3 xl:w-24 2xl:w-52">
-            <div className="absolute -bottom-1 w-64">
+            <div className="absolute -bottom-1 w-40 sm:w-64">
               <h1 className="font-bold sm:text-2xl text-xl xl:text-3xl 2xl:text-4xl ">
                 {' '}
                 {TEXT_CONSTANTS.WHY_US}
@@ -23,11 +23,10 @@ const WhyUs = () => {
             <h1>{TEXT_CONSTANTS.WE_PRIDE_OURSELVES}</h1>
           </div>
         </div>
-        <div className="">
+        <div className="w-[280px] h-[300px]  2xl:w-[640px] 2xl:h-[470px] relative ">
           <Image
             src="/images/whyus.png"
-            width={400}
-            height={350}
+            layout="fill"
             alt="whyus"
             className="object-contain"
           />
