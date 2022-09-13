@@ -39,6 +39,8 @@ interface InputTypes {
 }
 
 const Contact: NextPage = () => {
+  const [showError, setShowError] = useState('');
+  const [showSuccess, setShowSuccess] = useState('');
   const [inputValues, setInputValue] = useState<InputTypes>({
     fullName: '',
     email: '',
@@ -58,86 +60,88 @@ const Contact: NextPage = () => {
     company: '',
     comments: '',
   });
-  let isValid = true;
-  const checkValidation = () => {
-    let errors = validation;
-    console.log('errors', errors);
 
-    //full Name validation
-    if (!inputValues.fullName.trim()) {
-      if (errors.fullName) {
-        errors.fullName = 'First name is required';
-        isValid = false;
-      }
-    } else if (inputValues.fullName.length < 5) {
-      errors.fullName = 'First name not less than 5 char';
-      isValid = false;
-    } else if (inputValues.fullName.length > 10) {
-      errors.fullName = 'First name not more than 10 char';
-      isValid = false;
+  let errors = { ...validation };
+  const checkValidation = () => {
+    console.log('errors', validation);
+
+    if (!inputValues.fullName) {
+      errors.fullName = 'First name is required';
     } else {
       errors.fullName = '';
-      isValid = true;
     }
+
     // email validation
-    const emailCond =
-      "/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$/";
-    if (!inputValues.email.trim()) {
+    // const emailCond = "/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$/";
+    if (!inputValues.email) {
       errors.email = 'Email is required';
-      isValid = false;
-    } else if (inputValues.email.match(emailCond)) {
+    } else if (
+      !inputValues.email
+        .toLowerCase()
+        .match(
+          /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
+        )
+    ) {
       errors.email = 'Please ingress a valid email address';
-      isValid = false;
     } else {
       errors.email = '';
-      isValid = true;
     }
 
-    if (!inputValues.phoneNumber.trim()) {
+    if (!inputValues.phoneNumber) {
       errors.phoneNumber = 'phoneNumber is required';
-      isValid = false;
-    } else if (inputValues.phoneNumber.length < 9) {
-      errors.phoneNumber = 'phoneNumber must be correct';
-      isValid = false;
-    } else if (inputValues.phoneNumber.length >= 11) {
-      isValid = false;
-      errors.phoneNumber = 'number must be valid';
+    } else if (inputValues.phoneNumber.length > 10) {
+      errors.phoneNumber = 'phoneNumber not exceed 10';
+    } else if (inputValues.phoneNumber.length < 10) {
+      errors.phoneNumber = 'phoneNumber not less than 10';
     } else {
       errors.phoneNumber = '';
-      isValid = true;
     }
 
-    if (!inputValues.company.trim()) {
+    if (!inputValues.company) {
       errors.company = 'company name is required';
-      isValid = false;
-    } else if (inputValues.company.length < 5) {
-      errors.company = 'company name must be filled';
-      isValid = false;
-    } else if (inputValues.company.length > 10) {
-      errors.company = 'First name not more than 10 char';
-      isValid = false;
     } else {
       errors.company = '';
-      isValid = true;
     }
     return setValidation(errors);
   };
 
   useEffect(() => {
     checkValidation();
-  });
+  }, [inputValues]);
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    if (isValid) {
+    if (
+      !errors.fullName &&
+      !errors.email &&
+      !errors.phoneNumber &&
+      !errors.company
+    ) {
       console.log('inputValues', inputValues);
-      alert('Form submitted successfully');
+      setShowSuccess('Registered Succesfully');
+      setTimeout(() => {
+        setShowSuccess('');
+      }, 3000);
     } else {
-      alert('please fill required values');
+      setShowError('All Red Fields are required');
+      setTimeout(() => {
+        setShowError('');
+      }, 3000);
     }
   };
+
   return (
     <div>
+      {showError && (
+        <div className="fixed z-10 top-10 left-1/2 text-xl px-5 py-2 bg-red-400 text-white">
+          {showError}
+        </div>
+      )}
+      {showSuccess && (
+        <div className="fixed z-10 top-10 left-1/2 text-xl px-5 py-2 bg-green-400 text-white">
+          {showSuccess}
+        </div>
+      )}
       <div className="w-full h-96 -z-50 relative top-0 bg-[#010028]  ">
         <div className="">
           <svg
@@ -155,7 +159,7 @@ const Contact: NextPage = () => {
       </div>
       <div className="relative -top-32 sm:relative sm:-top-64 xl:-top-48 2xl:-top-80">
         <div className="w-full h-screen   flex justify-center items-center z-50">
-          <div className="w-5/4 sm:w-3/5   sm:p-10 bg-white max-h-fit overflow-hidden border-2 rounded-2xl shadow-md hover:shadow-none">
+          <div className="w-4/5 sm:w-4/5   sm:p-10 bg-white max-h-fit overflow-hidden border-2 rounded-2xl shadow-md hover:shadow-none">
             <div className="pl-5 pr-5 mb-3">
               <h1 className="text-3xl font-bold">
                 {TEXT_CONSTANTS.LEST_CONNECT}
@@ -169,7 +173,7 @@ const Contact: NextPage = () => {
               <div className="w-full sm:w-full md:w-3/4 ">
                 {/* form start */}
                 <div>
-                  <form onSubmit={handleSubmit}>
+                  <form id="registrationForm" onSubmit={handleSubmit}>
                     <div className="flex flex-col  md:space-x-2 mb-3 justify-center rounded-md pl-5 pr-5 md:flex-row sm:flex-col">
                       <div className="w-full">
                         <label className="block p-2 xl:text-lg 2xl:text-2xl">
@@ -177,11 +181,13 @@ const Contact: NextPage = () => {
                         </label>
                         <input
                           type="text"
-                          className={`rounded-full  w-full 2xl:p-4 xl:p-1 border-1 text-xl ${
-                            validation.fullName
+                          className={`rounded-full px-4 py-3 w-full 2xl:p-4 xl:p-1 border-1 text-xl 
+                          ${
+                            errors.fullName
                               ? 'focus:outline-red-600 border-red-500'
-                              : ''
-                          } `}
+                              : 'focus:outline-green-600 border-green-500'
+                          } 
+                          `}
                           name="fullName"
                           value={inputValues.fullName}
                           onChange={e => handleChange(e)}
@@ -193,7 +199,7 @@ const Contact: NextPage = () => {
                         </label>
                         <input
                           type="text"
-                          className={`rounded-full  w-full 2xl:p-4 xl:p-1 border-1 text-xl ${
+                          className={`rounded-full px-4 py-3 w-full 2xl:p-4 xl:p-1 border-1 text-xl ${
                             validation.email
                               ? 'focus:outline-red-600 border-red-500'
                               : ''
@@ -211,7 +217,7 @@ const Contact: NextPage = () => {
                         </label>
                         <input
                           type="number"
-                          className={`rounded-full  w-full 2xl:p-4 xl:p-1 border-1 text-xl ${
+                          className={`rounded-full px-4 py-3 w-full 2xl:p-4 xl:p-1 border-1 text-xl ${
                             validation.phoneNumber
                               ? 'focus:outline-red-600 border-red-500'
                               : ''
@@ -227,7 +233,7 @@ const Contact: NextPage = () => {
                         </label>
                         <input
                           type="text"
-                          className={`rounded-full  w-full 2xl:p-4 xl:p-1 border-1 text-xl ${
+                          className={`rounded-full px-4 py-3 bg-white w-full 2xl:p-4 xl:p-1 border-1 text-xl ${
                             validation.company
                               ? 'focus:outline-red-600 border-red-500'
                               : ''
@@ -239,7 +245,7 @@ const Contact: NextPage = () => {
                       </div>
                     </div>
                     <div className="w-full pl-5 pr-5">
-                      <label className="block p-2 xl:text-lg 2xl:text-2xl">
+                      <label className="block px-4 xl:text-lg 2xl:text-2xl">
                         Comments
                       </label>
                       <textarea
@@ -251,7 +257,7 @@ const Contact: NextPage = () => {
                     </div>
                     <div className="pl-5 pr-5 w-full sm:w-3/4  mt-3">
                       <button
-                        className="bg-green-300 w-full  sm:w-3/4 text-white font-normal xl:p-2 2xl:p-3 2xl:text-2xl border-1 rounded-full"
+                        className="bg-green-300 w-full py-3 sm:w-3/4 text-white font-normal xl:p-2 2xl:p-3 2xl:text-2xl border-1 rounded-full"
                         type="submit"
                       >
                         Send
