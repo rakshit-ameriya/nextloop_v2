@@ -3,6 +3,7 @@ import Image from 'next/image';
 import type { NextPage } from 'next';
 import Link from 'next/link';
 import { TEXT_CONSTANTS } from 'types/enum';
+import FormInputs from 'components/FormInputs';
 
 const Images_DATA = [
   {
@@ -30,6 +31,33 @@ const Images_DATA = [
   },
 ];
 
+const inputData = [
+  {
+    id: 1,
+    label: 'Full Name',
+    name: 'fullName',
+    type: 'text',
+  },
+  {
+    id: 2,
+    label: 'Email',
+    name: 'email',
+    type: 'email',
+  },
+  {
+    id: 3,
+    label: 'Phone Number',
+    name: 'phoneNumber',
+    type: 'number',
+  },
+  {
+    id: 4,
+    label: 'Company',
+    name: 'company',
+    type: 'text',
+  },
+];
+
 interface InputTypes {
   fullName: string;
   email: string;
@@ -41,7 +69,7 @@ interface InputTypes {
 const Contact: NextPage = () => {
   const [showError, setShowError] = useState('');
   const [showSuccess, setShowSuccess] = useState('');
-  const [inputValues, setInputValue] = useState<InputTypes>({
+  const [inputValues, setInputValue] = useState<any>({
     fullName: '',
     email: '',
     phoneNumber: '',
@@ -63,17 +91,12 @@ const Contact: NextPage = () => {
 
   let errors = { ...validation };
   const checkValidation = () => {
-    console.log('errors', validation);
-
-    if (!inputValues.fullName) {
+    if (!inputValues.fullName.trim()) {
       errors.fullName = 'First name is required';
     } else {
       errors.fullName = '';
     }
-
-    // email validation
-    // const emailCond = "/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$/";
-    if (!inputValues.email) {
+    if (!inputValues.email.trim()) {
       errors.email = 'Email is required';
     } else if (
       !inputValues.email
@@ -117,7 +140,7 @@ const Contact: NextPage = () => {
       !errors.phoneNumber &&
       !errors.company
     ) {
-      console.log('inputValues', inputValues);
+      console.log('inputsValues', inputValues);
       setShowSuccess('Registered Succesfully');
       setTimeout(() => {
         setShowSuccess('');
@@ -173,77 +196,17 @@ const Contact: NextPage = () => {
               <div className="w-full sm:w-full md:w-3/4 ">
                 {/* form start */}
                 <div>
-                  <form id="registrationForm" onSubmit={handleSubmit}>
-                    <div className="flex flex-col  md:space-x-2 mb-3 justify-center rounded-md pl-5 pr-5 md:flex-row sm:flex-col">
-                      <div className="w-full">
-                        <label className="block p-2 xl:text-lg 2xl:text-2xl">
-                          Full Name
-                        </label>
-                        <input
-                          type="text"
-                          className={`rounded-full px-4 py-3 w-full 2xl:p-4 xl:p-1 border-1 text-xl 
-                          ${
-                            errors.fullName
-                              ? 'focus:outline-red-600 border-red-500'
-                              : ''
-                          } 
-                          `}
-                          name="fullName"
-                          value={inputValues.fullName}
-                          onChange={e => handleChange(e)}
-                        />
-                      </div>
-                      <div className="w-full">
-                        <label className="block p-2 xl:text-lg 2xl:text-2xl">
-                          Email
-                        </label>
-                        <input
-                          type="text"
-                          className={`rounded-full px-4 py-3 w-full 2xl:p-4 xl:p-1 border-1 text-xl ${
-                            validation.email
-                              ? 'focus:outline-red-600 border-red-500'
-                              : ''
-                          } `}
-                          name="email"
-                          value={inputValues.email}
-                          onChange={e => handleChange(e)}
-                        />
-                      </div>
-                    </div>
-                    <div className="flex flex-col md:space-x-2 mb-3 rounded-md pl-5 pr-5 md:flex-row sm:flex-col">
-                      <div className="w-full">
-                        <label className="block p-2 xl:text-lg 2xl:text-2xl">
-                          Phone Number
-                        </label>
-                        <input
-                          type="number"
-                          className={`rounded-full px-4 py-3 w-full 2xl:p-4 xl:p-1 border-1 text-xl ${
-                            validation.phoneNumber
-                              ? 'focus:outline-red-600 border-red-500'
-                              : ''
-                          } `}
-                          name="phoneNumber"
-                          value={inputValues.phoneNumber}
-                          onChange={e => handleChange(e)}
-                        />
-                      </div>
-                      <div className="w-full">
-                        <label className="block p-2 xl:text-lg 2xl:text-2xl">
-                          Company{' '}
-                        </label>
-                        <input
-                          type="text"
-                          className={`rounded-full px-4 py-3 bg-white w-full 2xl:p-4 xl:p-1 border-1 text-xl ${
-                            validation.company
-                              ? 'focus:outline-red-600 border-red-500'
-                              : ''
-                          } `}
-                          name="company"
-                          value={inputValues.company}
-                          onChange={e => handleChange(e)}
-                        />
-                      </div>
-                    </div>
+                  <form onSubmit={handleSubmit}>
+                    {inputData.map(inputs => (
+                      <FormInputs
+                        key={inputs.id}
+                        {...inputs}
+                        value={inputValues[inputs.name]}
+                        onChange={handleChange}
+                        errors={errors[inputs.name]}
+                      />
+                    ))}
+
                     <div className="w-full pl-5 pr-5">
                       <label className="block px-4 xl:text-lg 2xl:text-2xl">
                         Comments
