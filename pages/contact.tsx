@@ -185,7 +185,7 @@ const Contact: NextPage = () => {
                           ${
                             errors.fullName
                               ? 'focus:outline-red-600 border-red-500'
-                              : 'focus:outline-green-600 border-green-500'
+                              : ''
                           } 
                           `}
                           name="fullName"

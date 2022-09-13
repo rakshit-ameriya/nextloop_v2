@@ -194,7 +194,6 @@ const Accordian = props => {
             <div>
               {Object.keys(allRoleTitles).map((key, i) => {
                 const item = allRoleTitles[key];
-                console.log('item:', item);
                 return (
                   <div key={i}>
                     <h1 className="font-bold text-[#7A7A7A] mt-5">
