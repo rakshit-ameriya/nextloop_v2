@@ -48,6 +48,8 @@ const Contact: NextPage = () => {
       name: 'fullName',
       type: 'text',
       pattern: '^[A-Z a-z]{3,16}$',
+      errorMessage:
+        'name should not contain any special char ,number and not less than 2 char',
       required: true,
     },
     {
@@ -55,6 +57,7 @@ const Contact: NextPage = () => {
       label: 'Email',
       name: 'email',
       type: 'email',
+      errorMessage: 'email should be in proper format',
       required: true,
     },
     {
@@ -63,6 +66,8 @@ const Contact: NextPage = () => {
       name: 'phoneNumber',
       type: 'string',
       pattern: '[1-9]{1}[0-9]{9}',
+      errorMessage:
+        'phone number is required ,should not exceed more than 10 digit',
       required: true,
     },
     {
@@ -71,6 +76,7 @@ const Contact: NextPage = () => {
       name: 'company',
       type: 'text',
       pattern: '^[A-Z a-z]{2,30}$',
+      errorMessage: 'company name is required',
       required: true,
     },
   ];
@@ -93,7 +99,7 @@ const Contact: NextPage = () => {
   return (
     <div>
       {showSuccess && (
-        <div className="fixed z-10 top-10 left-1/2 text-xl px-5 py-2 bg-green-400 text-white">
+        <div className="fixed z-10 top-24 rounded-sm left-[40%] text-xl px-5 py-2 bg-[#86EFAC] text-black">
           {showSuccess}
         </div>
       )}

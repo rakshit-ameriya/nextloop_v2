@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Card from 'components/Card';
 import { TEXT_CONSTANTS } from 'types/enum';
 
@@ -23,14 +23,17 @@ const Solutions = () => {
       description: TEXT_CONSTANTS.MOBILE_APP_DEVELOPMENT,
     },
   ];
+  const solution = useRef<HTMLInputElement>(null);
   return (
-    <div className="w-full min-h-[70vh] mt-24">
+    <div className="w-full min-h-[70vh] mt-24 " ref={solution} id="solution">
       <div className="">
         <h1 className="text-center text-2xl xl:text-3xl 2xl:text-4xl font-bold ">
           {' '}
           {TEXT_CONSTANTS.SOLUTIONS}
         </h1>
-        <h1 className="text-center">{TEXT_CONSTANTS.WE_COMMIT_DESIRING}</h1>
+        <h1 className="text-[10px] 2xl:text-lg text-center max-w-xs mx-auto sm:max-w-xl">
+          {TEXT_CONSTANTS.WE_COMMIT_DESIRING}
+        </h1>
       </div>
 
       <div className="flex justify-center flex-col items-center md:flex-row space-y-10 mt-5  sm:space-y-5  sm:space-x-4 pb-10  px-4 sm:px-0">

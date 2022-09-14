@@ -68,3 +68,14 @@ input:invalid[focused='true'] ~ input {
   border: 1px solid red;
   outline: 1px solid red;
 }
+
+.errorMes {
+  font-size: 14px;
+  padding: 3px;
+  color: red;
+  display: none;
+}
+
+input:invalid[focused='true'] ~ .errorMes {
+  display: block;
+}
