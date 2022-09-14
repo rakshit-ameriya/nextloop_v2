@@ -1,10 +1,10 @@
 .homeBackgroundImg {
   background-image: linear-gradient(
-      rgb(255, 255, 255, 0.2),
-      rgba(255, 255, 255, 0.2)
+      rgb(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
     ),
     linear-gradient(rgb(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
-    linear-gradient(rgb(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
+    linear-gradient(rgb(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
     linear-gradient(rgb(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
     linear-gradient(rgb(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
     url('/images/vector-31.png'), url('/images/group-12.png'),
@@ -12,6 +12,26 @@
     url('/images/vector-39.png');
 
   background-repeat: no-repeat;
-  background-size: 40% 30%, 50% 20%, 50% 25%, 70% 15%, 30% 15%;
-  background-position: -5% 50%, 50% 65%, 100% 75%, 35% 45%, -18% 90%;
+  background-size: 40% 10%, 40% 8%, 60% 19%, 90% 5%, 100% 10%;
+  background-position: 0% 50%, 10% 68%, 100% 70%, 80% 31%, -10% 82%;
+}
+
+@media screen and (min-width: 440px) {
+  .homeBackgroundImg {
+    background-image: linear-gradient(
+        rgb(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0.2)
+      ),
+      linear-gradient(rgb(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
+      linear-gradient(rgb(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
+      linear-gradient(rgb(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
+      linear-gradient(rgb(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
+      url('/images/vector-31.png'), url('/images/group-12.png'),
+      url('/images/vector-43.png'), url('/images/vector-39.png'),
+      url('/images/vector-39.png');
+
+    background-repeat: no-repeat;
+    background-size: 40% 30%, 50% 20%, 50% 25%, 70% 15%, 30% 15%;
+    background-position: -5% 50%, 50% 65%, 100% 75%, 35% 45%, -18% 90%;
+  }
 }

@@ -28,7 +28,7 @@ const IMAGES_DATA = {
 function HappyCustomers() {
   return (
     <div>
-      <div className="flex justify-center my-24">
+      <div className="flex justify-center my-3">
         <div className="relative bg-primaryGreenText w-40 h-3 xl:w-56 2xl:w-72">
           <div className="absolute -bottom-1 w-56 xl:w-80 2xl:w-80 ">
             <h1 className="font-bold sm:text-2xl text-xl xl:text-2xl 2xl:text-4xl   ">
@@ -37,7 +37,7 @@ function HappyCustomers() {
           </div>
         </div>
       </div>
-      <h1 className=" mt-3 2xl:text-lg xl:text-md text-center">
+      <h1 className=" 2xl:text-lg xl:text-md text-center">
         {TEXT_CONSTANTS.WE_COOPERATE_WITH_GLOBAL_BRANDS}
       </h1>
 

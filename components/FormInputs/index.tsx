@@ -4,6 +4,7 @@ interface InputTypes {
   label: string;
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   value: any;
+  errorMessage: string;
 }
 declare module 'react' {
   interface HTMLAttributes<T> extends AriaAttributes, DOMAttributes<T> {
@@ -12,7 +13,7 @@ declare module 'react' {
 }
 const FormInputs = (props: InputTypes) => {
   const [focused, setFocused] = useState(false);
-  const { label, onChange, ...inputs } = props;
+  const { label, onChange, errorMessage, ...inputs } = props;
 
   const handleFocus = () => {
     setFocused(true);
@@ -28,6 +29,7 @@ const FormInputs = (props: InputTypes) => {
           onBlur={handleFocus}
           focused={focused.toString()}
         />
+        <p className="errorMes">{errorMessage}</p>
       </div>
     </div>
   );
