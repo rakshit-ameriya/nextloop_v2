@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import type { NextPage } from 'next';
 import Link from 'next/link';
@@ -31,43 +31,7 @@ const Images_DATA = [
   },
 ];
 
-const inputData = [
-  {
-    id: 1,
-    label: 'Full Name',
-    name: 'fullName',
-    type: 'text',
-  },
-  {
-    id: 2,
-    label: 'Email',
-    name: 'email',
-    type: 'email',
-  },
-  {
-    id: 3,
-    label: 'Phone Number',
-    name: 'phoneNumber',
-    type: 'number',
-  },
-  {
-    id: 4,
-    label: 'Company',
-    name: 'company',
-    type: 'text',
-  },
-];
-
-interface InputTypes {
-  fullName: string;
-  email: string;
-  phoneNumber: string;
-  company: string;
-  comments: string;
-}
-
 const Contact: NextPage = () => {
-  const [showError, setShowError] = useState('');
   const [showSuccess, setShowSuccess] = useState('');
   const [inputValues, setInputValue] = useState<any>({
     fullName: '',
@@ -76,90 +40,58 @@ const Contact: NextPage = () => {
     company: '',
     comments: '',
   });
-  function handleChange(event: any) {
+
+  const inputData = [
+    {
+      id: 1,
+      label: 'Full Name',
+      name: 'fullName',
+      type: 'text',
+      pattern: '^[A-Z a-z]{3,16}$',
+      required: true,
+    },
+    {
+      id: 2,
+      label: 'Email',
+      name: 'email',
+      type: 'email',
+      required: true,
+    },
+    {
+      id: 3,
+      label: 'Phone Number',
+      name: 'phoneNumber',
+      type: 'string',
+      pattern: '[1-9]{1}[0-9]{9}',
+      required: true,
+    },
+    {
+      id: 4,
+      label: 'Company',
+      name: 'company',
+      type: 'text',
+      pattern: '^[A-Z a-z]{2,30}$',
+      required: true,
+    },
+  ];
+
+  function handleChange(
+    event: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>,
+  ) {
     const { name, value } = event.target;
     setInputValue({ ...inputValues, [name]: value });
   }
 
-  const [validation, setValidation] = useState<InputTypes>({
-    fullName: '',
-    email: '',
-    phoneNumber: '',
-    company: '',
-    comments: '',
-  });
-
-  let errors = { ...validation };
-  const checkValidation = () => {
-    if (!inputValues.fullName.trim()) {
-      errors.fullName = 'First name is required';
-    } else {
-      errors.fullName = '';
-    }
-    if (!inputValues.email.trim()) {
-      errors.email = 'Email is required';
-    } else if (
-      !inputValues.email
-        .toLowerCase()
-        .match(
-          /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
-        )
-    ) {
-      errors.email = 'Please ingress a valid email address';
-    } else {
-      errors.email = '';
-    }
-
-    if (!inputValues.phoneNumber) {
-      errors.phoneNumber = 'phoneNumber is required';
-    } else if (inputValues.phoneNumber.length > 10) {
-      errors.phoneNumber = 'phoneNumber not exceed 10';
-    } else if (inputValues.phoneNumber.length < 10) {
-      errors.phoneNumber = 'phoneNumber not less than 10';
-    } else {
-      errors.phoneNumber = '';
-    }
-
-    if (!inputValues.company) {
-      errors.company = 'company name is required';
-    } else {
-      errors.company = '';
-    }
-    return setValidation(errors);
-  };
-
-  useEffect(() => {
-    checkValidation();
-  }, [inputValues]);
-
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (
-      !errors.fullName &&
-      !errors.email &&
-      !errors.phoneNumber &&
-      !errors.company
-    ) {
-      console.log('inputsValues', inputValues);
-      setShowSuccess('Registered Succesfully');
-      setTimeout(() => {
-        setShowSuccess('');
-      }, 3000);
-    } else {
-      setShowError('All Red Fields are required');
-      setTimeout(() => {
-        setShowError('');
-      }, 3000);
-    }
+    setShowSuccess('Registered Succesfully');
+    setTimeout(() => {
+      setShowSuccess('');
+    }, 3000);
   };
 
   return (
     <div>
-      {showError && (
-        <div className="fixed z-10 top-10 left-1/2 text-xl px-5 py-2 bg-red-400 text-white">
-          {showError}
-        </div>
-      )}
       {showSuccess && (
         <div className="fixed z-10 top-10 left-1/2 text-xl px-5 py-2 bg-green-400 text-white">
           {showSuccess}
@@ -192,42 +124,41 @@ const Contact: NextPage = () => {
               </h1>
             </div>
 
-            <div className="flex flex-col justify-center items-center space-x-5 sm:flex-col md:flex-row">
+            <div className="flex flex-col justify-center items-center space-x-5  md:flex-row">
               <div className="w-full sm:w-full md:w-3/4 ">
                 {/* form start */}
-                <div>
-                  <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit}>
+                  <div className="w-full  flex flex-wrap">
                     {inputData.map(inputs => (
                       <FormInputs
                         key={inputs.id}
                         {...inputs}
                         value={inputValues[inputs.name]}
                         onChange={handleChange}
-                        errors={errors[inputs.name]}
                       />
                     ))}
+                  </div>
 
-                    <div className="w-full pl-5 pr-5">
-                      <label className="block px-4 xl:text-lg 2xl:text-2xl">
-                        Comments
-                      </label>
-                      <textarea
-                        className="rounded-md  w-full 2xl:p-4 xl:p-1 h-32 border-1 text-xl"
-                        name="comments"
-                        value={inputValues.comments}
-                        onChange={e => handleChange(e)}
-                      />
-                    </div>
-                    <div className="pl-5 pr-5 w-full sm:w-3/4  mt-3">
-                      <button
-                        className="bg-green-300 w-full py-3 sm:w-3/4 text-white font-normal xl:p-2 2xl:p-3 2xl:text-2xl border-1 rounded-full"
-                        type="submit"
-                      >
-                        Send
-                      </button>
-                    </div>
-                  </form>
-                </div>
+                  <div className="w-full pl-5 pr-5">
+                    <label className="block px-4 xl:text-lg 2xl:text-2xl">
+                      Comments
+                    </label>
+                    <textarea
+                      className="rounded-md  w-full 2xl:p-4 xl:p-1 h-32 border-1 text-xl"
+                      name="comments"
+                      value={inputValues.comments}
+                      onChange={e => handleChange(e)}
+                    />
+                  </div>
+                  <div className="pl-5 pr-5 w-full sm:w-3/4  mt-3">
+                    <button
+                      className="bg-green-300 w-full px-4 py-3 sm:w-2/3 text-white font-normal xl:px-4 2xl:px-4 2xl:text-2xl border-1 rounded-full"
+                      type="submit"
+                    >
+                      Send
+                    </button>
+                  </div>
+                </form>
               </div>
               {/* form end */}
               {/* adress start */}

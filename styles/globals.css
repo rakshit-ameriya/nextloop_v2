@@ -50,3 +50,21 @@ a {
   background-color: #0ad4a5;
   padding: 2px;
 }
+
+.errorMes {
+  font-size: 20px;
+  color: red;
+  display: none;
+}
+.errorMes:focus {
+  border: 1px solid black;
+  outline: #f5f7f7;
+}
+input:invalid[focused='true'] {
+  border: 1px solid red;
+  outline: 1px solid red;
+}
+input:invalid[focused='true'] ~ input {
+  border: 1px solid red;
+  outline: 1px solid red;
+}
