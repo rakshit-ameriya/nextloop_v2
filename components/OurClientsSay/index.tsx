@@ -141,12 +141,12 @@ const OurClinetsSay: NextPage = () => {
           ))}
         </div>
         <button
-          className="carousel-control-prev sm:absolute sm:left-40 sm:top-0 absolute left-20 top-10 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline"
+          className="carousel-control-prev   sm:absolute sm:left-40 sm:top-0 absolute left-20 top-10 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline"
           type="button"
           data-bs-target="#carouselExampleCaptions"
           data-bs-slide="prev"
         >
-          <div className="w-10 h-10 rounded-3xl bg-[#0AD4A5] flex justify-center items-center">
+          <div className="w-10 h-10 hidden xl:flex rounded-3xl bg-[#0AD4A5]  justify-center items-center">
             <Image
               src="/images/Vector 10.png"
               width={14}
@@ -162,7 +162,7 @@ const OurClinetsSay: NextPage = () => {
           data-bs-target="#carouselExampleCaptions"
           data-bs-slide="next"
         >
-          <div className="w-10 h-10 rounded-3xl bg-[#0AD4A5] flex justify-center items-center">
+          <div className="w-10 h-10 hidden xl:flex  rounded-3xl bg-[#0AD4A5]  justify-center items-center">
             <Image
               src="/images/Vector 10.png"
               width={14}

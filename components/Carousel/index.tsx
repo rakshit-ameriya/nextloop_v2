@@ -2,73 +2,17 @@ import Image from 'next/image';
 import styles from '../../styles/carousel.module.css';
 
 const Carousel = () => {
-  // const ImageData = [
-  //   {
-  //     id: 2,
-  //     image: '/images/Rectangle.png',
-  //     alt: 'loop-1',
-  //   },
-  //   {
-  //     id: 3,
-  //     image: '/images/Rectangle.png',
-  //     alt: 'loop-2',
-  //   },
-  // ];
   return (
     <>
-      <div className="w-full h-screen relative top-40 right-20 sm:top-72 sm:relative xl:relative xl:top-0 xl:left-0 2xl:relative 2xl:top-0">
-        <div
-          id="demo"
-          className="carousel slide bg-cover relative"
-          data-bs-ride="carousel"
-        >
-          {/* <div className="absolute top-80 left-20 bottom-0 sm:absolute sm:top-1/2  xl:absolute xl:top-2/3 xl:left-5 2xl:absolute 2xl:left-36 2xl:bottom-0 carousel-indicators  gap-0 sm:flex justify-start sm:flex-col ">
-            <button
-              type="button"
-              data-bs-target="#demo"
-              data-bs-slide-to="0"
-              className="active"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#demo"
-              data-bs-slide-to="1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#demo"
-              data-bs-slide-to="2"
-            ></button>
-          </div> */}
-
-          <div className={`carousel-inner ${styles.animateCarousel}`}>
-            <div className="carousel-item active w-full h-full object-contain">
-              <Image
-                src="/images/Rectangle.png"
-                height={430}
-                width={800}
-                alt="loop-3"
-                layout="responsive"
-                className="object-contain"
-              />
-            </div>
-            {/* {ImageData.map(item => (
-              <div
-                key={item.id}
-                className={`carousel-item object-cover object-center  `}
-              >
-                <Image
-                  src={item.image}
-                  height={230}
-                  width={500}
-                  layout="responsive"
-                  alt={item.alt}
-                  className="d-block w-full h-screen object-cover object-center"
-                />
-              </div>
-            ))} */}
-          </div>
-        </div>
+      <div
+        className={`max-w-[200px] h-[170px] sm:max-w-[250px] md:max-w-[600px] md:h-[600px] lg:max-w-[700px] lg:h-[500px] 2xl:max-w-[1200px]  2xl:h-[760px] relative  left-[10%] top-[60%] 2xl:left-[18%] md:left-[18%] md:top-24 sm:left-[50%] sm:top-[40%] ${styles.animateCarousel}`}
+      >
+        <Image
+          src="/images/Rectangle.png"
+          alt="loop-3"
+          layout="fill"
+          className="object-contain"
+        />
       </div>
     </>
   );

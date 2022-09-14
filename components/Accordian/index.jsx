@@ -162,7 +162,7 @@ const Accordian = props => {
         </div>
       </div>
 
-      <div className="absolute top-7 right-5 text-[#7A7A7A] transition-transform duration-500 rotate-0 peer-checked:rotate-180">
+      <div className="absolute top-1 2xl:top-7 right-5 text-[#7A7A7A] transition-transform duration-500 rotate-0 peer-checked:rotate-180">
         {/* Arrow */}
 
         <div className="w-8 h-8 relative">
@@ -183,6 +183,7 @@ const Accordian = props => {
                 <div key={items.id}>
                   <h1 className="font-bold text-[#7A7A7A]">
                     {items.titleText}
+                    <span> : </span>
                     <span className="font-normal text-[#7A7A7A]">
                       {items.jobTitle}
                     </span>
@@ -193,7 +194,6 @@ const Accordian = props => {
             <div>
               {Object.keys(allRoleTitles).map((key, i) => {
                 const item = allRoleTitles[key];
-
                 return (
                   <div key={i}>
                     <h1 className="font-bold text-[#7A7A7A] mt-5">

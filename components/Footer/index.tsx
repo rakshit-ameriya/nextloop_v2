@@ -28,13 +28,14 @@ const images = [
     id: 4,
     image: '/images/Twitter.png',
     color: `bg-blue-400`,
+    link: 'https://twitter.com/Nextloop_',
   },
 ];
 
 function Footer() {
   return (
     <>
-      <div className="bg-primaryBg  h-1/2 w-full flex justify-center items-center p-5 relative  ">
+      <div className="bg-primaryBg   h-1/2 w-full flex justify-center items-center p-5 relative  ">
         <div className="grid sm:grid-cols-5 grid-cols-2 gap-x-4">
           <div className="">
             <h1 className="text-white font-bold text-3xl xl:text-3xl 2xl:text-3xl">
@@ -50,15 +51,14 @@ function Footer() {
             <h1 className="text-white font-bold text-md xl:text-lg 2xl:text-lg ">
               {TEXT_CONSTANTS.FOLLOW_US}:
             </h1>
-            <div className="my-3 flex justify-start items-center">
+            <div className="my-3 flex justify-start gap-x-2 gap-y-2 items-center flex-wrap">
               {images.map(img => (
                 <Link key={img.id} href={img.link ? img.link : ''}>
                   <div
-                    className={`mr-3 bg-slate-50 object-contain hover:${img.color} cursor-pointer w-6 h-6 sm:w-8 sm:h-8 rounded-full   flex justify-center items-center`}
+                    className={`w-10 h-10 p-2 relative bg-white rounded-full border-8 border-white cursor-pointer`}
                   >
                     <Image
-                      width={15}
-                      height={15}
+                      layout="fill"
                       src={img.image}
                       alt="Image"
                       className="object-contain"

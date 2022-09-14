@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import type { NextPage } from 'next';
 import Link from 'next/link';
+import { TEXT_CONSTANTS } from 'types/enum';
+import FormInputs from 'components/FormInputs';
 
 const Images_DATA = [
   {
@@ -29,114 +31,72 @@ const Images_DATA = [
   },
 ];
 
-interface InputTypes {
-  fullName: string;
-  email: string;
-  phoneNumber: string;
-  company: string;
-  comments: string;
-}
-
 const Contact: NextPage = () => {
-  const [inputValues, setInputValue] = useState<InputTypes>({
+  const [showSuccess, setShowSuccess] = useState('');
+  const [inputValues, setInputValue] = useState<any>({
     fullName: '',
     email: '',
     phoneNumber: '',
     company: '',
     comments: '',
   });
-  function handleChange(event: any) {
+
+  const inputData = [
+    {
+      id: 1,
+      label: 'Full Name',
+      name: 'fullName',
+      type: 'text',
+      pattern: '^[A-Z a-z]{3,16}$',
+      required: true,
+    },
+    {
+      id: 2,
+      label: 'Email',
+      name: 'email',
+      type: 'email',
+      required: true,
+    },
+    {
+      id: 3,
+      label: 'Phone Number',
+      name: 'phoneNumber',
+      type: 'string',
+      pattern: '[1-9]{1}[0-9]{9}',
+      required: true,
+    },
+    {
+      id: 4,
+      label: 'Company',
+      name: 'company',
+      type: 'text',
+      pattern: '^[A-Z a-z]{2,30}$',
+      required: true,
+    },
+  ];
+
+  function handleChange(
+    event: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>,
+  ) {
     const { name, value } = event.target;
     setInputValue({ ...inputValues, [name]: value });
   }
 
-  const [validation, setValidation] = useState<InputTypes>({
-    fullName: '',
-    email: '',
-    phoneNumber: '',
-    company: '',
-    comments: '',
-  });
-  let isValid = true;
-  const checkValidation = () => {
-    let errors = validation;
-    console.log('errors', errors);
-
-    //full Name validation
-    if (!inputValues.fullName.trim()) {
-      if (errors.fullName) {
-        errors.fullName = 'First name is required';
-        isValid = false;
-      }
-    } else if (inputValues.fullName.length < 5) {
-      errors.fullName = 'First name not less than 5 char';
-      isValid = false;
-    } else if (inputValues.fullName.length > 10) {
-      errors.fullName = 'First name not more than 10 char';
-      isValid = false;
-    } else {
-      errors.fullName = '';
-      isValid = true;
-    }
-    // email validation
-    const emailCond =
-      "/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$/";
-    if (!inputValues.email.trim()) {
-      errors.email = 'Email is required';
-      isValid = false;
-    } else if (inputValues.email.match(emailCond)) {
-      errors.email = 'Please ingress a valid email address';
-      isValid = false;
-    } else {
-      errors.email = '';
-      isValid = true;
-    }
-
-    if (!inputValues.phoneNumber.trim()) {
-      errors.phoneNumber = 'phoneNumber is required';
-      isValid = false;
-    } else if (inputValues.phoneNumber.length < 9) {
-      errors.phoneNumber = 'phoneNumber must be correct';
-      isValid = false;
-    } else if (inputValues.phoneNumber.length >= 11) {
-      isValid = false;
-      errors.phoneNumber = 'number must be valid';
-    } else {
-      errors.phoneNumber = '';
-      isValid = true;
-    }
-
-    if (!inputValues.company.trim()) {
-      errors.company = 'company name is required';
-      isValid = false;
-    } else if (inputValues.company.length < 5) {
-      errors.company = 'company name must be filled';
-      isValid = false;
-    } else if (inputValues.company.length > 10) {
-      errors.company = 'First name not more than 10 char';
-      isValid = false;
-    } else {
-      errors.company = '';
-      isValid = true;
-    }
-    return setValidation(errors);
-  };
-
-  useEffect(() => {
-    checkValidation();
-  });
-
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (isValid) {
-      console.log('inputValues', inputValues);
-      alert('Form submitted successfully');
-    } else {
-      alert('please fill required values');
-    }
+    setShowSuccess('Registered Succesfully');
+    setTimeout(() => {
+      setShowSuccess('');
+    }, 3000);
   };
+
   return (
     <div>
+      {showSuccess && (
+        <div className="fixed z-10 top-10 left-1/2 text-xl px-5 py-2 bg-green-400 text-white">
+          {showSuccess}
+        </div>
+      )}
       <div className="w-full h-96 -z-50 relative top-0 bg-[#010028]  ">
         <div className="">
           <svg
@@ -154,129 +114,51 @@ const Contact: NextPage = () => {
       </div>
       <div className="relative -top-32 sm:relative sm:-top-64 xl:-top-48 2xl:-top-80">
         <div className="w-full h-screen   flex justify-center items-center z-50">
-          <div className="w-5/4 sm:w-3/5   sm:p-10 bg-white max-h-fit overflow-hidden border-2 rounded-2xl shadow-md hover:shadow-none">
+          <div className="w-4/5 sm:w-4/5   sm:p-10 bg-white max-h-fit overflow-hidden border-2 rounded-2xl shadow-md hover:shadow-none">
             <div className="pl-5 pr-5 mb-3">
-              <h1 className="text-3xl font-bold">Lets Connect</h1>
+              <h1 className="text-3xl font-bold">
+                {TEXT_CONSTANTS.LEST_CONNECT}
+              </h1>
               <h1 className="text-xs max-w-xs mt-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                {TEXT_CONSTANTS.GET_IN_TOUCH}
               </h1>
             </div>
 
-            <div className="flex flex-col justify-center items-center space-x-5 sm:flex-col md:flex-row">
+            <div className="flex flex-col justify-center items-center space-x-5  md:flex-row">
               <div className="w-full sm:w-full md:w-3/4 ">
                 {/* form start */}
-                <div>
-                  <form onSubmit={handleSubmit}>
-                    <div className="flex flex-col  md:space-x-2 mb-3 justify-center rounded-md pl-5 pr-5 md:flex-row sm:flex-col">
-                      <div className="w-full">
-                        <label className="block p-2 xl:text-lg 2xl:text-2xl">
-                          Full Name
-                        </label>
-                        <input
-                          type="text"
-                          className={`rounded-full  w-full 2xl:p-4 xl:p-1 border-1 text-xl ${
-                            validation.fullName
-                              ? 'focus:outline-red-600 border-red-500'
-                              : ''
-                          } `}
-                          name="fullName"
-                          value={inputValues.fullName}
-                          onChange={e => handleChange(e)}
-                        />
-                        {/* {validation.fullName && (
-                        <p className="text-xs text-red-500">
-                          {validation.fullName}
-                        </p>
-                      )} */}
-                      </div>
-                      <div className="w-full">
-                        <label className="block p-2 xl:text-lg 2xl:text-2xl">
-                          Email
-                        </label>
-                        <input
-                          type="text"
-                          className={`rounded-full  w-full 2xl:p-4 xl:p-1 border-1 text-xl ${
-                            validation.email
-                              ? 'focus:outline-red-600 border-red-500'
-                              : ''
-                          } `}
-                          name="email"
-                          value={inputValues.email}
-                          onChange={e => handleChange(e)}
-                        />
-                        {/* {validation.email && (
-                        <p className="text-xs text-red-500">
-                          {validation.company}
-                        </p>
-                      )} */}
-                      </div>
-                    </div>
-                    <div className="flex flex-col md:space-x-2 mb-3 rounded-md pl-5 pr-5 md:flex-row sm:flex-col">
-                      <div className="w-full">
-                        <label className="block p-2 xl:text-lg 2xl:text-2xl">
-                          Phone Number
-                        </label>
-                        <input
-                          type="number"
-                          className={`rounded-full  w-full 2xl:p-4 xl:p-1 border-1 text-xl ${
-                            validation.phoneNumber
-                              ? 'focus:outline-red-600 border-red-500'
-                              : ''
-                          } `}
-                          name="phoneNumber"
-                          value={inputValues.phoneNumber}
-                          onChange={e => handleChange(e)}
-                        />
-                        {/* {validation.phoneNumber && (
-                        <p className="text-xs text-red-500">
-                          {validation.phoneNumber}
-                        </p>
-                      )} */}
-                      </div>
-                      <div className="w-full">
-                        <label className="block p-2 xl:text-lg 2xl:text-2xl">
-                          Company{' '}
-                        </label>
-                        <input
-                          type="text"
-                          className={`rounded-full  w-full 2xl:p-4 xl:p-1 border-1 text-xl ${
-                            validation.company
-                              ? 'focus:outline-red-600 border-red-500'
-                              : ''
-                          } `}
-                          name="company"
-                          value={inputValues.company}
-                          onChange={e => handleChange(e)}
-                        />
-                        {/* {validation.company && (
-                        <p className="text-xs text-red-500">
-                          {validation.company}
-                        </p>
-                      )} */}
-                      </div>
-                    </div>
-                    <div className="w-full pl-5 pr-5">
-                      <label className="block p-2 xl:text-lg 2xl:text-2xl">
-                        Comments
-                      </label>
-                      <textarea
-                        className="rounded-md  w-full 2xl:p-4 xl:p-1 h-32 border-1 text-xl"
-                        name="comments"
-                        value={inputValues.comments}
-                        onChange={e => handleChange(e)}
+                <form onSubmit={handleSubmit}>
+                  <div className="w-full  flex flex-wrap">
+                    {inputData.map(inputs => (
+                      <FormInputs
+                        key={inputs.id}
+                        {...inputs}
+                        value={inputValues[inputs.name]}
+                        onChange={handleChange}
                       />
-                    </div>
-                    <div className="pl-5 pr-5 w-full sm:w-3/4  mt-3">
-                      <button
-                        className="bg-green-300 w-full  sm:w-3/4 text-white font-normal xl:p-2 2xl:p-3 2xl:text-2xl border-1 rounded-full"
-                        type="submit"
-                      >
-                        Send
-                      </button>
-                    </div>
-                  </form>
-                </div>
+                    ))}
+                  </div>
+
+                  <div className="w-full pl-5 pr-5">
+                    <label className="block px-4 xl:text-lg 2xl:text-2xl">
+                      Comments
+                    </label>
+                    <textarea
+                      className="rounded-md  w-full 2xl:p-4 xl:p-1 h-32 border-1 text-xl"
+                      name="comments"
+                      value={inputValues.comments}
+                      onChange={e => handleChange(e)}
+                    />
+                  </div>
+                  <div className="pl-5 pr-5 w-full sm:w-3/4  mt-3">
+                    <button
+                      className="bg-green-300 w-full px-4 py-3 sm:w-2/3 text-white font-normal xl:px-4 2xl:px-4 2xl:text-2xl border-1 rounded-full"
+                      type="submit"
+                    >
+                      Send
+                    </button>
+                  </div>
+                </form>
               </div>
               {/* form end */}
               {/* adress start */}
