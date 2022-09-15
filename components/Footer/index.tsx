@@ -38,7 +38,7 @@ function Footer() {
       <div className="bg-primaryBg   h-1/2 w-full flex justify-center items-center p-5 relative  ">
         <div className="grid sm:grid-cols-5 grid-cols-2 gap-x-4">
           <div className="">
-            <h1 className="text-white font-bold text-3xl xl:text-3xl 2xl:text-3xl">
+            <h1 className="text-white font-bold text-xl xl:text-3xl 2xl:text-3xl">
               {TEXT_CONSTANTS.NEXTLOOP}
             </h1>
             <h1 className="text-white text-sm font-light">
