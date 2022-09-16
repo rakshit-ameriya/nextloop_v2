@@ -99,14 +99,14 @@ const Contact: NextPage = () => {
   return (
     <div>
       {showSuccess && (
-        <div className="fixed z-10 top-24 rounded-sm left-[40%] text-xl px-5 py-2 bg-[#86EFAC] text-black">
+        <div className="flex fixed z-10 top-[10%] sm:top-20 rounded-sm left-[25%] sm:left-[40%] text-[8px] sm:text-xl px-5 py-2 bg-[#86EFAC] text-black">
           {showSuccess}
         </div>
       )}
-      <div className="w-full h-96 -z-50 relative top-0 bg-[#010028]  ">
+      <div className="w-full h-96 -z-50 relative top-0 bg-[#010028]">
         <div className="">
           <svg
-            className="absolute top-80 sm:absolute sm:top-60 xl:absolute xl:top-48 2xl:absolute 2xl:top-48"
+            className="absolute top-[85%] sm:top-[80%]  xl:top-[80%]  2xl:top-[80%]"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1440 320"
           >
@@ -118,9 +118,9 @@ const Contact: NextPage = () => {
           </svg>
         </div>
       </div>
-      <div className="relative -top-32 sm:relative sm:-top-64 xl:-top-48 2xl:-top-80">
-        <div className="w-full h-screen   flex justify-center items-center z-50">
-          <div className="w-4/5 sm:w-4/5   sm:p-10 bg-white max-h-fit overflow-hidden border-2 rounded-2xl shadow-md hover:shadow-none">
+      <div className="relative -top-32  sm:-top-64 xl:-top-48 2xl:-top-28">
+        <div className="w-full   flex justify-center items-center z-50">
+          <div className="w-4/5 sm:w-4/5   sm:p-10 bg-white  border-2 rounded-2xl shadow-md hover:shadow-none">
             <div className="pl-5 pr-5 mb-3">
               <h1 className="text-3xl font-bold">
                 {TEXT_CONSTANTS.LEST_CONNECT}
@@ -131,7 +131,7 @@ const Contact: NextPage = () => {
             </div>
 
             <div className="flex flex-col justify-center items-center space-x-5  md:flex-row">
-              <div className="w-full sm:w-full md:w-3/4 ">
+              <div className="w-full sm:w-full md:full lg:w-3/4">
                 {/* form start */}
                 <form onSubmit={handleSubmit}>
                   <div className="w-full  flex flex-wrap">

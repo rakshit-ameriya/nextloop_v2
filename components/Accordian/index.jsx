@@ -133,31 +133,33 @@ const Accordian = props => {
         className="peer absolute top-0 inset-x-0 w-full h-20 opacity-0 z-10 cursor-pointer"
       />
       <div className="h-20 w-full pl-5 pt-2 flex items-start flex-col">
-        <h1 className="text-lg font-bold text-[#7A7A7A]">{jobTitle}</h1>
+        <h1 className="text-[12px] sm:text-lg font-bold text-[#7A7A7A]">
+          {jobTitle}
+        </h1>
         <div className="flex space-x-2 mt-2">
           <div className="flex">
-            <div className="">
+            <div className="w-4 h-4  sm:w-5 sm:h-5 relative">
               <Image
                 src="/images/Location Point.png"
-                width={20}
-                height={20}
+                layout="fill"
                 alt="location"
               />
             </div>
-            <h1 className="text-sm font-normal text-[#7A7A7A] mx-2 ">
+            <h1 className="text-[12px]  sm:text-sm font-normal text-[#7A7A7A] mx-2 ">
               {location}
             </h1>
           </div>
           <div className="flex">
-            <div className="">
+            <div className="w-4 h-4  sm:w-5 sm:h-5 relative">
               <Image
                 src="/images/Travel bag.png"
-                width={20}
-                height={20}
+                layout="fill"
                 alt="location"
               />
             </div>
-            <h1 className="text-sm font-normal text-[#7A7A7A] mx-2 ">{exp}</h1>
+            <h1 className="text-[10px] sm:text-sm font-normal text-[#7A7A7A] mx-2 ">
+              {exp}
+            </h1>
           </div>
         </div>
       </div>
@@ -165,7 +167,7 @@ const Accordian = props => {
       <div className="absolute top-1 2xl:top-7 right-5 text-[#7A7A7A] transition-transform duration-500 rotate-0 peer-checked:rotate-180">
         {/* Arrow */}
 
-        <div className="w-8 h-8 relative">
+        <div className="w-4 h-4  sm:w-8 sm:h-8 relative">
           <Image
             src={'/svg/arrowIcons/up-arrow.svg'}
             alt="up-arrow"

@@ -19,7 +19,7 @@ const FormInputs = (props: InputTypes) => {
     setFocused(true);
   };
   return (
-    <div className="flex flex-col  w-full sm:w-1/2 md:space-x-2 mb-3 justify-center rounded-md pl-5 pr-5 md:flex-row sm:flex-col">
+    <div className="flex flex-col  w-full sm:w-full md:w-full lg:w-1/2 md:space-x-2 mb-3 justify-center rounded-md pl-5 pr-5 md:flex-row sm:flex-col">
       <div className="w-full">
         <label className="block p-2 xl:text-lg 2xl:text-2xl">{label}</label>
         <input
