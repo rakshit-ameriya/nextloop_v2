@@ -25,8 +25,8 @@ const Solutions = () => {
   ];
   const solution = useRef<HTMLInputElement>(null);
   return (
-    <div className="w-full min-h-[70vh] mt-24 " ref={solution} id="solution">
-      <div className="">
+    <div className="w-full min-h-[70vh] mt-20">
+      <div className="pt-3" ref={solution} id="solution">
         <h1 className="text-center text-2xl xl:text-3xl 2xl:text-4xl font-bold ">
           {' '}
           {TEXT_CONSTANTS.SOLUTIONS}
@@ -36,7 +36,7 @@ const Solutions = () => {
         </h1>
       </div>
 
-      <div className="flex justify-center flex-col items-center md:flex-row space-y-10 mt-5  sm:space-y-5  sm:space-x-4 pb-10  px-4 sm:px-0">
+      <div className="flex justify-center flex-wrap flex-col items-center md:flex-row space-y-10 mt-5  sm:space-y-5  sm:space-x-4 pb-10  px-4 sm:px-0">
         {CARD_DATA.map(item => (
           <Card
             key={item.id}

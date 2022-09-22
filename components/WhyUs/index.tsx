@@ -5,7 +5,7 @@ import { TEXT_CONSTANTS } from 'types/enum';
 const WhyUs = () => {
   return (
     <div className="2xl:w-4/5 mx-auto">
-      <div className="relative flex justify-center flex-col px-5 sm:flex-row sm:gap-x-40 items-center  w-full h-1/2 my-10">
+      <div className="relative flex justify-center flex-col px-5 sm:flex-row sm:gap-x-40 items-center  w-full h-1/2 my-20">
         <div className="w-full sm:w-72 2xl:w-80 flex flex-col py-10 ">
           <div className="relative bg-primaryGreenText w-16 h-3 xl:w-24 2xl:w-52">
             <div className="absolute -bottom-1 w-40 sm:w-64">
