@@ -63,8 +63,8 @@ const Career = () => {
             Current Openings
           </h1>
           <p className="text-[8px] xl:text-[14px] 2xl:text-xl text-white   text-center mt-2 p-3 ">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Join our team to transform what’s next. Work in a relaxed atmosphere
+            and build a career by working on international Projects.
           </p>
         </div>
       </div>

@@ -118,7 +118,7 @@ const Contact: NextPage = () => {
           </svg>
         </div>
       </div>
-      <div className="relative -top-32  sm:-top-64 xl:-top-48 2xl:-top-28">
+      <div className="relative -top-56  sm:-top-64 xl:-top-48 2xl:-top-28">
         <div className="w-full   flex justify-center items-center z-50">
           <div className="w-4/5 sm:w-4/5   sm:p-10 bg-white  border-2 rounded-2xl shadow-md hover:shadow-none">
             <div className="pl-5 pr-5 mb-3">

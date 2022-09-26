@@ -27,7 +27,7 @@ const IMAGES_DATA = {
 
 function HappyCustomers() {
   return (
-    <div>
+    <div className="md:my-40">
       <div className="flex justify-center my-3">
         <div className="relative bg-primaryGreenText w-40 h-3 xl:w-56 2xl:w-72">
           <div className="absolute -bottom-1 w-56 xl:w-80 2xl:w-80 ">
@@ -73,7 +73,7 @@ function HappyCustomers() {
           </div>
         </div>
         <div>
-          <div className="p-5">
+          <div className="pt-2">
             <div className="">
               <Image
                 src={'/images/happyCustomers7.png'}

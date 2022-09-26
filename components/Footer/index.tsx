@@ -130,7 +130,7 @@ function Footer() {
               ))}
             </ul>
           </div>
-          <div className=" absolute right-16 top-6">
+          <div className=" absolute right-10 top-6">
             <div className="cursor-pointer " onClick={scrollToTop}>
               <Image
                 src="/images/up-arrow-icon.png"
