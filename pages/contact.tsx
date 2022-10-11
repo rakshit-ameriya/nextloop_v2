@@ -216,12 +216,21 @@ const Contact: NextPage = () => {
                       className="object-contain"
                     />
                   </div>
-                  <div className="max-w-xs">
+                  <div className="">
                     {/* address */}
+                    <a
+                      rel="external nofollow noopener noreferrer"
+                      target="_blank"
+                      href="mailto:info@nextlooptechnologies.com"
+                    >
+                      <h1 className="text-[10px] xl:text-sm font-normal">
+                        info@nextlooptechnologies.com
+                      </h1>
+                    </a>
 
-                    <h1 className="text-[10px] xl:text-sm font-normal">
+                    {/* <h1 className="text-[10px] xl:text-sm font-normal">
                       info@nextlooptechnologies.com
-                    </h1>
+                    </h1> */}
                   </div>
                 </div>
                 <div className="flex">
