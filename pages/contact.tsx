@@ -227,10 +227,6 @@ const Contact: NextPage = () => {
                         info@nextlooptechnologies.com
                       </h1>
                     </a>
-
-                    {/* <h1 className="text-[10px] xl:text-sm font-normal">
-                      info@nextlooptechnologies.com
-                    </h1> */}
                   </div>
                 </div>
                 <div className="flex">
