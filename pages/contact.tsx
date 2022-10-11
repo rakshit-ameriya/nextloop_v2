@@ -99,7 +99,7 @@ const Contact: NextPage = () => {
   return (
     <div>
       {showSuccess && (
-        <div className="flex fixed z-10 top-[10%] sm:top-20 rounded-sm left-[25%] sm:left-[40%] text-[8px] sm:text-xl px-5 py-2 bg-[#86EFAC] text-black">
+        <div className="flex fixed z-10 top-[10%] sm:top-20 rounded-sm left-[25%] sm:left-[40%] md:left-[30%] lg:left-[35%] xl:left-[40%] 2xl:left-[42%] text-[8px] sm:text-xl px-5 py-2 bg-[#86EFAC] text-black">
           {showSuccess}
         </div>
       )}
@@ -170,12 +170,11 @@ const Contact: NextPage = () => {
               {/* adress start */}
               <div className="md:w-1/4 mt-2 md:mt-2 sm:mt-10 sm:w-3/4">
                 <div className="flex space-x-5">
-                  <div>
+                  <div className="w-6 h-6 relative">
                     {/* icons */}
                     <Image
                       src="/images/addressIcon.png"
-                      width={30}
-                      height={30}
+                      layout="fill"
                       alt="Location Icon"
                       className="object-contain"
                     />
@@ -183,21 +182,20 @@ const Contact: NextPage = () => {
                   <div className="space-y-1">
                     {/* address */}
 
-                    <h1 className="text-sm font-bold text-black">Indore, IN</h1>
-                    <h1 className="text-xs font-normal">
-                      Lorem Ispsum Tower 07, Rd, opp.
+                    <h1 className="text-lg font-bold text-black">
+                      420, 5th Floor, Onam Plaza ,
                     </h1>
-                    <h1 className="text-xs font-normal">Lorem Complex</h1>
-                    <h1 className="text-xs font-normal"> Indore (M.P) 45200</h1>
+                    <h1 className="text-lg font-normal">
+                      New Palasia, Indore, MP. 452001
+                    </h1>
                   </div>
                 </div>
                 <div className="flex space-x-5 mt-3">
-                  <div>
+                  <div className="w-6 h-6 relative">
                     {/* icons */}
                     <Image
                       src="/images/telephone.png"
-                      width={18}
-                      height={18}
+                      layout="fill"
                       alt="Phone Icon"
                       className="object-contain"
                     />
@@ -205,24 +203,25 @@ const Contact: NextPage = () => {
                   <div className="">
                     {/* address */}
 
-                    <h1 className="text-xs font-normal">+91 00000 00000</h1>
+                    <h1 className="text-lg font-normal">6351673645</h1>
                   </div>
                 </div>
                 <div className="flex space-x-5 mt-3">
-                  <div>
+                  <div className="w-6 h-6 relative">
                     {/* icons */}
                     <Image
                       src="/images/message-box.png"
-                      width={15}
-                      height={15}
+                      layout="fill"
                       alt="Message Icon"
                       className="object-contain"
                     />
                   </div>
-                  <div className="">
+                  <div className="max-w-xs">
                     {/* address */}
 
-                    <h1 className="text-xs font-normal">hello@nextloop.com</h1>
+                    <h1 className="text-[10px] xl:text-sm font-normal">
+                      info@nextlooptechnologies.com
+                    </h1>
                   </div>
                 </div>
                 <div className="flex">

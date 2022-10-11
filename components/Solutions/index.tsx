@@ -14,7 +14,7 @@ const Solutions = () => {
       id: 2,
       title: 'Web Development',
       image: '/images/webdevelopment.svg',
-      description: TEXT_CONSTANTS.DESCRIPTION,
+      description: TEXT_CONSTANTS.WEB_DEVELOPMENT,
     },
     {
       id: 3,
