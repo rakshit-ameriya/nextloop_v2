@@ -42,10 +42,10 @@ const constants = {
     'Contact Us',
   ],
   CONTACT: [
-    'Indore, IN',
-    'Lorem ispsum tower',
-    'Complex',
-    'Indore (M.P), 452001',
+    '420, 5th Floor, Onam Plaza ,',
+    ' New Palasia, Indore, MP. 452001',
+    'Mobile no. 6351673645',
+    'Mail id: info@nextlooptechnologies.com',
   ],
   Navigation: [
     {
