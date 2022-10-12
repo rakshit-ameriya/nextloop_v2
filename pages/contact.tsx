@@ -130,7 +130,7 @@ const Contact: NextPage = () => {
               </h1>
             </div>
 
-            <div className="flex flex-col justify-center items-center space-x-5  md:flex-row">
+            <div className="flex flex-col justify-center items-center md:gap-x-2  md:flex-row">
               <div className="w-full sm:w-full md:full lg:w-3/4">
                 {/* form start */}
                 <form onSubmit={handleSubmit}>
@@ -168,9 +168,9 @@ const Contact: NextPage = () => {
               </div>
               {/* form end */}
               {/* adress start */}
-              <div className="md:w-1/4 mt-2 md:mt-2 sm:mt-10 sm:w-3/4">
-                <div className="flex space-x-5">
-                  <div className="w-6 h-6 relative">
+              <div className="mt-4 md:mt-0 flex flex-col md:w-[50%] px-2 sm:px-0 sm:w-3/4 mx-auto">
+                <div className="flex gap-x-2">
+                  <div className="w-6 h-6 md:w-7 md:h-7 relative">
                     {/* icons */}
                     <Image
                       src="/images/addressIcon.png"
@@ -182,17 +182,16 @@ const Contact: NextPage = () => {
                   <div className="space-y-1">
                     {/* address */}
 
-                    <h1 className="text-lg font-bold text-black">
+                    <h1 className="text-[15px] xl:text-lg font-bold text-black">
                       420, 5th Floor, Onam Plaza ,
                     </h1>
-                    <h1 className="text-lg font-normal">
+                    <h1 className="text-[15px] xl:text-lg font-normal">
                       New Palasia, Indore, MP. 452001
                     </h1>
                   </div>
                 </div>
-                <div className="flex space-x-5 mt-3">
-                  <div className="w-6 h-6 relative">
-                    {/* icons */}
+                <div className="flex items-center gap-x-2 mt-3">
+                  <div className="w-5 h-5 md:w-6 md:h-6 relative">
                     <Image
                       src="/images/telephone.png"
                       layout="fill"
@@ -201,14 +200,13 @@ const Contact: NextPage = () => {
                     />
                   </div>
                   <div className="">
-                    {/* address */}
-
-                    <h1 className="text-lg font-normal">6351673645</h1>
+                    <h1 className="text-[15px] xl:text-lg font-normal">
+                      6351673645
+                    </h1>
                   </div>
                 </div>
-                <div className="flex space-x-5 mt-3">
-                  <div className="w-6 h-6 relative">
-                    {/* icons */}
+                <div className="flex items-center gap-x-2 mt-3">
+                  <div className="w-5 h-6 md:w-6 md:h-6  relative">
                     <Image
                       src="/images/message-box.png"
                       layout="fill"
@@ -216,36 +214,31 @@ const Contact: NextPage = () => {
                       className="object-contain"
                     />
                   </div>
-                  <div className="">
-                    {/* address */}
-                    <a
-                      rel="external nofollow noopener noreferrer"
-                      target="_blank"
-                      href="mailto:info@nextlooptechnologies.com"
-                    >
-                      <h1 className="text-[10px] xl:text-sm font-normal">
-                        info@nextlooptechnologies.com
-                      </h1>
-                    </a>
-                  </div>
+                  <a
+                    rel="external nofollow noopener noreferrer"
+                    target="_blank"
+                    href="mailto:info@nextlooptechnologies.com"
+                  >
+                    <h1 className="text-[15px] xl:text-lg font-normal">
+                      info@nextlooptechnologies.com
+                    </h1>
+                  </a>
                 </div>
                 <div className="flex">
                   {Images_DATA.map(img => (
                     <Link key={img.id} href={img.link ? img.link : ''}>
-                      <div className="w-4 h-4 mr-2 mt-3 cursor-pointer">
+                      <div className="w-5 h-5 md:w-6 md:h-6 relative mr-2 mt-3 cursor-pointer">
                         <Image
                           src={img.image}
-                          width={10}
-                          height={10}
                           alt={img.alt}
-                          layout="responsive"
+                          layout="fill"
                           className="object-contain"
                         />
                       </div>
                     </Link>
                   ))}
                 </div>
-                <div className="mt-3 max-w-xs max-h-fit pr-5 sm:pr-0">
+                <div className="mt-3 max-w-xs max-h-fit">
                   <Image
                     src="/images/map.png"
                     width={300}
