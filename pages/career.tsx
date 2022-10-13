@@ -1,6 +1,13 @@
 import Image from 'next/image';
 import React from 'react';
 import Accordian from '../components/Accordian';
+import {
+  ionicAllRoleTitles,
+  nextJsAllRoleTitles,
+  frontEndLeadAllRoleTitles,
+  BDIAllRoleTitles,
+  HRInternAllRoleTitles,
+} from '../constants';
 
 const Career = () => {
   const jobDesc = [
@@ -9,30 +16,45 @@ const Career = () => {
       jobTitle: 'Ionic Developer',
       location: 'indore/pune',
       exp: '2+years of exp.',
+      keySkills:
+        'Experience in Ionic 6, Angular 13, Typescript, Stencil Js, NodeJS, HTML5, and CSS3.',
+      allRoleTitles: ionicAllRoleTitles,
     },
     {
       id: 2,
       jobTitle: 'Next js Developer',
       location: 'indore/pune',
       exp: '2+years of exp.',
+      keySkills:
+        'JavaScript, Next Js, React JS, HTML5, and CSS3, Redux, Bootstrap, TypeScript',
+      allRoleTitles: nextJsAllRoleTitles,
     },
     {
       id: 3,
       jobTitle: 'Front-End Lead Tech',
       location: 'indore/pune',
       exp: '4+years of exp.',
+      keySkills:
+        'JavaScript, CSS, HTML, and front-end languages.Knowledge of REACT tools including React.js, Webpack, Enzyme, Redux, and Flux.',
+      allRoleTitles: frontEndLeadAllRoleTitles,
     },
     {
       id: 4,
       jobTitle: 'BDI(Business Dev Intern)',
       location: 'indore/pune',
       exp: 'Fresher.',
+      keySkills:
+        'Proven working experience as a business development manager, sales executive or a relevant role',
+      allRoleTitles: BDIAllRoleTitles,
     },
     {
       id: 5,
       jobTitle: 'Human Resources Intern',
       location: 'indore/pune',
       exp: 'Fresher.',
+      keySkills:
+        'Experience as a Staff Assistant or similar junior HR role is a plus',
+      allRoleTitles: HRInternAllRoleTitles,
     },
   ];
   return (
@@ -75,11 +97,10 @@ const Career = () => {
             jobTitle={item.jobTitle}
             location={item.location}
             exp={item.exp}
+            keySkills={item.keySkills}
+            allRoleTitles={item.allRoleTitles}
           />
         ))}
-        {/* <div className="font-bold  text-[#7A7A7A] mt-5">
-          <button className="text-xl">VIEW ALL OPENINGS {` >> `}</button>
-        </div> */}
       </div>
     </>
   );
