@@ -146,7 +146,7 @@ const Contact: NextPage = () => {
                   </div>
 
                   <div className="w-full pl-5 pr-5">
-                    <label className="block px-4 xl:text-lg 2xl:text-2xl">
+                    <label className="block p-2 xl:text-lg 2xl:text-2xl">
                       Comments
                     </label>
                     <textarea
