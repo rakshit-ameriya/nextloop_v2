@@ -7,9 +7,9 @@ const Header = () => {
     <>
       <div className="w-full h-[75vh] sm:h-[100vh] 2xl:h-screen  bg-primaryBg relative top-0">
         <Carousel />
-        <div className="w-[90%] md:w-[65%] 2xl:w-[55%]  absolute top-1/3 sm:top-1/2 md:top-[40%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div className="w-[90%] md:w-[65%] 2xl:w-[55%]  absolute top-1/3   2xl:top-1/2 2xl:left-[42%] 3xl:left-[48%] md:top-[40%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <div className="flex justify-start w-full items-start">
-            <div className="text-primaryGreenText text-4xl xl:text-4xl 2xl:text-6xl 2xl:font-extrabold font-bold">
+            <div className="text-primaryGreenText text-4xl xl:text-4xl 2xl:text-6xl 2xl:font-extrabold font-bold font-montserratBold">
               <h1>{TEXT_CONSTANTS.NEXT_LEVEL_IT}</h1>
               <h1 className="text-4xl xl:text-4xl 2xl:text-6xl  text-primaryGreenText ">
                 {TEXT_CONSTANTS.SOLUTIONS}

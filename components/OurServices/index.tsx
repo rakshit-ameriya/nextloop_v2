@@ -18,7 +18,7 @@ const OurServices = () => {
     },
     {
       id: 3,
-      title: 'Discepline',
+      title: 'Discipline',
       image: '/images/mobiledevelopment.svg',
       description: TEXT_CONSTANTS.FEDALITY_TO_OUR_PROCESS,
     },

@@ -7,9 +7,9 @@ const WhyUs = () => {
     <div className="2xl:w-4/5 mx-auto">
       <div className="relative flex justify-center flex-col px-5 sm:flex-row sm:gap-x-40 items-center  w-full h-1/2 my-20">
         <div className="w-full sm:w-72 2xl:w-80 flex flex-col py-10 ">
-          <div className="relative bg-primaryGreenText w-16 h-3 xl:w-24 2xl:w-52">
-            <div className="absolute -bottom-1 w-40 sm:w-64">
-              <h1 className="font-bold sm:text-2xl text-xl xl:text-3xl 2xl:text-4xl ">
+          <div className="relative bg-primaryGreenText w-20 h-3 xl:w-52 2xl:w-64">
+            <div className="absolute -bottom-1 w-40 sm:w-72">
+              <h1 className="font-bold text-[14px] md:text-3xl xl:text-3xl 2xl:text-4xl">
                 {' '}
                 {TEXT_CONSTANTS.WHY_US}
               </h1>
