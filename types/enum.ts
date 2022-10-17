@@ -2,7 +2,7 @@ export enum TEXT_CONSTANTS {
   NEXTLOOP = 'nextloop',
   CONTACT = 'CONTACT',
   HAPPY_SERVICES = 'Happy Customers',
-  WE_COOPERATE_WITH_GLOBAL_BRANDS = 'We corporate with global brands',
+  WE_COOPERATE_WITH_GLOBAL_BRANDS = 'We Cooperate with global brands',
   BEST_WEB_STUDIO = 'The best web studio',
   IN_NEWYORK = 'in New York -   ',
   ACCORDING = 'according',
