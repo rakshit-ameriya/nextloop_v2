@@ -29,15 +29,15 @@ function HappyCustomers() {
   return (
     <div className="md:my-40">
       <div className="flex justify-center my-3">
-        <div className="relative bg-primaryGreenText w-40 h-3 xl:w-56 2xl:w-72">
-          <div className="absolute -bottom-1 w-56 xl:w-80 2xl:w-80 ">
-            <h1 className="font-bold sm:text-2xl text-xl xl:text-2xl 2xl:text-4xl   ">
+        <div className="relative bg-primaryGreenText w-32 h-3 md:w-72 xl:w-72 2xl:w-80">
+          <div className="absolute -bottom-1 w-56 md:w-72 xl:w-80 2xl:w-96 ">
+            <h1 className="font-bold text-[14px] md:text-3xl xl:text-3xl 2xl:text-4xl">
               {TEXT_CONSTANTS.HAPPY_SERVICES}
             </h1>
           </div>
         </div>
       </div>
-      <h1 className=" 2xl:text-lg xl:text-md text-center">
+      <h1 className=" 2xl:text-lg xl:text-md flex justify-center">
         {TEXT_CONSTANTS.WE_COOPERATE_WITH_GLOBAL_BRANDS}
       </h1>
 

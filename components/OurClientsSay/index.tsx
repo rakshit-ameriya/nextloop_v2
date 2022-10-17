@@ -10,8 +10,7 @@ const OurClinetsSay: NextPage = () => {
       image_1: (
         <Image
           src={'/images/Vector 40.png'}
-          width={650}
-          height={240}
+          layout="fill"
           alt="testimonials-1"
         />
       ),
@@ -24,8 +23,7 @@ const OurClinetsSay: NextPage = () => {
       image_1: (
         <Image
           src={'/images/Vector 40.png'}
-          width={650}
-          height={240}
+          layout="fill"
           alt="testimonials-1"
         />
       ),
@@ -38,9 +36,9 @@ const OurClinetsSay: NextPage = () => {
   return (
     <div className="w-full h-2/3 my-20">
       <div className="flex justify-center my-3">
-        <div className="relative bg-primaryGreenText w-40 h-3 sm:48 xl:w-44 2xl:w-64">
-          <div className="absolute -bottom-1 w-56 xl:w-80 2xl:w-80 ">
-            <h1 className="font-bold sm:text-2xl text-xl xl:text-2xl 2xl:text-4xl  ">
+        <div className="relative bg-primaryGreenText w-28 h-3 md:w-64 xl:w-62 2xl:w-64">
+          <div className="absolute -bottom-1 w-56 md:w-72 xl:w-80 2xl:w-80 ">
+            <h1 className="font-bold text-[14px] md:text-3xl xl:text-3xl 2xl:text-4xl">
               {' '}
               {TEXT_CONSTANTS.OUR_CLIENT_SAYS}
             </h1>
@@ -80,34 +78,30 @@ const OurClinetsSay: NextPage = () => {
         </div>
         <div className="carousel-inner relative w-full overflow-hidden h-96">
           <div className="carousel-item active relative float-left w-full h-2/3 text-center">
-            <div className="flex justify-center ">
-              <div className="w-full h-1/2 mt-14 bg-cover">
-                <Image
-                  src={'/images/Vector 40.png'}
-                  width={650}
-                  height={240}
-                  alt="testimonials-1"
-                />
-              </div>
-            </div>
-            <div className="w-full h-40 flex justify-center ">
-              <div className="flex justify-center items-start w-1/2 h-1/2 absolute top-0">
-                <Image
-                  src={'/images/Ellipse 54.png'}
-                  className=""
-                  alt="smaple image"
-                  width={110}
-                  height={110}
-                />
-              </div>
+            <div className="relative md:w-[50%] w-[100%] h-[60%] md:h-[100%] mt-14 bg-cover mx-auto">
+              <Image
+                src={'/images/Vector 40.png'}
+                layout="fill"
+                alt="testimonials-1"
+              />
+              <div className="w-full flex justify-center ">
+                <div className="flex justify-center items-start w-[40%] h-[40%] absolute -top-14">
+                  <Image
+                    src={'/images/Ellipse 54.png'}
+                    className="object-contain"
+                    alt="smaple image"
+                    layout="fill"
+                  />
+                </div>
 
-              <div className="absolute top-28 xl:top-32 2xl:top-28 left-auto">
-                <p className="text-[8px] mx-auto xl:text-md 2xl:text-[14px] text-white max-w-lg mb-3 ">
-                  {TEXT_CONSTANTS.WE_WOULD_LIKE_TO_EXPRESS}
-                </p>
-                <h1 className="text-white text-[8px] 2xl:text-lg font-semibold">
-                  {TEXT_CONSTANTS.RAHUL_JAIN_CEO}
-                </h1>
+                <div className="w-[80%] absolute top-[57%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                  <p className="text-[8px] mx-auto xl:text-[12px] 2xl:text-[14px] text-[#000] opacity-50  mb-3 ">
+                    {TEXT_CONSTANTS.WE_WOULD_LIKE_TO_EXPRESS}
+                  </p>
+                  <h1 className="text-white text-[8px] xl:text-[12px] 2xl:text-lg font-semibold">
+                    {TEXT_CONSTANTS.RAHUL_JAIN_CEO}
+                  </h1>
+                </div>
               </div>
             </div>
           </div>
@@ -116,25 +110,26 @@ const OurClinetsSay: NextPage = () => {
               key={item.id}
               className=" carousel-item  relative float-left w-full h-2/3 text-center"
             >
-              <div className=" w-full h-1/2 mt-14 bg-cover">{item.image_1}</div>
-              <div className="mt-12 mb-6 flex  justify-center">
-                <div className="flex justify-center items-start w-1/2 h-1/2 absolute top-0">
-                  <Image
-                    src={item.image_2}
-                    className=""
-                    alt="smaple image"
-                    width={110}
-                    height={110}
-                  />
-                </div>
+              <div className="relative md:w-[50%] h-[60%] md:h-[100%] mt-14 bg-cover mx-auto">
+                {item.image_1}
+                <div className="mt-12 mb-6 flex  justify-center ">
+                  <div className="flex justify-center items-start w-[40%] h-[40%] absolute -top-14">
+                    <Image
+                      src={item.image_2}
+                      className="object-contain"
+                      alt="smaple image"
+                      layout="fill"
+                    />
+                  </div>
 
-                <div className="absolute top-28 xl:top-32 2xl:top-28 left-auto">
-                  <p className="text-[8px] mx-auto xl:text-md 2xl:text-[14px] text-white max-w-lg mb-3">
-                    {item.paragraph}
-                  </p>
-                  <h1 className="text-white text-[10px] 2xl:text-lg font-semibold">
-                    {item.title}
-                  </h1>
+                  <div className="w-[80%] absolute top-[58%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <p className="text-[8px] mx-auto xl:text-[12px] 2xl:text-[14px] text-[#000] opacity-50  mb-3">
+                      {item.paragraph}
+                    </p>
+                    <h1 className="text-[#fff] text-[8px] xl:text-[12px] 2xl:text-lg font-semibold">
+                      {item.title}
+                    </h1>
+                  </div>
                 </div>
               </div>
             </div>

@@ -55,7 +55,7 @@ function Footer() {
               {images.map(img => (
                 <Link key={img.id} href={img.link ? img.link : ''}>
                   <div
-                    className={`w-10 h-10 p-2 relative bg-white rounded-full border-8 border-white cursor-pointer`}
+                    className={`w-8 h-8 xl:w-8 xl:h-8 2xl:w-10 2xl:h-10 p-2 relative bg-white rounded-full border-8 border-white cursor-pointer`}
                   >
                     <Image
                       layout="fill"
@@ -69,14 +69,14 @@ function Footer() {
             </div>
           </div>
           <div className="">
-            <h1 className="text-white font-bold text-sm xl:text-lg 2xl:text-2xl underline decoration-green-300 ">
+            <h1 className="text-white font-bold text-sm xl:text-lg 2xl:text-2xl underline ">
               {TEXT_CONSTANTS.DISCOVER}
             </h1>
             <ul className="mt-3">
               {Constants.DISCOVER.map(items => (
                 <li
                   key={items.id}
-                  className="text-primaryGrayText text-xs xl:text-md 2xl:text-lg my-1 font-normal hover:text-black cursor-pointer"
+                  className="text-primaryGrayText text-xs xl:text-md 2xl:text-lg my-1 font-normal hover:text-[#0ad4a5] cursor-pointer"
                 >
                   <Link href={items.link}>
                     <a> {items.name}</a>
@@ -86,14 +86,14 @@ function Footer() {
             </ul>
           </div>
           <div className="">
-            <h1 className="text-white font-bold text-sm xl:text-lg 2xl:text-2xl  underline decoration-green-300">
+            <h1 className="text-white font-bold text-sm xl:text-lg 2xl:text-2xl  underline ">
               {TEXT_CONSTANTS.INFORMATION}
             </h1>
             <ul className="mt-3">
               {Constants.INFORMATION.map((items, id) => (
                 <li
                   key={id}
-                  className="text-primaryGrayText  text-xs xl:text-md 2xl:text-lg my-1  font-normal hover:text-black cursor-pointer"
+                  className="text-primaryGrayText  text-xs xl:text-md 2xl:text-lg my-1  font-normal hover:text-[#0ad4a5] cursor-pointer"
                 >
                   {items}
                 </li>
@@ -101,14 +101,14 @@ function Footer() {
             </ul>
           </div>
           <div className="">
-            <h1 className="text-white font-bold text-sm  xl:text-lg 2xl:text-2xl underline decoration-green-300 ">
+            <h1 className="text-white font-bold text-sm  xl:text-lg 2xl:text-2xl underline">
               {TEXT_CONSTANTS.HELP_AND_SUPPORT}
             </h1>
             <ul className="mt-3">
               {Constants.SUPPORT.map((items, id) => (
                 <li
                   key={id}
-                  className="text-primaryGrayText  text-xs xl:text-md 2xl:text-lg my-1 font-normal hover:text-black cursor-pointer"
+                  className="text-primaryGrayText  text-xs xl:text-md 2xl:text-lg my-1 font-normal hover:text-[#0ad4a5] cursor-pointer"
                 >
                   {items}
                 </li>
@@ -116,14 +116,14 @@ function Footer() {
             </ul>
           </div>
           <div className="">
-            <h1 className="text-white font-bold text-sm xl:text-lg 2xl:text-2xl underline decoration-green-300">
+            <h1 className="text-white font-bold text-sm xl:text-lg 2xl:text-2xl underline ">
               {TEXT_CONSTANTS.CONTACT}
             </h1>
             <ul className="mt-3">
               {Constants.CONTACT.map((items, id) => (
                 <li
                   key={id}
-                  className="text-primaryGrayText  text-xs xl:text-md 2xl:text-lg my-1 font-normal hover:text-black cursor-pointer"
+                  className="text-primaryGrayText  text-xs xl:text-md 2xl:text-lg my-1 font-normal"
                 >
                   {items}
                 </li>

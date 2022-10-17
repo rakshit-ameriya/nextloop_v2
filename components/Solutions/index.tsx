@@ -27,11 +27,11 @@ const Solutions = () => {
   return (
     <div className="w-full min-h-[70vh] mt-20">
       <div className="pt-3" ref={solution} id="solution">
-        <h1 className="text-center text-2xl xl:text-3xl 2xl:text-4xl font-bold ">
+        <h1 className="text-center text-[14px] md:text-3xl xl:text-3xl 2xl:text-4xl font-bold ">
           {' '}
           {TEXT_CONSTANTS.SOLUTIONS}
         </h1>
-        <h1 className="text-[10px] 2xl:text-lg text-center max-w-xs mx-auto sm:max-w-xl">
+        <h1 className="text-sm 2xl:text-lg text-center w-[80%] md:w-[30%] mx-auto">
           {TEXT_CONSTANTS.WE_COMMIT_DESIRING}
         </h1>
       </div>

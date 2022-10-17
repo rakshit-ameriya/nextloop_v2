@@ -158,7 +158,7 @@ const Contact: NextPage = () => {
                   </div>
                   <div className="pl-5 pr-5 w-full sm:w-3/4  mt-3">
                     <button
-                      className="bg-green-300 w-full px-4 py-3 sm:w-2/3 text-white font-normal xl:px-4 2xl:px-4 2xl:text-2xl border-1 rounded-full"
+                      className="bg-green-300 w-full px-2 py-2 sm:w-2/3 text-white font-normal xl:py-2 2xl:px-4 2xl:text-2xl border-1 rounded-full"
                       type="submit"
                     >
                       Send

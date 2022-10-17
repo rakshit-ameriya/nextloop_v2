@@ -9,9 +9,9 @@ const AboutUs = () => {
     <div className="2xl:w-4/5 mx-auto  my-20 px-5" ref={aboutUs} id="aboutUs">
       <div className="relative flex justify-center flex-col sm:flex-row space-y-10 sm:space-y-0 sm:space-x-28 space-x-0   items-center ">
         <div className="w-64 md:w-96 2xl:w-96 flex flex-col">
-          <div className="relative bg-primaryGreenText w-24 h-3 xl:w-32 2xl:w-40 mt-10">
+          <div className="relative bg-primaryGreenText w-16 h-3 xl:w-32 2xl:w-40 mt-10">
             <div className="absolute -bottom-1 w-64">
-              <h1 className="font-bold sm:text-2xl text-xl xl:text-3xl 2xl:text-4xl  ">
+              <h1 className="font-bold text-[14px] md:text-3xl xl:text-3xl 2xl:text-4xl">
                 {' '}
                 {TEXT_CONSTANTS.ABOUT_US}
               </h1>
