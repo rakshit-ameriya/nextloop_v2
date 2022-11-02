@@ -14,7 +14,7 @@ const OurClinetsSay: NextPage = () => {
           alt="testimonials-1"
         />
       ),
-      image_2: '/images/Ellipse 54.png',
+      image_2: '/images/user.png',
       paragraph: TEXT_CONSTANTS.UNDER_TIGHT_DEADLINES,
       title: TEXT_CONSTANTS.HARRY_ADITOLA_CEO,
     },
@@ -27,7 +27,7 @@ const OurClinetsSay: NextPage = () => {
           alt="testimonials-1"
         />
       ),
-      image_2: '/images/Ellipse 54.png',
+      image_2: '/images/user.png',
       paragraph: TEXT_CONSTANTS.AFTER_EVALUATING_A_FEW_OUTSOURCERS,
       title: TEXT_CONSTANTS.MR_HENRY_CEO,
     },
@@ -87,7 +87,7 @@ const OurClinetsSay: NextPage = () => {
               <div className="w-full flex justify-center ">
                 <div className="flex justify-center items-start w-[40%] h-[40%] absolute -top-14">
                   <Image
-                    src={'/images/Ellipse 54.png'}
+                    src={'/images/user.png'}
                     className="object-contain"
                     alt="smaple image"
                     layout="fill"

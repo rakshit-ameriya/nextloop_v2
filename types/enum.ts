@@ -67,5 +67,9 @@ export enum TEXT_CONSTANTS {
   TECH_SUPPORT = 'We believe that the best customer service is when end users don’t need to reach out to the helpline. We provide technical support to the businesses keeping this point in mind so that we can cater the required services and provide the best in class experience.',
   GET_IN_TOUCH = 'Get into the loop of Technical Innovation',
   LEST_CONNECT = "Let's Connect",
+  SKILLFULL_TEAM = 'Skillful Team',
+  MEETING_DEADLINE = 'Meeting the deadlines',
+  CLIENT_SATISFACTION = 'Client Satisfaction',
   WEB_DEVELOPMENT = 'Your website is the center of your digital eco-system, like a brick and mortar location, the experience matters once a customer enters, just as much as the perception they have of you before they walk through the door.And for all these services we are providing one stop solution at nextloop with best in class support.',
+  NEXTLOOP_HAS_CONSTANTLY_PROVIDED = 'Nextloop has constantly provided quality service for all ourprojects. We’ve been happy to work with their staff, who are alwayslooking out for our interests and have been a key element in ourgrowth. Glad to have chosen Nextloop for all our outsourcing development needs.',
 }

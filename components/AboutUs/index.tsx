@@ -3,7 +3,9 @@ import Image from 'next/image';
 import { TEXT_CONSTANTS } from 'types/enum';
 
 const AboutUs = () => {
-  const [progress] = useState(60);
+  const [skillData] = useState(90);
+  const [meetingData] = useState(95);
+  const [clientData] = useState(90);
   const aboutUs = useRef<HTMLInputElement>(null);
   return (
     <div className="2xl:w-4/5 mx-auto  my-20 px-5" ref={aboutUs} id="aboutUs">
@@ -40,15 +42,15 @@ const AboutUs = () => {
               <div className="flex justify-start text-xs text-gray-400">
                 <div>
                   <h1 className="flex justify-start text-xs pb-2 font-sans font-semibold text-black xl:text-md 2xl:text-[15px]">
-                    {TEXT_CONSTANTS.REGULAR_CUSTOMERS}
+                    {TEXT_CONSTANTS.SKILLFULL_TEAM}
                   </h1>
                 </div>
-                <h1 className="mx-6 xl:text-md 2xl:text-lg">{progress}%</h1>
+                <h1 className="mx-6 xl:text-md 2xl:text-lg">{skillData}%</h1>
               </div>
               <div className="w-full bg-gray-400 rounded-md">
                 <div
                   className="bg-primaryGreenText text-xs font-medium text-blue-100 text-center p-0.5 leading-none  h-2 rounded-md"
-                  style={{ width: `${progress}%` }}
+                  style={{ width: `${skillData}%` }}
                 ></div>
               </div>
             </div>
@@ -56,15 +58,15 @@ const AboutUs = () => {
               <div className="flex justify-start text-xs text-gray-400">
                 <div>
                   <h1 className="flex justify-start text-xs pb-2 font-sans font-semibold text-black xl:text-md 2xl:text-[15px]">
-                    {TEXT_CONSTANTS.REGULAR_CUSTOMERS}
+                    {TEXT_CONSTANTS.MEETING_DEADLINE}
                   </h1>
                 </div>
-                <h1 className="mx-6 xl:text-md 2xl:text-lg">{progress}%</h1>
+                <h1 className="mx-6 xl:text-md 2xl:text-lg">{meetingData}%</h1>
               </div>
               <div className="w-full bg-gray-400 rounded-md">
                 <div
                   className="bg-primaryGreenText text-xs font-medium text-blue-100 text-center p-0.5 leading-none  h-2 rounded-md"
-                  style={{ width: `${progress}%` }}
+                  style={{ width: `${meetingData}%` }}
                 ></div>
               </div>
             </div>
@@ -72,15 +74,15 @@ const AboutUs = () => {
               <div className="flex justify-start text-xs text-gray-400">
                 <div>
                   <h1 className="flex justify-start text-xs pb-2 font-sans font-semibold  text-black xl:text-md 2xl:text-[15px]">
-                    {TEXT_CONSTANTS.REGULAR_CUSTOMERS}
+                    {TEXT_CONSTANTS.CLIENT_SATISFACTION}
                   </h1>
                 </div>
-                <h1 className="mx-6 xl:text-md 2xl:text-lg">{progress}%</h1>
+                <h1 className="mx-6 xl:text-md 2xl:text-lg">{clientData}%</h1>
               </div>
               <div className="w-full bg-gray-400 rounded-md">
                 <div
                   className="bg-primaryGreenText text-xs font-medium text-blue-100 text-center p-0.5 leading-none  h-2 rounded-md"
-                  style={{ width: `${progress}%` }}
+                  style={{ width: `${clientData}%` }}
                 ></div>
               </div>
             </div>
