@@ -42,7 +42,7 @@ function HappyCustomers() {
       </h1>
 
       <div className=" w-full h-1/2 flex flex-col sm:flex-col md:flex-row justify-evenly mt-5">
-        <div className="mx-auto">
+        <div className="mx-auto flex-1">
           <div className="flex sm:justify-evenly justify-center  sm:space-x-16 space-x-10">
             <div className="flex flex-col space-y-12 ">
               {IMAGES_DATA.imgData_1.map(img => (
@@ -72,46 +72,10 @@ function HappyCustomers() {
             </div>
           </div>
         </div>
-        <div className="mx-auto mt-4 md:mt-0">
-          <div className="">
-            <Image
-              src={'/images/happyCustomers7.png'}
-              width={35}
-              height={35}
-              alt="Statue of Liberty"
-              className="object-contain"
-            />
-          </div>
-          <div className="text-2xl font-bold mt-3">
-            <h1>{TEXT_CONSTANTS.BEST_WEB_STUDIO}</h1>
-            <span>{TEXT_CONSTANTS.IN_NEWYORK}</span>
-            <span className="text-2xl font-normal">
-              {TEXT_CONSTANTS.ACCORDING}
-            </span>
-          </div>
-
-          <div className="text-2xl">
-            <p>{TEXT_CONSTANTS.TO_MAGAZINE_DEVELOPER}</p>
-          </div>
-          <div className="flex justify-start mt-4">
-            <div className="">
-              <Image
-                src={'/images/happyCustomers8.png'}
-                width={90}
-                height={90}
-                alt="Signature"
-                className="object-contain"
-              />
-            </div>
-            <div>
-              <div className="text-base font-bold leading-5  text-gray-500">
-                <p>{TEXT_CONSTANTS.RICHARD_JACOBSON}</p>
-              </div>
-              <div className="text-base font-normal leading-5  text-gray-500">
-                <p>{TEXT_CONSTANTS.MAGAZINE_EDITOR}</p>
-              </div>
-            </div>
-          </div>
+        <div className="flex-1 mx-auto mt-4 md:mt-0">
+          <p className="w-[80%] mx-auto font-montserratBold text-xl leading-relaxed">
+            {TEXT_CONSTANTS.NEXTLOOP_HAS_CONSTANTLY_PROVIDED}
+          </p>
         </div>
       </div>
     </div>

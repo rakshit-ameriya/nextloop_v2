@@ -150,7 +150,7 @@ const Contact: NextPage = () => {
                       Comments
                     </label>
                     <textarea
-                      className="rounded-md  w-full 2xl:p-4 xl:p-1 h-32 border-1 text-xl"
+                      className="rounded-md px-4 w-full 2xl:p-4 xl:p-1 h-32 border-1 text-xl"
                       name="comments"
                       value={inputValues.comments}
                       onChange={e => handleChange(e)}
