@@ -116,7 +116,13 @@ const Accordian = props => {
             </div>
             <div className="max-w-xs  flex flex-col place-content-end cursor-pointer">
               <div className="bg-[#0AD4A5] mt-5 max-w-xs p-1 rounded-2xl text-center text-white ">
-                <button>Apply</button>
+                <a
+                  rel="external nofollow noopener noreferrer"
+                  target="_blank"
+                  href="mailto:info@nextlooptechnologies.com"
+                >
+                  <h1 className="text-[15px] xl:text-lg font-normal">Apply</h1>
+                </a>
               </div>
             </div>
           </div>

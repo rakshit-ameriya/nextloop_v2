@@ -39,8 +39,8 @@ const AboutUs = () => {
           </div>
           <div className="">
             <div className="mt-4 ">
-              <div className="flex justify-start text-xs text-gray-400">
-                <div>
+              <div className="flex justify-start text-xs text-gray-400 ">
+                <div className="w-full">
                   <h1 className="flex justify-start text-xs pb-2 font-sans font-semibold text-black xl:text-md 2xl:text-[15px]">
                     {TEXT_CONSTANTS.SKILLFULL_TEAM}
                   </h1>
@@ -56,7 +56,7 @@ const AboutUs = () => {
             </div>
             <div className="mt-3">
               <div className="flex justify-start text-xs text-gray-400">
-                <div>
+                <div className="w-full">
                   <h1 className="flex justify-start text-xs pb-2 font-sans font-semibold text-black xl:text-md 2xl:text-[15px]">
                     {TEXT_CONSTANTS.MEETING_DEADLINE}
                   </h1>
@@ -72,7 +72,7 @@ const AboutUs = () => {
             </div>
             <div className="mt-3">
               <div className="flex justify-start text-xs text-gray-400">
-                <div>
+                <div className="w-full">
                   <h1 className="flex justify-start text-xs pb-2 font-sans font-semibold  text-black xl:text-md 2xl:text-[15px]">
                     {TEXT_CONSTANTS.CLIENT_SATISFACTION}
                   </h1>

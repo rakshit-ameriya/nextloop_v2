@@ -1,7 +1,6 @@
 import React from 'react';
 import { TEXT_CONSTANTS } from '../../types/enum';
 import Carousel from 'components/Carousel';
-
 const Header = () => {
   return (
     <>
