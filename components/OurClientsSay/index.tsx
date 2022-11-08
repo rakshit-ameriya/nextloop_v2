@@ -135,8 +135,9 @@ const OurClinetsSay: NextPage = () => {
             </div>
           ))}
         </div>
+
         <button
-          className="carousel-control-prev   sm:absolute sm:left-40 sm:top-0 absolute left-20 top-10 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline"
+          className="carousel-control-prev rounded-full w-auto h-10  absolute left-40 top-1/2  flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline"
           type="button"
           data-bs-target="#carouselExampleCaptions"
           data-bs-slide="prev"
@@ -151,8 +152,9 @@ const OurClinetsSay: NextPage = () => {
             />
           </div>
         </button>
+
         <button
-          className="carousel-control-next sm:absolute sm:right-40 sm:top-0 absolute right-20 top-10 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline "
+          className="carousel-control-next rounded-full w-auto h-10  absolute right-40 top-1/2 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline "
           type="button"
           data-bs-target="#carouselExampleCaptions"
           data-bs-slide="next"

@@ -7,19 +7,19 @@ const constants = {
     },
     {
       id: 'service',
-      name: 'Service',
-      link: '/#service',
+      name: 'Services',
+      link: '/#solution',
     },
-    {
-      id: 'portfolio',
-      name: 'Portfolio',
-      link: '/#portfolio',
-    },
-    {
-      id: 'elements',
-      name: 'Elements',
-      link: '/#elements',
-    },
+    // {
+    //   id: 'portfolio',
+    //   name: 'Portfolio',
+    //   link: '/#portfolio',
+    // },
+    // {
+    //   id: 'elements',
+    //   name: 'Elements',
+    //   link: '/#elements',
+    // },
 
     {
       id: 'aboutUs',
@@ -35,11 +35,15 @@ const constants = {
     'Privacy Policy',
   ],
   SUPPORT: [
-    'Live Chat',
+    // 'Live Chat',
     // 'FaQ',
     // 'How to Stay Safe',
-    'Terms & Conditions',
-    'Contact Us',
+    // 'Terms & Conditions',
+    {
+      id: 'contactus',
+      name: 'Contact Us',
+      link: '/contact',
+    },
   ],
   CONTACT: [
     '420, 5th Floor, Onam Plaza ,',

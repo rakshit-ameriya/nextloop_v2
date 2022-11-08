@@ -73,8 +73,18 @@ function HappyCustomers() {
           </div>
         </div>
         <div className="flex-1 mx-auto mt-4 md:mt-0">
-          <p className="w-[80%] mx-auto font-montserratBold text-xl leading-relaxed">
+          <div className="w-8 h-8 relative">
+            <Image
+              src="/images/paragraphQoute.png"
+              layout="fill"
+              alt="paraqoute"
+            />
+          </div>
+          <p className="w-[80%] mx-auto font-montserratBold text-3xl font-bold leading-relaxed">
             {TEXT_CONSTANTS.NEXTLOOP_HAS_CONSTANTLY_PROVIDED}
+          </p>
+          <p className="w-[80%] mx-auto font-montserratBold text-xl leading-relaxed">
+            {TEXT_CONSTANTS.GLAD_TO_HAVE_CHOOSEN_NEXTLOOP}
           </p>
         </div>
       </div>

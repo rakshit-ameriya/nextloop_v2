@@ -14,7 +14,7 @@ const Career = () => {
     {
       id: 1,
       jobTitle: 'Ionic Developer',
-      location: 'indore/pune',
+      location: 'indore/remote',
       exp: '2+years of exp.',
       keySkills:
         'Experience in Ionic 6, Angular 13, Typescript, Stencil Js, NodeJS, HTML5, and CSS3.',
@@ -23,7 +23,7 @@ const Career = () => {
     {
       id: 2,
       jobTitle: 'Next js Developer',
-      location: 'indore/pune',
+      location: 'indore/remote',
       exp: '2+years of exp.',
       keySkills:
         'JavaScript, Next Js, React JS, HTML5, and CSS3, Redux, Bootstrap, TypeScript',
@@ -32,7 +32,7 @@ const Career = () => {
     {
       id: 3,
       jobTitle: 'Front-End Lead Tech',
-      location: 'indore/pune',
+      location: 'indore/remote',
       exp: '4+years of exp.',
       keySkills:
         'JavaScript, CSS, HTML, and front-end languages.Knowledge of REACT tools including React.js, Webpack, Enzyme, Redux, and Flux.',
@@ -41,7 +41,7 @@ const Career = () => {
     {
       id: 4,
       jobTitle: 'BDI(Business Dev Intern)',
-      location: 'indore/pune',
+      location: 'indore/remote',
       exp: 'Fresher.',
       keySkills:
         'Proven working experience as a business development manager, sales executive or a relevant role',
