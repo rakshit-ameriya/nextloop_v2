@@ -50,7 +50,7 @@ const Career = () => {
     {
       id: 5,
       jobTitle: 'Human Resources Intern',
-      location: 'indore/pune',
+      location: 'indore/remote',
       exp: 'Fresher.',
       keySkills:
         'Experience as a Staff Assistant or similar junior HR role is a plus',

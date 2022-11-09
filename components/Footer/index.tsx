@@ -36,8 +36,8 @@ function Footer() {
   return (
     <>
       <div className="bg-primaryBg   h-1/2 w-full flex justify-center items-center p-5 relative  ">
-        <div className="grid md:grid-cols-4 grid-cols-2 gap-x-4">
-          <div className="">
+        <div className="grid  sm:grid-cols-4 grid-cols-2 gap-x-4">
+          <div className="sm:order-1 order-1">
             <h1 className="text-white font-bold text-xl xl:text-3xl 2xl:text-3xl">
               {TEXT_CONSTANTS.NEXTLOOP}
             </h1>
@@ -67,7 +67,7 @@ function Footer() {
               ))}
             </div>
           </div>
-          <div className="">
+          <div className="sm:order-2 order-2">
             <h1 className="text-white font-bold text-sm xl:text-lg 2xl:text-2xl underline ">
               {TEXT_CONSTANTS.DISCOVER}
             </h1>
@@ -99,7 +99,7 @@ function Footer() {
               ))}
             </ul>
           </div> */}
-          <div className="">
+          <div className="sm:order-3 order-2">
             <h1 className="text-white font-bold text-sm  xl:text-lg 2xl:text-2xl underline">
               {TEXT_CONSTANTS.HELP_AND_SUPPORT}
             </h1>
@@ -116,7 +116,7 @@ function Footer() {
               ))}
             </ul>
           </div>
-          <div className="">
+          <div className="sm:order-4 order-1">
             <h1 className="text-white font-bold text-sm xl:text-lg 2xl:text-2xl underline ">
               {TEXT_CONSTANTS.CONTACT}
             </h1>
